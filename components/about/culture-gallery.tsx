@@ -92,7 +92,7 @@ export function CultureGallery() {
 
         <div
           ref={gridRef}
-          className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-12 sm:gap-5"
+          className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-12 sm:auto-rows-[180px] sm:gap-5 lg:auto-rows-[220px]"
         >
           {GALLERY.map((item) => (
             <div

@@ -9,9 +9,9 @@ import { fadeUp, fadeIn, viewportOnce } from "@/lib/animations";
 import { cn } from "@/lib/utils";
 
 const accentStyles = {
-  lime: { bg: "bg-lime-300", text: "text-ink-950", ring: "ring-lime-300/30" },
-  coral: { bg: "bg-coral-500", text: "text-paper", ring: "ring-coral-500/30" },
-  violet: { bg: "bg-violet-500", text: "text-paper", ring: "ring-violet-500/30" },
+  lime: { bg: "bg-lime-300", text: "text-ink-950", ring: "ring-lime-300/30", glow: "bg-lime-300/25" },
+  coral: { bg: "bg-coral-500", text: "text-paper", ring: "ring-coral-500/30", glow: "bg-coral-500/25" },
+  violet: { bg: "bg-violet-500", text: "text-paper", ring: "ring-violet-500/30", glow: "bg-violet-500/25" },
 } as const;
 
 interface ServiceCardProps {
@@ -87,12 +87,21 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
       >
         <div
           className={cn(
-            "flex w-full flex-col justify-between gap-8 rounded-lg bg-ink-950 p-8 ring-1 sm:p-10",
+            "relative flex w-full flex-col justify-between gap-8 overflow-hidden rounded-lg bg-ink-950/80 p-8 ring-1 backdrop-blur-xl transition-transform duration-300 hover:-translate-y-1 sm:p-10",
             accent.ring
           )}
         >
-          <span className="eyebrow text-paper/40">Impact</span>
-          <div>
+          <div
+            aria-hidden
+            className={cn(
+              "pointer-events-none absolute -right-10 -top-10 size-56 rounded-full blur-[80px]",
+              accent.glow
+            )}
+          />
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-paper/[0.06] to-transparent" />
+
+          <span className="eyebrow relative text-paper/40">Impact</span>
+          <div className="relative">
             <p className="font-display text-5xl font-semibold text-paper sm:text-6xl">
               {service.metric.value}
             </p>

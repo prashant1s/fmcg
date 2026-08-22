@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   alternates: { canonical: "/services" },
 };
 
+const HERO_IMAGE =
+  "https://images.unsplash.com/photo-1612362426802-dcc0ccd25f64?w=1600&q=80&auto=format&fit=crop";
+
 export default function ServicesPage() {
   return (
     <>
@@ -21,6 +24,8 @@ export default function ServicesPage() {
         eyebrow="Our Services"
         title="The full social stack, built for consumer goods."
         description="From always-on content to full-funnel paid media — eight disciplines working as one team, so nothing falls through the cracks between vendors."
+        image={HERO_IMAGE}
+        imageAlt="A content team planning a social campaign"
       />
       <ServiceDetail />
       <ServiceProcess />

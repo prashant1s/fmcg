@@ -69,7 +69,7 @@ export function StorySection() {
                 className="object-cover"
               />
             </div>
-            <p className="leading-relaxed text-ink-500">
+            <p className="text-left leading-relaxed text-ink-500">
               Ripe started in 2018 when our founder, fresh off a decade
               running brand social for two Fortune 500 food companies, got
               tired of watching generalist agencies apply the same playbook
@@ -78,7 +78,7 @@ export function StorySection() {
               retail cycles, impulse purchase psychology, and category
               culture. So we built an agency that only works within it.
             </p>
-            <p className="leading-relaxed text-ink-500">
+            <p className="text-left leading-relaxed text-ink-500">
               Seven years later, that focus is still our only real
               differentiator: every strategist, producer, and media buyer
               here has only ever worked on consumer goods.
