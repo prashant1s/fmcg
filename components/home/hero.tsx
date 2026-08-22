@@ -27,7 +27,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative flex min-h-[100svh] flex-col justify-end overflow-hidden bg-ink-950 pt-32">
+    <section className="relative flex min-h-[100svh] flex-col justify-center overflow-hidden bg-ink-950 pt-20">
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <motion.div
           animate={{ x: [0, 30, 0], y: [0, -20, 0] }}

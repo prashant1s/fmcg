@@ -49,26 +49,11 @@ export function StorySection() {
     <section className="bg-paper py-section">
       <div className="container-wide">
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-20">
-          <SectionHeading
-            eyebrow="Our story"
-            title="Founded on a simple bet: category focus beats generalist scale."
-          />
-          <motion.div
-            variants={fadeIn}
-            initial="hidden"
-            whileInView="visible"
-            viewport={viewportOnce}
-            className="flex flex-col gap-6"
-          >
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg">
-              <Image
-                src={STORY_IMAGE}
-                alt="The Ripe founding team in an early planning session"
-                fill
-                sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-cover"
-              />
-            </div>
+          <div className="flex flex-col gap-6">
+            <SectionHeading
+              eyebrow="Our story"
+              title="Founded on a simple bet: category focus beats generalist scale."
+            />
             <p className="text-left leading-relaxed text-ink-500">
               Ripe started in 2018 when our founder, fresh off a decade
               running brand social for two Fortune 500 food companies, got
@@ -83,6 +68,22 @@ export function StorySection() {
               differentiator: every strategist, producer, and media buyer
               here has only ever worked on consumer goods.
             </p>
+          </div>
+          <motion.div
+            variants={fadeIn}
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportOnce}
+          >
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg">
+              <Image
+                src={STORY_IMAGE}
+                alt="The Ripe founding team in an early planning session"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover"
+              />
+            </div>
           </motion.div>
         </div>
 
