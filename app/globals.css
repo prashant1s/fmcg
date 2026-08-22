@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-ink-100;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink-950 font-sans antialiased;
+    font-feature-settings: "cv11", "ss01";
+  }
+
+  ::selection {
+    @apply bg-lime-300 text-ink-950;
+  }
+
+  :focus-visible {
+    outline: 2px solid theme("colors.ink.950");
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .dark :focus-visible {
+    outline-color: theme("colors.lime.300");
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-paper;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-ink-300 rounded-full border-2 border-paper;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-ink-400;
+  }
+}
+
+@layer components {
+  .skip-link {
+    @apply fixed left-4 top-4 z-[100] -translate-y-24 rounded-full bg-ink-950 px-5 py-3 text-sm font-medium text-paper transition-transform duration-300 focus:translate-y-0;
+  }
+
+  .container-wide {
+    @apply mx-auto w-full max-w-container px-5 sm:px-8 lg:px-12 xl:px-16;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.18em] text-ink-500;
+  }
+
+  .btn-focus {
+    @apply focus-visible:outline-offset-4;
+  }
+
+  .grain-overlay {
+    @apply pointer-events-none absolute inset-0 bg-grain opacity-[0.05] mix-blend-overlay;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer utilities {
+  .mask-fade-x {
+    mask-image: linear-gradient(
+      90deg,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%
+    );
+  }
+
+  .mask-fade-b {
+    mask-image: linear-gradient(180deg, black 85%, transparent 100%);
+  }
+
+  .mask-fade-y {
+    mask-image: linear-gradient(
+      180deg,
+      transparent 0%,
+      black 12%,
+      black 88%,
+      transparent 100%
+    );
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+.split-line {
+  overflow: hidden;
+  display: block;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: theme("colors.ink.950");
+  opacity: 0.15;
+  transition: all 0.3s theme("transitionTimingFunction.expo");
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 22px;
+  border-radius: 9999px;
+  background: theme("colors.ink.950");
+}
