@@ -50,15 +50,17 @@ export function TiltCard({
       ref={ref}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
+      whileHover={{ y: -6, scale: 1.015 }}
+      transition={{ type: "spring", stiffness: 300, damping: 20, mass: 0.5 }}
       style={{ rotateX, rotateY, transformPerspective: 900 }}
       className={cn(
-        "group relative overflow-hidden rounded-lg border border-ink-950/8 bg-paper",
+        "group relative overflow-hidden rounded-lg border border-ink-950/8 bg-paper shadow-[0_1px_2px_rgba(15,15,15,0.04)] transition-shadow duration-500 ease-expo hover:shadow-[0_24px_48px_-12px_rgba(15,15,15,0.16)]",
         className
       )}
     >
       <motion.div
         aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+        className="pointer-events-none absolute inset-0 rounded-lg opacity-0 transition-opacity duration-500 ease-expo group-hover:opacity-100"
         style={{
           background: useTransform(
             [glowX, glowY],
@@ -66,6 +68,10 @@ export function TiltCard({
               `radial-gradient(320px circle at ${gx} ${gy}, ${glowColor}, transparent 70%)`
           ),
         }}
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 rounded-lg opacity-0 ring-1 ring-inset ring-ink-950/10 transition-opacity duration-300 group-hover:opacity-100"
       />
       <div className="relative z-10">{children}</div>
     </motion.div>

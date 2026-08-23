@@ -48,19 +48,21 @@ export function ServicesOverview() {
                 <Link href="/services" className="block h-full">
                   <TiltCard
                     glowColor={accent.glow}
-                    className="flex h-full flex-col justify-between gap-8 p-7 hover:border-ink-950/20 sm:p-8"
+                    className="flex h-full flex-col justify-between gap-8 p-7 transition-colors duration-500 ease-expo hover:border-ink-950/20 sm:p-8"
                   >
                     <div className="flex items-start justify-between">
                       <span
                         className={cn(
-                          "flex size-12 items-center justify-center rounded-full",
+                          "flex size-12 items-center justify-center rounded-full transition-transform duration-500 ease-expo group-hover:scale-110 group-hover:rotate-6",
                           accent.bg,
                           accent.text
                         )}
                       >
                         <DynamicIcon name={service.icon} className="size-5" />
                       </span>
-                      <ArrowUpRight className="size-5 text-ink-300 transition-all duration-400 ease-expo group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-ink-950" />
+                      <span className="flex size-9 items-center justify-center rounded-full transition-colors duration-400 ease-expo group-hover:bg-ink-950/5">
+                        <ArrowUpRight className="size-5 text-ink-300 transition-all duration-400 ease-expo group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-ink-950" />
+                      </span>
                     </div>
 
                     <div className="flex flex-col gap-2.5">
