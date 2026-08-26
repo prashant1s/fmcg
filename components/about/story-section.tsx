@@ -6,7 +6,7 @@ import { SectionHeading } from "@/components/shared/section-heading";
 import { fadeIn, viewportOnce } from "@/lib/animations";
 
 const STORY_IMAGE =
-  "https://images.unsplash.com/photo-1683199804561-ce75c2c7bf61?w=1200&q=80&auto=format&fit=crop";
+  "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1200&q=80&auto=format&fit=crop";
 
 export function StorySection() {
   return (
@@ -42,7 +42,7 @@ export function StorySection() {
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg">
               <Image
                 src={STORY_IMAGE}
-                alt="The Ripe founding team in an early planning session"
+                alt="A quiet workspace overlooking the city, where Ripe's early strategy took shape"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover"

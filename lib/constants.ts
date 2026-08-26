@@ -58,7 +58,6 @@ export const SERVICE_OPTIONS = [
   "Influencer Marketing",
   "Paid Social Advertising",
   "Social Strategy & Consulting",
-  "Community Management",
   "Analytics & Reporting",
   "Not sure yet",
 ] as const;

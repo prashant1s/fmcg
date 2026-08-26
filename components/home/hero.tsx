@@ -27,7 +27,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative flex min-h-[100svh] flex-col justify-center overflow-hidden bg-ink-950 pt-20">
+    <section className="relative flex min-h-[90svh] flex-col justify-center overflow-hidden bg-ink-950 pt-20">
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <motion.div
           animate={{ x: [0, 30, 0], y: [0, -20, 0] }}
@@ -48,7 +48,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-ink-950" />
       </div>
 
-      <div className="container-wide relative grid grid-cols-1 items-center gap-10 pb-8 lg:grid-cols-12 lg:gap-8 lg:pb-0 xl:gap-12">
+      <div className="container-wide relative grid grid-cols-1 items-center gap-8 pb-4 lg:grid-cols-12 lg:gap-8 lg:pb-0 xl:gap-12">
         <motion.div
           variants={staggerContainer(0.1)}
           initial="hidden"
@@ -62,7 +62,7 @@ export function Hero() {
 
           <motion.h1
             variants={fadeUp}
-            className="text-display-xl text-balance text-paper"
+            className="text-display-lg text-balance text-paper"
           >
             We make{" "}
             <span className="relative inline-flex overflow-hidden align-bottom">
@@ -118,11 +118,11 @@ export function Hero() {
         </motion.div>
       </div>
 
-      <div className="container-wide relative pb-16 sm:pb-20 lg:pb-16">
+      <div className="container-wide relative pb-10 pt-6 sm:pb-12 lg:pb-10">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, ease: EXPO_EASE, delay: 0.6 }}
+          transition={{ duration: 0.9, ease: EXPO_EASE, delay: 0.5 }}
           className="border-t border-paper/10 pt-5"
         >
           <StatsCounter stats={HERO_STATS} light />

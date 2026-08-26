@@ -59,25 +59,6 @@ export const services: Service[] = [
     accent: "violet",
   },
   {
-    id: "svc-7",
-    slug: "community-management",
-    title: "Community Management",
-    shortDescription:
-      "Real-time community care that protects brand equity and turns fans into repeat buyers.",
-    description:
-      "Our community team responds, moderates, and engages across every channel with your brand voice on lock — turning comments and DMs into a retention channel and an early-warning system for product feedback.",
-    icon: "MessagesSquare",
-    deliverables: [
-      "Daily comment & DM management",
-      "Brand voice & tone guidelines",
-      "Crisis & escalation protocols",
-      "Social listening & sentiment tracking",
-      "Community growth initiatives",
-    ],
-    metric: { label: "avg. response time", value: "<2 hrs" },
-    accent: "lime",
-  },
-  {
     id: "svc-8",
     slug: "analytics-reporting",
     title: "Analytics & Reporting",

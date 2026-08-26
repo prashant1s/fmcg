@@ -23,8 +23,8 @@ const GALLERY = [
   },
   {
     id: "g2",
-    src: u("1758691737492-48e8fdd336f7"),
-    alt: "The Ripe team celebrating a campaign launch",
+    src: u("1524758631624-e2822e304c36"),
+    alt: "A lounge corner in the Ripe studio",
     span: "sm:col-span-5",
     speed: -0.1,
   },
@@ -37,8 +37,8 @@ const GALLERY = [
   },
   {
     id: "g4",
-    src: u("1758518730468-6e5669d5af6d"),
-    alt: "Team members walking through the studio hallway",
+    src: u("1497366754035-f200968a6e72"),
+    alt: "A quiet hallway inside the Ripe studio",
     span: "sm:col-span-6",
     speed: -0.15,
   },
