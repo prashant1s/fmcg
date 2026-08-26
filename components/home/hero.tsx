@@ -62,7 +62,7 @@ export function Hero() {
 
           <motion.h1
             variants={fadeUp}
-            className="text-display-lg text-balance text-paper"
+            className="text-display-xl text-balance text-paper"
           >
             We make{" "}
             <span className="relative inline-flex overflow-hidden align-bottom">
