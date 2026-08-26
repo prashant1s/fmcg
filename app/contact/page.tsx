@@ -6,17 +6,39 @@ import { Map } from "@/components/contact/map";
 import { AlternativeContact } from "@/components/contact/alternative-contact";
 import { OfficeLocations } from "@/components/contact/office-locations";
 import { FaqQuickLinks } from "@/components/contact/faq-quick-links";
+import { breadcrumbJsonLd } from "@/lib/json-ld";
+
+const TITLE = "Contact Us";
+const DESCRIPTION =
+  "Get in touch with Ripe to talk about your FMCG brand's social strategy. Fill out the form, call, WhatsApp, or request a callback.";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
-  description:
-    "Get in touch with Ripe to talk about your FMCG brand's social strategy. Fill out the form, call, WhatsApp, or request a callback.",
+  title: TITLE,
+  description: DESCRIPTION,
   alternates: { canonical: "/contact" },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: "/contact",
+  },
+  twitter: {
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
+
+const breadcrumbs = breadcrumbJsonLd([
+  { name: "Home", path: "/" },
+  { name: "Contact", path: "/contact" },
+]);
 
 export default function ContactPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
+      />
       <PageHero
         eyebrow="Get In Touch"
         title="Let's create something amazing together."

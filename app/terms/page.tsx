@@ -2,11 +2,23 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/shared/page-hero";
 import { SITE } from "@/lib/constants";
 
+const TITLE = "Terms of Service";
+const DESCRIPTION = `The terms that govern your use of ${SITE.url}.`;
+
 export const metadata: Metadata = {
-  title: "Terms of Service",
-  description: `The terms that govern your use of ${SITE.url}.`,
+  title: TITLE,
+  description: DESCRIPTION,
   alternates: { canonical: "/terms" },
   robots: { index: false, follow: true },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: "/terms",
+  },
+  twitter: {
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default function TermsPage() {

@@ -2,11 +2,23 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/shared/page-hero";
 import { SITE } from "@/lib/constants";
 
+const TITLE = "Privacy Policy";
+const DESCRIPTION = `How ${SITE.fullName} collects, uses, and protects your information.`;
+
 export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description: `How ${SITE.fullName} collects, uses, and protects your information.`,
+  title: TITLE,
+  description: DESCRIPTION,
   alternates: { canonical: "/privacy" },
   robots: { index: false, follow: true },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: "/privacy",
+  },
+  twitter: {
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default function PrivacyPage() {

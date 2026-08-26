@@ -6,7 +6,7 @@ import { Footer } from "@/components/layout/footer";
 import { BackToTop } from "@/components/shared/back-to-top";
 import { Loader } from "@/components/shared/loader";
 import { PageTransition } from "@/components/layout/page-transition";
-import { SITE } from "@/lib/constants";
+import { SITE, SOCIAL_LINKS } from "@/lib/constants";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -65,22 +65,11 @@ export const metadata: Metadata = {
     siteName: SITE.fullName,
     title: `${SITE.fullName} — ${SITE.tagline}`,
     description: SITE.description,
-    images: [
-      {
-        url: "https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?w=1200&h=630&fit=crop&q=80",
-        width: 1200,
-        height: 630,
-        alt: `${SITE.fullName} — ${SITE.tagline}`,
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${SITE.fullName} — ${SITE.tagline}`,
     description: SITE.description,
-    images: [
-      "https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?w=1200&h=630&fit=crop&q=80",
-    ],
   },
   robots: {
     index: true,
@@ -102,21 +91,27 @@ export const viewport: Viewport = {
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
-  "@type": "MarketingAgency",
+  "@type": "ProfessionalService",
+  "@id": `${SITE.url}/#organization`,
   name: SITE.fullName,
+  alternateName: SITE.name,
   url: SITE.url,
+  logo: `${SITE.url}/icon.svg`,
+  image: `${SITE.url}/opengraph-image`,
   description: SITE.description,
   email: SITE.email,
   telephone: SITE.phone,
+  foundingDate: SITE.founded,
   address: {
     "@type": "PostalAddress",
-    streetAddress: SITE.address,
+    streetAddress: "548 Market Street, Suite 62",
+    addressLocality: "San Francisco",
+    addressRegion: "CA",
+    postalCode: "94104",
+    addressCountry: "US",
   },
-  sameAs: [
-    "https://instagram.com",
-    "https://linkedin.com",
-    "https://x.com",
-  ],
+  areaServed: "US",
+  sameAs: SOCIAL_LINKS.map((link) => link.href),
 };
 
 export default function RootLayout({

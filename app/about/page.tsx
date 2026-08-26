@@ -5,17 +5,39 @@ import { Values } from "@/components/about/values";
 import { Awards } from "@/components/about/awards";
 import { CultureGallery } from "@/components/about/culture-gallery";
 import { CtaSection } from "@/components/home/cta-section";
+import { breadcrumbJsonLd } from "@/lib/json-ld";
+
+const TITLE = "About Us";
+const DESCRIPTION =
+  "Meet Ripe — a social media agency built exclusively for FMCG and consumer goods brands. Our story, our team, and the values behind the work.";
 
 export const metadata: Metadata = {
-  title: "About Us",
-  description:
-    "Meet Ripe — a social media agency built exclusively for FMCG and consumer goods brands. Our story, our team, and the values behind the work.",
+  title: TITLE,
+  description: DESCRIPTION,
   alternates: { canonical: "/about" },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: "/about",
+  },
+  twitter: {
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
+
+const breadcrumbs = breadcrumbJsonLd([
+  { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
+]);
 
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
+      />
       <PageHero
         eyebrow="About Ripe"
         title="A social agency built exclusively for consumer goods."

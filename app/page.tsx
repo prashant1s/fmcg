@@ -13,6 +13,12 @@ export const metadata: Metadata = {
   title: `${SITE.fullName} — ${SITE.tagline}`,
   description: SITE.description,
   alternates: { canonical: "/" },
+  openGraph: {
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function HomePage() {
