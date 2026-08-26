@@ -1,11 +1,9 @@
 import { MapPin, Phone, Mail, Clock, Instagram, Linkedin, Twitter } from "lucide-react";
-import { FaTiktok } from "react-icons/fa6";
 import { SITE, SOCIAL_LINKS, WORKING_HOURS } from "@/lib/constants";
 
 const socialIcons = {
   Instagram: Instagram,
   LinkedIn: Linkedin,
-  TikTok: FaTiktok,
   X: Twitter,
 };
 

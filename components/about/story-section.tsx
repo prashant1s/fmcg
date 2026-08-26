@@ -1,50 +1,14 @@
 "use client";
 
-import { useLayoutEffect, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { MILESTONES } from "@/data/content";
 import { SectionHeading } from "@/components/shared/section-heading";
-import { fadeUp, fadeIn, viewportOnce } from "@/lib/animations";
-
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger);
-}
+import { fadeIn, viewportOnce } from "@/lib/animations";
 
 const STORY_IMAGE =
   "https://images.unsplash.com/photo-1683199804561-ce75c2c7bf61?w=1200&q=80&auto=format&fit=crop";
 
 export function StorySection() {
-  const timelineRef = useRef<HTMLDivElement>(null);
-  const lineRef = useRef<HTMLDivElement>(null);
-
-  useLayoutEffect(() => {
-    const timeline = timelineRef.current;
-    const line = lineRef.current;
-    if (!timeline || !line) return;
-
-    const ctx = gsap.context(() => {
-      gsap.fromTo(
-        line,
-        { scaleY: 0 },
-        {
-          scaleY: 1,
-          ease: "none",
-          scrollTrigger: {
-            trigger: timeline,
-            start: "top 70%",
-            end: "bottom 80%",
-            scrub: 0.6,
-          },
-        }
-      );
-    }, timeline);
-
-    return () => ctx.revert();
-  }, []);
-
   return (
     <section className="bg-paper py-section">
       <div className="container-wide">
@@ -85,40 +49,6 @@ export function StorySection() {
               />
             </div>
           </motion.div>
-        </div>
-
-        <div ref={timelineRef} className="relative mt-24 pl-8 sm:pl-10">
-          <div className="absolute left-0 top-1 h-full w-px bg-ink-950/10" />
-          <div
-            ref={lineRef}
-            className="absolute left-0 top-1 h-full w-px origin-top bg-coral-500"
-          />
-
-          <div className="flex flex-col gap-14">
-            {MILESTONES.map((milestone) => (
-              <motion.div
-                key={milestone.id}
-                variants={fadeUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={viewportOnce}
-                className="relative flex flex-col gap-2 sm:flex-row sm:gap-10"
-              >
-                <span className="absolute -left-[2.15rem] top-1 size-3 rounded-full border-2 border-paper bg-coral-500 sm:-left-[2.65rem]" />
-                <span className="font-display text-2xl font-semibold text-ink-950 sm:w-28 sm:shrink-0">
-                  {milestone.year}
-                </span>
-                <div className="max-w-xl">
-                  <h3 className="text-lg font-semibold text-ink-950">
-                    {milestone.title}
-                  </h3>
-                  <p className="mt-2 leading-relaxed text-ink-500">
-                    {milestone.description}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </div>
     </section>

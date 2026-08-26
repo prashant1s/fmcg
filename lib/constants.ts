@@ -25,7 +25,6 @@ export const NAV_LINKS: NavLink[] = [
 export const SOCIAL_LINKS = [
   { label: "Instagram", href: "https://instagram.com" },
   { label: "LinkedIn", href: "https://linkedin.com" },
-  { label: "TikTok", href: "https://tiktok.com" },
   { label: "X", href: "https://x.com" },
 ] as const;
 
@@ -65,11 +64,11 @@ export const SERVICE_OPTIONS = [
 ] as const;
 
 export const BUDGET_OPTIONS = [
-  "Under $5,000 / month",
-  "$5,000 – $10,000 / month",
-  "$10,000 – $25,000 / month",
-  "$25,000 – $50,000 / month",
-  "$50,000+ / month",
+  "Under ₹5,000 / month",
+  "₹5,000 – ₹10,000 / month",
+  "₹10,000 – ₹25,000 / month",
+  "₹25,000 – ₹50,000 / month",
+  "₹50,000+ / month",
 ] as const;
 
 export const PROJECT_FILTERS = [

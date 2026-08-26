@@ -115,7 +115,6 @@ const organizationJsonLd = {
   sameAs: [
     "https://instagram.com",
     "https://linkedin.com",
-    "https://tiktok.com",
     "https://x.com",
   ],
 };

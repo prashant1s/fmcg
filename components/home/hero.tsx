@@ -48,7 +48,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-ink-950" />
       </div>
 
-      <div className="container-wide relative grid grid-cols-1 items-center gap-10 pb-16 lg:grid-cols-12 lg:gap-8 lg:pb-0 xl:gap-12">
+      <div className="container-wide relative grid grid-cols-1 items-center gap-10 pb-8 lg:grid-cols-12 lg:gap-8 lg:pb-0 xl:gap-12">
         <motion.div
           variants={staggerContainer(0.1)}
           initial="hidden"
@@ -123,29 +123,11 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: EXPO_EASE, delay: 0.6 }}
-          className="border-t border-paper/10 pt-10 lg:mt-8"
+          className="border-t border-paper/10 pt-5"
         >
           <StatsCounter stats={HERO_STATS} light />
         </motion.div>
       </div>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2, duration: 0.8 }}
-        className="absolute bottom-6 right-6 hidden flex-col items-center gap-2 sm:flex lg:right-12"
-      >
-        <span className="font-mono text-[0.65rem] uppercase tracking-[0.2em] text-paper/40 [writing-mode:vertical-lr]">
-          Scroll
-        </span>
-        <motion.span
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
-          className="flex h-8 w-5 items-start justify-center rounded-full border border-paper/30 p-1"
-        >
-          <span className="size-1 rounded-full bg-lime-300" />
-        </motion.span>
-      </motion.div>
 
       <ProjectModal
         project={selectedProject}

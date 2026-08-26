@@ -26,7 +26,7 @@ export const faqs: FAQ[] = [
     id: "faq-4",
     question: "What platforms do you manage?",
     answer:
-      "Instagram, TikTok, Facebook, Pinterest, and LinkedIn for organic and community management; Meta, TikTok, and LinkedIn for paid social. We'll recommend the right platform mix based on your category and audience, not run every channel by default.",
+      "Instagram, Facebook, Pinterest, and LinkedIn for organic and community management; Meta and LinkedIn for paid social. We'll recommend the right platform mix based on your category and audience, not run every channel by default.",
     category: "services",
   },
   {

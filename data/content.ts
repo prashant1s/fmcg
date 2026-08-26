@@ -8,8 +8,8 @@ import type {
 } from "@/types";
 
 export const HERO_STATS: StatItem[] = [
-  { id: "stat-1", label: "FMCG Brands Served", value: 68 },
-  { id: "stat-2", label: "Campaigns Launched", value: 940, suffix: "+" },
+  { id: "stat-1", label: "FMCG Brands Served", value: 20 },
+  { id: "stat-2", label: "Campaigns Launched", value: 200, suffix: "+" },
   { id: "stat-3", label: "Avg. ROAS Generated", value: 5.8, suffix: "x" },
   { id: "stat-4", label: "Social Reach Driven", value: 210, suffix: "M+" },
 ];
@@ -144,9 +144,9 @@ export const MILESTONES: MilestoneItem[] = [
   {
     id: "ms-5",
     year: "2023",
-    title: "$1B+ in tracked retail sales influenced",
+    title: "₹1B+ in tracked retail sales influenced",
     description:
-      "Client campaigns cross a cumulative $1 billion in retail sales influenced, based on aggregated attribution and lift studies.",
+      "Client campaigns cross a cumulative ₹1 billion in retail sales influenced, based on aggregated attribution and lift studies.",
   },
   {
     id: "ms-6",
@@ -170,7 +170,7 @@ export const PRICING_TIERS: PricingTier[] = [
   {
     id: "tier-starter",
     name: "Starter",
-    price: "$5,000",
+    price: "₹5,000",
     period: "/ month",
     description: "For emerging brands ready to build a real content system.",
     features: [
@@ -186,7 +186,7 @@ export const PRICING_TIERS: PricingTier[] = [
   {
     id: "tier-growth",
     name: "Growth",
-    price: "$15,000",
+    price: "₹15,000",
     period: "/ month",
     description: "For scaling brands ready to add paid, UGC, and creators.",
     features: [
@@ -223,7 +223,6 @@ export const PRICING_TIERS: PricingTier[] = [
 
 export const TOOLS = [
   "Meta Business Suite",
-  "TikTok Ads Manager",
   "Adobe Creative Suite",
   "Canva",
   "Sprout Social",

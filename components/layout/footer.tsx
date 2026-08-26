@@ -4,7 +4,6 @@ import { useState, type FormEvent } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Instagram, Linkedin, Twitter, Check } from "lucide-react";
-import { FaTiktok } from "react-icons/fa6";
 import { SITE, NAV_LINKS, SOCIAL_LINKS, WORKING_HOURS } from "@/lib/constants";
 import { services } from "@/data/services";
 import { newsletterSchema } from "@/lib/validations";
@@ -14,7 +13,6 @@ import { EXPO_EASE } from "@/lib/animations";
 const socialIcons = {
   Instagram: Instagram,
   LinkedIn: Linkedin,
-  TikTok: FaTiktok,
   X: Twitter,
 };
 
@@ -96,11 +94,11 @@ export function Footer() {
               Get In Touch
             </h3>
             <div className="flex flex-col gap-2 text-sm text-paper/60">
-              <a href={`mailto:${SITE.email}`} className="w-fit transition-colors hover:text-paper">
-                {SITE.email}
+              <a href="mailto:sanidhya@whizoidstudio.com" className="w-fit transition-colors hover:text-paper">
+                sanidhya@whizoidstudio.com
               </a>
-              <a href={`tel:${SITE.phoneHref}`} className="w-fit transition-colors hover:text-paper">
-                {SITE.phone}
+              <a href="tel:+918962177924" className="w-fit transition-colors hover:text-paper">
+                +91 89621 77924
               </a>
               <p className="max-w-[16rem] leading-relaxed">{SITE.address}</p>
               <p className="pt-1 text-xs text-paper/40">{WORKING_HOURS}</p>

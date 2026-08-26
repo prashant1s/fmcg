@@ -24,7 +24,7 @@ export const team: TeamMember[] = [
     id: "team-3",
     name: "Theo Bramwell",
     role: "Head of Paid Social",
-    bio: "Manages eight figures in annual media spend across Meta, TikTok, and LinkedIn. Lives and breathes incrementality testing.",
+    bio: "Manages eight figures in annual media spend across Meta and LinkedIn. Lives and breathes incrementality testing.",
     image: u("1507003211169-0a1dd7228f2d"),
     social: { linkedin: "https://linkedin.com" },
   },

@@ -2,25 +2,6 @@ import type { Service } from "@/types";
 
 export const services: Service[] = [
   {
-    id: "svc-1",
-    slug: "social-media-marketing",
-    title: "Social Media Marketing",
-    shortDescription:
-      "Full-funnel social management that turns feeds into a always-on demand engine for your FMCG brand.",
-    description:
-      "We plan, produce, and publish a content system across Instagram, TikTok, Facebook, and Pinterest built around how people actually discover consumer goods — recipe hooks, unboxings, shelf-to-cart moments, and community banter. Every post ties back to a growth objective, not just a content calendar.",
-    icon: "Share2",
-    deliverables: [
-      "Channel strategy & content pillars",
-      "Monthly content calendar & copywriting",
-      "Organic community engagement",
-      "Platform-native creative formats",
-      "Monthly performance reporting",
-    ],
-    metric: { label: "avg. follower growth", value: "+184%" },
-    accent: "lime",
-  },
-  {
     id: "svc-2",
     slug: "content-creation-design",
     title: "Content Creation & Design",
@@ -40,25 +21,6 @@ export const services: Service[] = [
     accent: "coral",
   },
   {
-    id: "svc-3",
-    slug: "ugc-campaigns",
-    title: "UGC Campaigns",
-    shortDescription:
-      "Creator-shot, algorithm-friendly content that reads as real — because it is.",
-    description:
-      "We source, brief, and manage a vetted roster of everyday creators to produce raw, native-feeling content — taste tests, morning routines, pantry hauls — engineered to outperform polished brand content in both organic reach and paid conversion.",
-    icon: "Sparkles",
-    deliverables: [
-      "Creator sourcing & vetting",
-      "UGC briefs & usage rights management",
-      "Whitelisting & Spark Ads setup",
-      "Hook and script testing",
-      "UGC content library & tagging",
-    ],
-    metric: { label: "avg. CTR lift vs. brand content", value: "+63%" },
-    accent: "violet",
-  },
-  {
     id: "svc-4",
     slug: "influencer-marketing",
     title: "Influencer Marketing",
@@ -76,25 +38,6 @@ export const services: Service[] = [
     ],
     metric: { label: "creator partnerships managed", value: "450+" },
     accent: "lime",
-  },
-  {
-    id: "svc-5",
-    slug: "paid-social-advertising",
-    title: "Paid Social Advertising",
-    shortDescription:
-      "Performance media across Meta, TikTok, and LinkedIn engineered around retail economics.",
-    description:
-      "We build and optimize paid social programs with FMCG margin structures in mind — creative testing at speed, full-funnel retargeting, and incrementality measurement that protects ROAS while scaling spend.",
-    icon: "Target",
-    deliverables: [
-      "Meta, TikTok & LinkedIn campaign management",
-      "Creative testing frameworks",
-      "Full-funnel retargeting builds",
-      "Incrementality & MMM-informed budgeting",
-      "Weekly optimization & reporting",
-    ],
-    metric: { label: "avg. ROAS", value: "5.8x" },
-    accent: "coral",
   },
   {
     id: "svc-6",
