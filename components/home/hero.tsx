@@ -27,7 +27,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative flex min-h-[90svh] flex-col justify-center overflow-hidden bg-ink-950 pt-20">
+    <section className="relative flex min-h-[80svh] flex-col justify-center overflow-hidden bg-ink-950 pt-16 sm:pt-20">
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <motion.div
           animate={{ x: [0, 30, 0], y: [0, -20, 0] }}
@@ -48,7 +48,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-ink-950" />
       </div>
 
-      <div className="container-wide relative grid grid-cols-1 items-center gap-8 pb-4 lg:grid-cols-12 lg:gap-8 lg:pb-0 xl:gap-12">
+      <div className="mx-auto w-full max-w-container px-4 sm:px-6 lg:px-10 xl:px-14 relative grid grid-cols-1 items-center gap-6 pb-4 lg:grid-cols-12 lg:gap-6 lg:pb-0 xl:gap-10">
         <motion.div
           variants={staggerContainer(0.1)}
           initial="hidden"
@@ -114,16 +114,16 @@ export function Hero() {
           transition={{ duration: 1, ease: EXPO_EASE, delay: 0.3 }}
           className="hidden lg:col-span-5 lg:block"
         >
-          <RotatingCards items={HERO_PROJECTS} onSelect={setSelectedProject} className="min-h-[44rem] xl:min-h-[50rem]" />
+          <RotatingCards items={HERO_PROJECTS} onSelect={setSelectedProject} className="min-h-[30rem] xl:min-h-[34rem]" />
         </motion.div>
       </div>
 
-      <div className="container-wide relative pb-10 pt-6 sm:pb-12 lg:pb-10">
+      <div className="mx-auto w-full max-w-container px-4 sm:px-6 lg:px-10 xl:px-14 relative pb-6 pt-4 sm:pb-8 lg:pb-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: EXPO_EASE, delay: 0.5 }}
-          className="border-t border-paper/10 pt-5"
+          className="border-t border-paper/10 pt-4"
         >
           <StatsCounter stats={HERO_STATS} light />
         </motion.div>
