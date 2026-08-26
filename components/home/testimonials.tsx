@@ -9,6 +9,15 @@ import "swiper/css/pagination";
 import { testimonials } from "@/data/testimonials";
 import { SectionHeading } from "@/components/shared/section-heading";
 
+function initials(name: string) {
+  return name
+    .split(" ")
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0]?.toUpperCase())
+    .join("");
+}
+
 export function Testimonials() {
   return (
     <section className="bg-paper-soft py-section">
@@ -35,23 +44,27 @@ export function Testimonials() {
         >
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id} className="!h-auto pb-4">
-              <div className="flex h-full flex-col justify-between gap-8 rounded-lg border border-ink-950/8 bg-paper p-8 sm:p-9">
-                <Quote className="size-8 text-lime-400" />
+              <div className="flex h-full flex-col justify-between gap-5 rounded-lg border border-ink-950/8 bg-paper p-6 sm:p-7">
+                <Quote className="size-6 text-lime-400" />
 
-                <p className="text-lg leading-relaxed text-ink-700">
+                <p className="line-clamp-5 text-sm leading-relaxed text-ink-700">
                   &ldquo;{testimonial.quote}&rdquo;
                 </p>
 
-                <div className="flex items-center justify-between gap-4 border-t border-ink-950/8 pt-6">
+                <div className="flex items-center justify-between gap-4 border-t border-ink-950/8 pt-4">
                   <div className="flex items-center gap-3">
-                    <div className="relative size-11 shrink-0 overflow-hidden rounded-full">
-                      <Image
-                        src={testimonial.avatar}
-                        alt={testimonial.name}
-                        fill
-                        sizes="44px"
-                        className="object-cover"
-                      />
+                    <div className="relative flex size-9 shrink-0 items-center justify-center overflow-hidden rounded-full bg-ink-950 text-xs font-semibold text-paper">
+                      {testimonial.avatar ? (
+                        <Image
+                          src={testimonial.avatar}
+                          alt={testimonial.name}
+                          fill
+                          sizes="36px"
+                          className="object-cover"
+                        />
+                      ) : (
+                        initials(testimonial.name)
+                      )}
                     </div>
                     <div>
                       <p className="text-sm font-semibold text-ink-950">
@@ -62,11 +75,13 @@ export function Testimonials() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex gap-0.5" aria-label={`${testimonial.rating} out of 5 stars`}>
-                    {Array.from({ length: testimonial.rating }).map((_, i) => (
-                      <Star key={i} className="size-3.5 fill-coral-500 text-coral-500" />
-                    ))}
-                  </div>
+                  {testimonial.rating ? (
+                    <div className="flex gap-0.5" aria-label={`${testimonial.rating} out of 5 stars`}>
+                      {Array.from({ length: testimonial.rating }).map((_, i) => (
+                        <Star key={i} className="size-3.5 fill-coral-500 text-coral-500" />
+                      ))}
+                    </div>
+                  ) : null}
                 </div>
               </div>
             </SwiperSlide>

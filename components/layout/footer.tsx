@@ -4,7 +4,7 @@ import { useState, type FormEvent } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Instagram, Linkedin, Twitter, Check } from "lucide-react";
-import { SITE, NAV_LINKS, SOCIAL_LINKS, WORKING_HOURS } from "@/lib/constants";
+import { SITE, NAV_LINKS, SOCIAL_LINKS } from "@/lib/constants";
 import { services } from "@/data/services";
 import { newsletterSchema } from "@/lib/validations";
 import { cn } from "@/lib/utils";
@@ -100,8 +100,9 @@ export function Footer() {
               <a href="tel:+918962177924" className="w-fit transition-colors hover:text-paper">
                 +91 89621 77924
               </a>
-              <p className="max-w-[16rem] leading-relaxed">{SITE.address}</p>
-              <p className="pt-1 text-xs text-paper/40">{WORKING_HOURS}</p>
+              <p className="max-w-[16rem] leading-relaxed">
+                2nd Floor, Elite House, Old Palasia Rd, Indore, MP 452001
+              </p>
             </div>
           </div>
         </div>

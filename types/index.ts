@@ -67,8 +67,8 @@ export interface Testimonial {
   role: string;
   company: string;
   quote: string;
-  avatar: string;
-  rating: number;
+  avatar?: string;
+  rating?: number;
 }
 
 export interface FAQ {

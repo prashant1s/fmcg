@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import { services } from "@/data/services";
 import { DynamicIcon } from "@/lib/icon-map";
 import { TiltCard } from "@/components/ui/card";
 import { SectionHeading } from "@/components/shared/section-heading";
@@ -17,8 +16,38 @@ const accentStyles = {
   violet: { bg: "bg-violet-500", text: "text-paper", glow: "rgba(108,92,231,0.2)" },
 } as const;
 
+const HOME_SERVICES = [
+  {
+    id: "home-1",
+    title: "Content & Creative",
+    shortDescription:
+      "In-house photography, videography, and design that make packaged goods look irresistible on a 6-inch screen.",
+    icon: "PenTool",
+    metric: { value: "120+", label: "assets produced / month" },
+    accent: "coral",
+  },
+  {
+    id: "home-2",
+    title: "Influencer Marketing",
+    shortDescription:
+      "Creator partnerships that build trust at shelf and velocity online.",
+    icon: "Users",
+    metric: { value: "450+", label: "creator partnerships managed" },
+    accent: "lime",
+  },
+  {
+    id: "home-3",
+    title: "Strategy & Analytics",
+    shortDescription:
+      "The category, channel, and content strategy — backed by retail-minded reporting that connects performance to sell-through.",
+    icon: "Compass",
+    metric: { value: "80+", label: "brand strategies delivered" },
+    accent: "violet",
+  },
+] as const;
+
 export function ServicesOverview() {
-  const featured = services.slice(0, 6);
+  const featured = HOME_SERVICES;
 
   return (
     <section className="bg-paper py-section">
@@ -39,7 +68,7 @@ export function ServicesOverview() {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3"
+          className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-3"
         >
           {featured.map((service) => {
             const accent = accentStyles[service.accent];

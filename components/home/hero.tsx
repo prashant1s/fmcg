@@ -27,7 +27,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative flex min-h-[80svh] flex-col justify-center overflow-hidden bg-ink-950 pt-16 sm:pt-20">
+    <section className="relative flex min-h-[90svh] flex-col justify-center overflow-hidden bg-ink-950 pt-18 sm:pt-30">
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <motion.div
           animate={{ x: [0, 30, 0], y: [0, -20, 0] }}
@@ -84,7 +84,7 @@ export function Hero() {
 
           <motion.p
             variants={fadeUp}
-            className="max-w-xl text-balance text-lg leading-relaxed text-ink-200 sm:text-xl"
+            className="max-w-2xl text-balance text-md leading-relaxed text-ink-200 sm:text-md"
           >
             Ripe is a social media agency built exclusively for consumer goods
             brands — strategy, content, UGC, and paid media engineered to move

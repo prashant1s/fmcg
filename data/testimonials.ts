@@ -1,57 +1,92 @@
 import type { Testimonial } from "@/types";
 
-const u = (id: string, w = 200) =>
-  `https://images.unsplash.com/photo-${id}?w=${w}&q=80&auto=format&fit=crop`;
-
 export const testimonials: Testimonial[] = [
   {
     id: "test-1",
-    name: "Dana Whitfield",
-    role: "Founder",
-    company: "Hearth & Husk",
+    name: "Akash Bhillare",
+    role: "Director",
+    company: "GA Bhillare Consultants Pvt Ltd",
     quote:
-      "We went into our retail buyer meeting with a shelf full of proof, not promises. Ripe built us an audience before we had a single case of product in stores.",
-    avatar: u("1573497019940-1c28c88b4f3e"),
-    rating: 5,
+      "Working with Whizoid has made our IT and digital operations more streamlined. From website and application management to regular maintenance, their team handles everything efficiently and with clarity.",
   },
   {
     id: "test-2",
-    name: "Priya Nathan",
-    role: "VP Marketing",
-    company: "Rootline Organics",
+    name: "RP Lindeman",
+    role: "Director",
+    company: "Liberty Cleaning Inc",
     quote:
-      "Ripe didn't just manage our channels, they helped us rebuild a relationship. Our comments section went from a liability to our best sales tool.",
-    avatar: u("1609436132311-e4b0c9370469"),
-    rating: 5,
+      "Set-up and implementation was very easy. Communication with the team is excellent. We broke even on our investment very quickly!",
   },
   {
     id: "test-3",
-    name: "Marco Alvarez",
-    role: "Director of Marketing",
-    company: "Fernwell Coffee Co.",
+    name: "Shrey Agrawal",
+    role: "Director",
+    company: "Bramha Realty Infrastructure Pvt Ltd",
     quote:
-      "For the first time, our 40 locations feel like one brand online instead of 40 separate accounts. And our grocery launch had an audience waiting on day one.",
-    avatar: u("1580411415491-a672219c801b"),
-    rating: 5,
+      "For one of our key projects, the social media, UGC shoots, and lead generation were planned and executed with strong attention to detail. The campaign delivered 400+ leads within a month, giving us the confidence to extend the collaboration across other projects as well. The team has been consistent and reliable throughout.",
   },
   {
     id: "test-4",
-    name: "Sam O'Rourke",
-    role: "Growth Lead",
-    company: "Emberfield Sauces",
+    name: "Neeraj Kumar",
+    role: "Head of Operations",
+    company: "Cloudwingshost",
     quote:
-      "Our media buying didn't change, our creative did. Ripe's testing engine found winners faster than we thought was possible.",
-    avatar: u("1573497491765-dccce02b29df"),
-    rating: 5,
+      "There is nothing technical that they are not capable of doing. Their team created a website for us first, and we got really satisfied afterward we worked with them for lead generation & SEO which increases our sales to almost 200%.",
   },
   {
     id: "test-5",
-    name: "Renée Castillo",
-    role: "CMO",
-    company: "Cloudwash Home",
+    name: "Rhinocult",
+    role: "Brand",
+    company: "Rhinocult",
     quote:
-      "We'd basically written off paid social. Ripe's team found the structure and the patience to make it our most predictable channel.",
-    avatar: u("1573497491207-618cc224f243"),
-    rating: 5,
+      "The team helped us build strong brand momentum across platforms. From social media and viral campaigns to shoots, influencer collaborations, paid ads, and marketplaces management, everything was handled with clarity and consistency. The execution translated into better visibility and steady growth.",
+  },
+  {
+    id: "test-6",
+    name: "Harsh Ingale",
+    role: "Owner",
+    company: "Rassa Rasoi",
+    quote:
+      "From the very first month, the social media and influencer campaigns delivered clear results, generating 200+ orders for our cloud kitchen. The strategy was focused, execution was smooth, and the impact on visibility and demand was immediate.",
+  },
+  {
+    id: "test-7",
+    name: "Amit Bajaj",
+    role: "Director",
+    company: "RSW Intsol Pvt Ltd",
+    quote:
+      "Across both our brands, PurpleLofts and RSW Intsol, the collaboration has been steady and dependable over the years. From website development to social media management and lead generation, everything has been handled with consistency and clarity. The long-term engagement reflects the trust built through reliable execution and ongoing support.",
+  },
+  {
+    id: "test-8",
+    name: "Subhash Marineni",
+    role: "Director",
+    company: "Ditra Inc",
+    quote:
+      "The engagement has been consistent and dependable over the years. The team understands our requirements well, adapts quickly, and delivers with reliability. This long-term collaboration has made them a trusted technology partner for our ongoing initiatives.",
+  },
+  {
+    id: "test-9",
+    name: "Aniket",
+    role: "Owner",
+    company: "Masoli Restaurant",
+    quote:
+      "Whizoid managed our social media and influencer collaborations with a clear and consistent strategy. Their efforts helped improve our brand visibility and contributed to an approximate 28% increase in monthly revenue over time. The team was proactive, organized, and easy to coordinate with.",
+  },
+  {
+    id: "test-10",
+    name: "Amit Kulkarni",
+    role: "Marketing",
+    company: "Venkys",
+    quote:
+      "Whizoid supported us with social media management and stall design and execution. Their approach was well-organized, creative, and aligned with our brand requirements. The coordination and delivery were smooth throughout.",
+  },
+  {
+    id: "test-11",
+    name: "Levan Z",
+    role: "Owner",
+    company: "Cleaning Chief",
+    quote:
+      "We switched all our marketing to them - Google Ads, Meta Ads, SEO, and lead generation. Two main reasons: they're results-driven and optimize campaigns within 2-3 days based on real data, not guesswork. Second, they're flexible with pricing when results don't meet expectations. Plus, you talk directly to the specialists doing the work, not through project managers. That direct access and transparency made all the difference.",
   },
 ];

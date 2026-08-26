@@ -11,7 +11,7 @@ export const HERO_STATS: StatItem[] = [
   { id: "stat-1", label: "FMCG Brands Served", value: 20 },
   { id: "stat-2", label: "Campaigns Launched", value: 200, suffix: "+" },
   { id: "stat-3", label: "Avg. ROAS Generated", value: 5.8, suffix: "x" },
-  { id: "stat-4", label: "Social Reach Driven", value: 210, suffix: "M+" },
+  { id: "stat-4", label: "Social Reach Driven", value: 67, suffix: "M+" },
 ];
 
 export const RESULTS_STATS: StatItem[] = [
@@ -235,35 +235,20 @@ export const TOOLS = [
 
 export interface TrustedBrand {
   name: string;
-  style: "sans" | "serif" | "script" | "mono";
+  src: string;
 }
 
-export const TRUSTED_BRANDS_ROW_1: TrustedBrand[] = [
-  { name: "Hearth & Husk", style: "serif" },
-  { name: "Rootline Organics", style: "sans" },
-  { name: "Milk & Bloom", style: "script" },
-  { name: "Fernwell Coffee Co.", style: "serif" },
-  { name: "Sundrop Juico", style: "sans" },
-  { name: "Emberfield Sauces", style: "mono" },
-  { name: "Meadowlane Skincare", style: "script" },
-  { name: "Cloudwash Home", style: "sans" },
-  { name: "Northfield Provisions", style: "serif" },
-  { name: "Bramble & Co.", style: "script" },
-  { name: "Husklane Bakery", style: "sans" },
-  { name: "Glowstate Beauty", style: "mono" },
-];
-
-export const TRUSTED_BRANDS_ROW_2: TrustedBrand[] = [
-  { name: "Brewfolk Coffee", style: "serif" },
-  { name: "Tidyroot Home", style: "sans" },
-  { name: "Verona Skin", style: "script" },
-  { name: "Suddsy", style: "mono" },
-  { name: "Vitalroot Wellness", style: "serif" },
-  { name: "Toastworks", style: "sans" },
-  { name: "Pinegrove Naturals", style: "script" },
-  { name: "Citrine Cold Brew", style: "mono" },
-  { name: "Calmwell", style: "sans" },
-  { name: "Nibbleworks", style: "serif" },
-  { name: "Barefaced Beauty", style: "script" },
-  { name: "Frothworks", style: "mono" },
+export const TRUSTED_BRAND_LOGOS: TrustedBrand[] = [
+  { name: "HP", src: "/logos/hp.svg" },
+  { name: "Mahindra", src: "/logos/mahindra.svg" },
+  { name: "Exicom", src: "/logos/exicom.svg" },
+  { name: "Chargeup", src: "/logos/chargeup.svg" },
+  { name: "Bramha Realty", src: "/logos/bramha-realty.svg" },
+  { name: "Kishandas", src: "/logos/kishandas.svg" },
+  { name: "Snuzzles", src: "/logos/snuzzles.svg" },
+  { name: "11:11", src: "/logos/11-11.svg" },
+  { name: "Brihanmumbai Municipal Corporation", src: "/logos/bmc-mumbai.webp" },
+  { name: "G. A. Bhilare Consultants", src: "/logos/gabcpl-consultants.webp" },
+  { name: "Masoli Restaurant", src: "/logos/masoli-restaurant.webp" },
+  { name: "Ditra", src: "/logos/ditra.webp" },
 ];
