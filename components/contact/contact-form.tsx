@@ -6,7 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 import { contactFormSchema, type ContactFormValues } from "@/lib/validations";
-import { SERVICE_OPTIONS, BUDGET_OPTIONS } from "@/lib/constants";
+import { SERVICE_OPTIONS, SITE } from "@/lib/constants";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select } from "@/components/ui/select";
@@ -25,10 +25,25 @@ export function ContactForm() {
   });
 
   const onSubmit = async (data: ContactFormValues) => {
-    await new Promise((resolve) => setTimeout(resolve, 900));
-    console.log("Contact form submission:", data);
+    const message = [
+      `Hi Ripe, I'd like to get in touch.`,
+      ``,
+      `Name: ${data.name}`,
+      `Email: ${data.email}`,
+      `Phone: ${data.phone}`,
+      `Company: ${data.company}`,
+      `Service Interested In: ${data.service}`,
+      ``,
+      data.message,
+    ].join("\n");
+
     setIsSubmitted(true);
     reset();
+    window.open(
+      `https://wa.me/${SITE.whatsappHref}?text=${encodeURIComponent(message)}`,
+      "_blank",
+      "noopener,noreferrer"
+    );
   };
 
   if (isSubmitted) {
@@ -47,10 +62,10 @@ export function ContactForm() {
         >
           <CheckCircle2 className="size-8" />
         </motion.span>
-        <h3 className="text-2xl font-semibold text-ink-950">Message sent.</h3>
+        <h3 className="text-2xl font-semibold text-ink-950">Redirecting you to WhatsApp.</h3>
         <p className="max-w-sm text-ink-500">
-          Thanks for reaching out — a member of our team will follow up within
-          one business day.
+          We&apos;ve opened WhatsApp with your details filled in — just hit send and
+          our team will reply shortly.
         </p>
         <Button variant="outline" className="mt-2 border-ink-950/15" onClick={() => setIsSubmitted(false)}>
           Send Another Message
@@ -78,20 +93,12 @@ export function ContactForm() {
           <Input label="Phone Number" type="tel" error={errors.phone?.message} {...register("phone")} />
           <Input label="Company Name" error={errors.company?.message} {...register("company")} />
         </div>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-          <Select
-            label="Service Interested In"
-            options={SERVICE_OPTIONS}
-            error={errors.service?.message}
-            {...register("service")}
-          />
-          <Select
-            label="Budget Range"
-            options={BUDGET_OPTIONS}
-            error={errors.budget?.message}
-            {...register("budget")}
-          />
-        </div>
+        <Select
+          label="Service Interested In"
+          options={SERVICE_OPTIONS}
+          error={errors.service?.message}
+          {...register("service")}
+        />
         <Textarea
           label="Tell us about your brand and goals"
           error={errors.message?.message}

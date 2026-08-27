@@ -10,7 +10,6 @@ export const contactFormSchema = z.object({
     .max(20, "Please enter a valid phone number."),
   company: z.string().trim().min(2, "Please enter your company name."),
   service: z.string().min(1, "Please select a service."),
-  budget: z.string().min(1, "Please select a budget range."),
   message: z
     .string()
     .trim()

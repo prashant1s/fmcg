@@ -3,7 +3,7 @@
 import { useState, type FormEvent } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Instagram, Linkedin, Twitter, Check } from "lucide-react";
+import { ArrowUpRight, Instagram, Linkedin, Twitter, Youtube, Check } from "lucide-react";
 import { SITE, NAV_LINKS, SOCIAL_LINKS } from "@/lib/constants";
 import { services } from "@/data/services";
 import { newsletterSchema } from "@/lib/validations";
@@ -14,6 +14,7 @@ const socialIcons = {
   Instagram: Instagram,
   LinkedIn: Linkedin,
   X: Twitter,
+  YouTube: Youtube,
 };
 
 export function Footer() {

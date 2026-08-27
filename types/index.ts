@@ -117,13 +117,6 @@ export interface NavLink {
   href: string;
 }
 
-export interface AwardItem {
-  id: string;
-  title: string;
-  issuer: string;
-  year: string;
-}
-
 export interface MilestoneItem {
   id: string;
   year: string;
@@ -137,6 +130,5 @@ export interface ContactFormData {
   phone: string;
   company: string;
   service: string;
-  budget: string;
   message: string;
 }

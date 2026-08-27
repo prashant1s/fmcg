@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/shared/page-hero";
 import { StorySection } from "@/components/about/story-section";
 import { Values } from "@/components/about/values";
-import { Awards } from "@/components/about/awards";
 import { CultureGallery } from "@/components/about/culture-gallery";
 import { CtaSection } from "@/components/home/cta-section";
 import { breadcrumbJsonLd } from "@/lib/json-ld";
@@ -45,7 +44,6 @@ export default function AboutPage() {
       />
       <StorySection />
       <Values />
-      <Awards />
       <CultureGallery />
       <CtaSection
         eyebrow="Careers at Ripe"

@@ -7,10 +7,11 @@ export const SITE = {
   description:
     "Ripe is a full-service social media agency built for FMCG brands — social strategy, UGC, influencer marketing, and paid social that turn scroll-stopping content into sell-through.",
   url: "https://ripe.agency",
-  email: "hello@ripe.agency",
-  phone: "+1 (415) 555-0142",
-  phoneHref: "+14155550142",
-  address: "548 Market Street, Suite 62, San Francisco, CA 94104",
+  email: "sanidhya@whizoidstudio.com",
+  phone: "+91 89621 77924",
+  phoneHref: "+918962177924",
+  whatsappHref: "918962177924",
+  address: "2nd Floor, Elite House, Old Palasia Rd, Indore, MP 452001",
   founded: "2018",
 } as const;
 
@@ -23,29 +24,33 @@ export const NAV_LINKS: NavLink[] = [
 ];
 
 export const SOCIAL_LINKS = [
-  { label: "Instagram", href: "https://instagram.com" },
-  { label: "LinkedIn", href: "https://linkedin.com" },
-  { label: "X", href: "https://x.com" },
+  { label: "Instagram", href: "https://www.instagram.com/whizoidstudio/" },
+  { label: "X", href: "https://x.com/whizoidstudio" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/whizoidstudio/" },
+  { label: "YouTube", href: "https://www.youtube.com/c/WhizoidStudio" },
 ] as const;
 
 export const OFFICES = [
   {
-    id: "sf",
-    city: "San Francisco (HQ)",
-    address: "548 Market Street, Suite 62, San Francisco, CA 94104",
-    phone: "+1 (415) 555-0142",
+    id: "indore",
+    city: "Indore, MP",
+    address: "2nd Floor, Elite House, Old Palasia Rd, Indore, MP 452001",
+    phone: "+91 89621 77924",
+    email: "hello@whizoid.com",
   },
   {
-    id: "nyc",
-    city: "New York",
-    address: "142 West 24th Street, Floor 4, New York, NY 10011",
-    phone: "+1 (212) 555-0198",
+    id: "bengaluru",
+    city: "Bengaluru, KA",
+    address: "72, 1st Main Rd, JP Nagar 7th Phase, Bengaluru 560078",
+    phone: "+91 89621 77924",
+    email: "hello@whizoid.com",
   },
   {
-    id: "mumbai",
-    city: "Mumbai",
-    address: "Level 3, One BKC, Bandra Kurla Complex, Mumbai 400051",
-    phone: "+91 22 5550 3344",
+    id: "pune",
+    city: "Pune, MH",
+    address: "5th floor, Akruti Sankul, Opp. Janata Sahakari Bank, Tilak Road, Sadashiv Peth, Pune 411030",
+    phone: "+91 89621 77924",
+    email: "hello@whizoid.com",
   },
 ] as const;
 
@@ -54,20 +59,10 @@ export const WORKING_HOURS = "Monday – Friday, 9:00 AM – 6:00 PM (local time
 export const SERVICE_OPTIONS = [
   "Social Media Marketing",
   "Content Creation & Design",
-  "UGC Campaigns",
-  "Influencer Marketing",
   "Paid Social Advertising",
   "Social Strategy & Consulting",
   "Analytics & Reporting",
   "Not sure yet",
-] as const;
-
-export const BUDGET_OPTIONS = [
-  "Under ₹5,000 / month",
-  "₹5,000 – ₹10,000 / month",
-  "₹10,000 – ₹25,000 / month",
-  "₹25,000 – ₹50,000 / month",
-  "₹50,000+ / month",
 ] as const;
 
 export const PROJECT_FILTERS = [

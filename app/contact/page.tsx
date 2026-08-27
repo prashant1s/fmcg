@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { PageHero } from "@/components/shared/page-hero";
+import { ContactHero } from "@/components/contact/contact-hero";
 import { ContactForm } from "@/components/contact/contact-form";
 import { ContactInfo } from "@/components/contact/contact-info";
-import { Map } from "@/components/contact/map";
 import { AlternativeContact } from "@/components/contact/alternative-contact";
 import { OfficeLocations } from "@/components/contact/office-locations";
 import { FaqQuickLinks } from "@/components/contact/faq-quick-links";
@@ -39,11 +38,7 @@ export default function ContactPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
       />
-      <PageHero
-        eyebrow="Get In Touch"
-        title="Let's create something amazing together."
-        description="Tell us about your brand, your category, and where you want social to take you. We reply within one business day."
-      />
+      <ContactHero />
 
       <section id="contact-form" className="scroll-mt-24 bg-paper py-section">
         <div className="container-wide">
@@ -58,7 +53,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <Map />
       <AlternativeContact />
       <OfficeLocations />
       <FaqQuickLinks />

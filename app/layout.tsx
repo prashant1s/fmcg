@@ -51,8 +51,8 @@ export const metadata: Metadata = {
   keywords: [
     "FMCG social media agency",
     "consumer goods marketing",
-    "UGC campaigns",
-    "influencer marketing agency",
+    
+    
     "paid social advertising",
     "CPG marketing agency",
   ],
@@ -104,13 +104,13 @@ const organizationJsonLd = {
   foundingDate: SITE.founded,
   address: {
     "@type": "PostalAddress",
-    streetAddress: "548 Market Street, Suite 62",
-    addressLocality: "San Francisco",
-    addressRegion: "CA",
-    postalCode: "94104",
-    addressCountry: "US",
+    streetAddress: "2nd Floor, Elite House, Old Palasia Rd",
+    addressLocality: "Indore",
+    addressRegion: "MP",
+    postalCode: "452001",
+    addressCountry: "IN",
   },
-  areaServed: "US",
+  areaServed: "IN",
   sameAs: SOCIAL_LINKS.map((link) => link.href),
 };
 

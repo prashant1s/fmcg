@@ -3,7 +3,6 @@ import type {
   ProcessStep,
   ValueProp,
   PricingTier,
-  AwardItem,
   MilestoneItem,
 } from "@/types";
 
@@ -155,15 +154,6 @@ export const MILESTONES: MilestoneItem[] = [
     description:
       "Ripe now operates from San Francisco, New York, and Mumbai, serving 68 active FMCG brands across four continents.",
   },
-];
-
-export const AWARDS: AwardItem[] = [
-  { id: "award-1", title: "Social Agency of the Year — CPG", issuer: "Shorty Awards", year: "2024" },
-  { id: "award-2", title: "Gold — Best UGC Campaign", issuer: "The Drum Awards", year: "2024" },
-  { id: "award-3", title: "Best Small Agency, West Coast", issuer: "Ad Age", year: "2023" },
-  { id: "award-4", title: "Silver — Influencer Marketing", issuer: "Cannes Lions", year: "2023" },
-  { id: "award-5", title: "Top 50 Social Agencies", issuer: "Adweek", year: "2022" },
-  { id: "award-6", title: "Rising Agency of the Year", issuer: "Digiday Awards", year: "2021" },
 ];
 
 export const PRICING_TIERS: PricingTier[] = [

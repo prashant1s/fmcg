@@ -8,9 +8,9 @@ import { staggerContainer, fadeUp, viewportOnce } from "@/lib/animations";
 
 export function OfficeLocations() {
   return (
-    <section className="bg-paper py-section">
+    <section className="bg-ink-950 py-section">
       <div className="container-wide">
-        <SectionHeading eyebrow="Where we are" title="Three studios, one focus." />
+        <SectionHeading eyebrow="Where we are" title="Three cities, one focus." light />
 
         <motion.div
           variants={staggerContainer(0.1)}
@@ -23,19 +23,27 @@ export function OfficeLocations() {
             <motion.div
               key={office.id}
               variants={fadeUp}
-              className="flex flex-col gap-5 rounded-lg border border-ink-950/8 p-8"
+              className="flex flex-col gap-5 rounded-lg border border-paper/10 p-8"
             >
-              <span className="flex size-11 items-center justify-center rounded-full bg-ink-950/5 text-ink-950">
+              <span className="flex size-11 items-center justify-center rounded-full bg-paper/8 text-lime-300">
                 <Building2 className="size-5" />
               </span>
-              <h3 className="text-lg font-semibold text-ink-950">{office.city}</h3>
-              <p className="text-sm leading-relaxed text-ink-500">{office.address}</p>
-              <a
-                href={`tel:${office.phone.replace(/[^+\d]/g, "")}`}
-                className="mt-auto text-sm font-medium text-ink-950 underline decoration-ink-950/20 underline-offset-4 transition-colors hover:text-coral-600 hover:decoration-coral-600"
-              >
-                {office.phone}
-              </a>
+              <h3 className="text-lg font-semibold text-paper">{office.city}</h3>
+              <p className="text-sm leading-relaxed text-ink-200">{office.address}</p>
+              <div className="mt-auto flex flex-col gap-1.5">
+                <a
+                  href={`tel:${office.phone.replace(/[^+\d]/g, "")}`}
+                  className="text-sm font-medium text-paper underline decoration-paper/25 underline-offset-4 transition-colors hover:text-lime-300 hover:decoration-lime-300"
+                >
+                  {office.phone}
+                </a>
+                <a
+                  href={`mailto:${office.email}`}
+                  className="text-sm font-medium text-paper underline decoration-paper/25 underline-offset-4 transition-colors hover:text-lime-300 hover:decoration-lime-300"
+                >
+                  {office.email}
+                </a>
+              </div>
             </motion.div>
           ))}
         </motion.div>

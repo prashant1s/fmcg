@@ -1,10 +1,11 @@
-import { MapPin, Phone, Mail, Clock, Instagram, Linkedin, Twitter } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 import { SITE, SOCIAL_LINKS, WORKING_HOURS } from "@/lib/constants";
 
 const socialIcons = {
   Instagram: Instagram,
   LinkedIn: Linkedin,
   X: Twitter,
+  YouTube: Youtube,
 };
 
 const items = [
