@@ -229,16 +229,9 @@ export interface TrustedBrand {
 }
 
 export const TRUSTED_BRAND_LOGOS: TrustedBrand[] = [
-  { name: "HP", src: "/logos/hp.svg" },
-  { name: "Mahindra", src: "/logos/mahindra.svg" },
-  { name: "Exicom", src: "/logos/exicom.svg" },
-  { name: "Chargeup", src: "/logos/chargeup.svg" },
-  { name: "Bramha Realty", src: "/logos/bramha-realty.svg" },
   { name: "Kishandas", src: "/logos/kishandas.svg" },
   { name: "Snuzzles", src: "/logos/snuzzles.svg" },
   { name: "11:11", src: "/logos/11-11.svg" },
-  { name: "Brihanmumbai Municipal Corporation", src: "/logos/bmc-mumbai.webp" },
-  { name: "G. A. Bhilare Consultants", src: "/logos/gabcpl-consultants.webp" },
   { name: "Masoli Restaurant", src: "/logos/masoli-restaurant.webp" },
   { name: "Ditra", src: "/logos/ditra.webp" },
 ];
