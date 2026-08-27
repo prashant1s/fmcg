@@ -3,7 +3,13 @@ export type ProjectCategory =
   | "UGC"
   | "Paid Ads"
   | "Branding"
-  | "Influencer Marketing";
+  | "Influencer Marketing"
+  | "Ad Production"
+  | "Website Development"
+  | "Graphics Design"
+  | "Strategy Planning"
+  | "Photography"
+  | "E-commerce";
 
 export interface ResultMetric {
   label: string;

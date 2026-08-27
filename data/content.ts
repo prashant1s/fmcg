@@ -14,10 +14,10 @@ export const HERO_STATS: StatItem[] = [
 ];
 
 export const RESULTS_STATS: StatItem[] = [
-  { id: "rstat-1", label: "Total Campaigns", value: 940, suffix: "+" },
-  { id: "rstat-2", label: "Combined Social Reach", value: 210, suffix: "M+" },
-  { id: "rstat-3", label: "Average ROAS", value: 5.8, suffix: "x" },
-  { id: "rstat-4", label: "Clients Served", value: 68 },
+  { id: "rstat-1", label: "FMCG Brands Served", value: 20 },
+  { id: "rstat-2", label: "Campaigns Launched", value: 200, suffix: "+" },
+  { id: "rstat-3", label: "Avg. ROAS Generated", value: 5.8, suffix: "x" },
+  { id: "rstat-4", label: "Social Reach Driven", value: 67, suffix: "M+" },
 ];
 
 export const WHY_CHOOSE_US: ValueProp[] = [

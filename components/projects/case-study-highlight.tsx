@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { fadeUp, fadeIn, viewportOnce } from "@/lib/animations";
 import { cn } from "@/lib/utils";
 
-const spotlightSlugs = ["rootline-organics-community-rebuild", "cloudwash-home-paid-social-scale"];
+const spotlightSlugs = ["rhino-cult", "kishandas"];
 
 const accentTextLight = {
   lime: "text-lime-300",

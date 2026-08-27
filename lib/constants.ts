@@ -68,8 +68,8 @@ export const SERVICE_OPTIONS = [
 export const PROJECT_FILTERS = [
   "All",
   "Social Media",
-  "UGC",
-  "Paid Ads",
-  "Branding",
+  "Ad Production",
   "Influencer Marketing",
+  "Branding",
+  "Photography",
 ] as const;
