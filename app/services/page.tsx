@@ -82,7 +82,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Our Services"
         title="The full social stack, built for consumer goods."
-        description="From always-on content to full-funnel paid media — eight disciplines working as one team, so nothing falls through the cracks between vendors."
+        description="From always-on content to full-funnel paid media — every discipline working as one team, so nothing falls through the cracks between vendors."
         image={HERO_IMAGE}
         imageAlt="A content team planning a social campaign"
       />

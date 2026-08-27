@@ -8,10 +8,34 @@ import { DynamicIcon } from "@/lib/icon-map";
 import { fadeUp, fadeIn, viewportOnce } from "@/lib/animations";
 import { cn } from "@/lib/utils";
 
-const accentStyles = {
-  lime: { bg: "bg-lime-300", text: "text-ink-950", ring: "ring-lime-300/30", glow: "bg-lime-300/25" },
-  coral: { bg: "bg-coral-500", text: "text-paper", ring: "ring-coral-500/30", glow: "bg-coral-500/25" },
-  violet: { bg: "bg-violet-500", text: "text-paper", ring: "ring-violet-500/30", glow: "bg-violet-500/25" },
+export const accentStyles = {
+  lime: {
+    bg: "bg-lime-300",
+    text: "text-ink-950",
+    ring: "ring-lime-300/30",
+    chipBg: "bg-lime-300/10",
+    chipBorder: "border-lime-300/30",
+    chipText: "text-lime-800",
+    panelFrom: "from-lime-900",
+  },
+  coral: {
+    bg: "bg-coral-500",
+    text: "text-paper",
+    ring: "ring-coral-500/30",
+    chipBg: "bg-coral-500/10",
+    chipBorder: "border-coral-500/25",
+    chipText: "text-coral-700",
+    panelFrom: "from-coral-900",
+  },
+  violet: {
+    bg: "bg-violet-500",
+    text: "text-paper",
+    ring: "ring-violet-500/30",
+    chipBg: "bg-violet-500/10",
+    chipBorder: "border-violet-500/25",
+    chipText: "text-violet-700",
+    panelFrom: "from-violet-900",
+  },
 } as const;
 
 interface ServiceCardProps {
@@ -21,30 +45,26 @@ interface ServiceCardProps {
 
 export function ServiceCard({ service, index }: ServiceCardProps) {
   const accent = accentStyles[service.accent];
-  const reversed = index % 2 === 1;
 
   return (
     <div
       id={service.slug}
-      className="grid scroll-mt-28 grid-cols-1 gap-10 border-b border-ink-950/8 py-14 first:pt-0 last:border-b-0 lg:grid-cols-12 lg:gap-8 lg:py-16"
+      className="group relative grid scroll-mt-32 grid-cols-1 gap-8 border-b border-ink-950/8 py-12 first:pt-0 last:border-b-0 lg:grid-cols-12 lg:gap-8 lg:py-14"
     >
       <motion.div
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
         viewport={viewportOnce}
-        className={cn(
-          "flex flex-col gap-6 lg:col-span-7",
-          reversed && "lg:order-2"
-        )}
+        className="flex flex-col gap-6 lg:col-span-7"
       >
-        <div className="flex items-center gap-4">
-          <span className="font-mono text-sm text-ink-300">
+        <div className="flex items-center gap-4 lg:hidden">
+          <span className="flex size-9 items-center justify-center rounded-full border border-ink-950/10 font-mono text-xs text-ink-400">
             0{index + 1}
           </span>
           <span
             className={cn(
-              "flex size-12 items-center justify-center rounded-full",
+              "flex size-12 items-center justify-center rounded-full transition-transform duration-300 group-hover:scale-105",
               accent.bg,
               accent.text
             )}
@@ -58,10 +78,17 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
           {service.description}
         </p>
 
-        <ul className="grid grid-cols-1 gap-3 pt-2 sm:grid-cols-2">
+        <ul className="flex flex-wrap gap-2 pt-2">
           {service.deliverables.map((item) => (
-            <li key={item} className="flex items-start gap-2.5 text-sm text-ink-600">
-              <Check className="mt-0.5 size-4 shrink-0 text-coral-500" />
+            <li
+              key={item}
+              className={cn(
+                "flex items-center gap-1.5 rounded-full border px-3.5 py-2 text-sm leading-none text-ink-700",
+                accent.chipBg,
+                accent.chipBorder
+              )}
+            >
+              <Check className={cn("size-3.5 shrink-0", accent.chipText)} />
               {item}
             </li>
           ))}
@@ -80,27 +107,28 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
         initial="hidden"
         whileInView="visible"
         viewport={viewportOnce}
-        className={cn(
-          "flex items-center lg:col-span-5",
-          reversed && "lg:order-1"
-        )}
+        className="flex items-center lg:col-span-5"
       >
         <div
           className={cn(
-            "relative flex w-full flex-col justify-between gap-8 overflow-hidden rounded-lg bg-ink-950/80 p-8 ring-1 backdrop-blur-xl transition-transform duration-300 hover:-translate-y-1 sm:p-10",
-            accent.ring
+            "relative flex w-full flex-col justify-between gap-10 overflow-hidden rounded-lg bg-gradient-to-br to-ink-950 p-8 ring-1 backdrop-blur-xl transition-transform duration-300 hover:-translate-y-1 sm:p-10",
+            accent.ring,
+            accent.panelFrom
           )}
         >
-          <div
-            aria-hidden
-            className={cn(
-              "pointer-events-none absolute -right-10 -top-10 size-56 rounded-full blur-[80px]",
-              accent.glow
-            )}
+          <DynamicIcon
+            name={service.icon}
+            className="pointer-events-none absolute -right-6 -top-6 size-32 text-paper/[0.06]"
           />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-paper/[0.06] to-transparent" />
 
-          <span className="eyebrow relative text-paper/40">Impact</span>
+          <div className="relative flex items-center gap-3">
+            <span className={cn("flex size-9 items-center justify-center rounded-full", accent.bg, accent.text)}>
+              <DynamicIcon name={service.icon} className="size-4" />
+            </span>
+            <span className="eyebrow text-paper/40">Impact</span>
+          </div>
+
           <div className="relative">
             <p className="font-display text-5xl font-semibold text-paper sm:text-6xl">
               {service.metric.value}
