@@ -4,7 +4,6 @@ import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { BackToTop } from "@/components/shared/back-to-top";
-import { Loader } from "@/components/shared/loader";
 import { PageTransition } from "@/components/layout/page-transition";
 import { SITE, SOCIAL_LINKS } from "@/lib/constants";
 
@@ -125,7 +124,6 @@ export default function RootLayout({
       className={`${bricolage.variable} ${inter.variable} ${spaceMono.variable} ${fraunces.variable} ${caveat.variable}`}
     >
       <body className="relative min-h-screen overflow-x-hidden bg-paper">
-        <Loader />
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>

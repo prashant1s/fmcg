@@ -43,7 +43,7 @@ const QUICK_ACTIONS: QuickAction[] = [
 
 export function ContactHero() {
   return (
-    <section className="relative overflow-hidden bg-ink-950 pt-52 pb-22 sm:pb-24">
+    <section className="relative overflow-hidden bg-ink-950 pt-32 pb-22 sm:pt-40 sm:pb-24 lg:pt-52">
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <motion.div
           animate={{ x: [0, 26, 0], y: [0, -18, 0] }}

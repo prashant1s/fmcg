@@ -18,7 +18,7 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
           rows={rows}
           placeholder=" "
           className={cn(
-            "peer w-full resize-none rounded-md border bg-transparent px-4 pb-3 pt-6 text-[0.95rem] text-ink-950 outline-none transition-colors duration-300",
+            "peer w-full resize-none rounded-md border bg-transparent px-4 pb-3 pt-6 text-base text-ink-950 outline-none transition-colors duration-300 sm:text-[0.95rem]",
             "border-ink-950/15 focus:border-ink-950",
             error && "border-coral-500 focus:border-coral-600",
             className

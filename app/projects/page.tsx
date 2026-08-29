@@ -11,6 +11,9 @@ const TITLE = "Our Work";
 const DESCRIPTION =
   "Case studies from Ripe's work with FMCG brands across social media, UGC, paid ads, branding, and influencer marketing — with real results.";
 
+const HERO_IMAGE =
+  "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1800&q=80&auto=format&fit=crop";
+
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
@@ -62,6 +65,9 @@ export default function ProjectsPage() {
         eyebrow="Our Work"
         title="Projects that delivered results."
         description="A look at recent campaigns across food, beverage, personal care, and household categories — filtered by discipline, backed by real metrics."
+        image={HERO_IMAGE}
+        imageAlt="A creative team reviewing a photoshoot for a consumer brand"
+        size="tall"
       />
       <ResultsCounter />
       <ProjectsShowcase />
