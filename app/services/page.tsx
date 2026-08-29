@@ -85,6 +85,7 @@ export default function ServicesPage() {
         description="From always-on content to full-funnel paid media — every discipline working as one team, so nothing falls through the cracks between vendors."
         image={HERO_IMAGE}
         imageAlt="A content team planning a social campaign"
+        size="tall"
       />
       <ServiceDetail />
       <ServiceProcess />

@@ -5,7 +5,7 @@ import type { Project, ProjectCategory } from "@/types";
 import { projects } from "@/data/projects";
 import { PROJECT_FILTERS } from "@/lib/constants";
 import { ProjectFilter } from "./project-filter";
-import { ProjectGrid } from "./project-grid";
+import { ProjectStack } from "./project-stack";
 import { ProjectModal } from "./project-modal";
 
 export function ProjectsShowcase() {
@@ -33,7 +33,7 @@ export function ProjectsShowcase() {
         <ProjectFilter active={activeFilter} onChange={setActiveFilter} counts={counts} />
 
         <div className="mt-10">
-          <ProjectGrid projects={filteredProjects} onSelect={setSelectedProject} />
+          <ProjectStack key={activeFilter} projects={filteredProjects} onSelect={setSelectedProject} />
         </div>
       </div>
 

@@ -43,6 +43,7 @@ export function Modal({ isOpen, onClose, children, className, labelledBy }: Moda
     <AnimatePresence>
       {isOpen && (
         <motion.div
+          data-lenis-prevent
           className="fixed inset-0 z-[90] flex items-start justify-center overflow-y-auto p-4 py-10 sm:p-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

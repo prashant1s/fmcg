@@ -28,8 +28,8 @@ export function PageHero({
   return (
     <section
       className={cn(
-        "relative flex flex-col justify-end overflow-hidden bg-ink-950 pt-32 pb-16 sm:pb-20",
-        size === "tall" ? "min-h-[85svh]" : "min-h-[60svh]"
+        "relative flex flex-col justify-center overflow-hidden bg-ink-950 pt-32 pb-16 sm:pb-20",
+        size === "tall" ? "min-h-[80svh]" : "min-h-[60svh]"
       )}
     >
       {image && (
@@ -40,7 +40,7 @@ export function PageHero({
             fill
             priority
             sizes="100vw"
-            className="object-cover opacity-40"
+            className="object-cover object-bottom opacity-40"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/70 to-ink-950/40" />
         </div>
