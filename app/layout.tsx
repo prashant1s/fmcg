@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { BackToTop } from "@/components/shared/back-to-top";
+import { ContactPopup } from "@/components/shared/contact-popup";
 import { PageTransition } from "@/components/layout/page-transition";
 import { SITE, SOCIAL_LINKS } from "@/lib/constants";
 
@@ -133,6 +134,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <BackToTop />
+        <ContactPopup />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}

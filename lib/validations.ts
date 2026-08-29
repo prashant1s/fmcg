@@ -31,3 +31,16 @@ export const quickCallSchema = z.object({
 });
 
 export type QuickCallValues = z.infer<typeof quickCallSchema>;
+
+export const popupContactSchema = z.object({
+  name: z.string().trim().min(2, "Please enter your full name."),
+  email: z.string().trim().email("Please enter a valid email address."),
+  phone: z
+    .string()
+    .trim()
+    .min(7, "Please enter a valid phone number.")
+    .max(20, "Please enter a valid phone number."),
+  message: z.string().trim().max(2000, "That's a lot! Please keep it under 2000 characters.").optional(),
+});
+
+export type PopupContactValues = z.infer<typeof popupContactSchema>;
