@@ -17,6 +17,8 @@ interface ProjectCardProps {
   priority?: boolean;
   className?: string;
   variant?: "grid" | "stack";
+  showCategory?: boolean;
+  showText?: boolean;
 }
 
 export function ProjectCard({
@@ -25,6 +27,8 @@ export function ProjectCard({
   priority = false,
   className,
   variant = "grid",
+  showCategory = true,
+  showText = true,
 }: ProjectCardProps) {
   const Wrapper = onClick ? "button" : "div";
   const isStack = variant === "stack";
@@ -49,53 +53,59 @@ export function ProjectCard({
       />
       <div className="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/20 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-95" />
 
-      <div className="absolute left-5 right-5 top-5 flex flex-wrap items-center gap-2">
-        {project.category.slice(0, 2).map((cat) => (
-          <span
-            key={cat}
-            className="rounded-full border border-paper/25 bg-ink-950/40 px-3 py-1 text-[0.65rem] font-medium uppercase tracking-wide text-paper backdrop-blur-sm"
-          >
-            {cat}
-          </span>
-        ))}
-      </div>
-
-      <div className={cn("absolute inset-x-0 bottom-0 flex flex-col gap-3 sm:gap-4", isStack ? "p-6 sm:p-8" : "p-6")}>
-        <div className="flex items-center gap-2">
-          <span className={cn("size-1.5 rounded-full", accentDot[project.accent])} />
-          <span className="font-mono text-xs uppercase tracking-wide text-paper/60">
-            {project.client} · {project.year}
-          </span>
-        </div>
-
-        <h3 className={cn("font-semibold leading-snug text-paper", isStack ? "text-xl sm:text-3xl" : "text-xl sm:text-2xl")}>
-          {project.title}
-        </h3>
-
-        <div
-          className={cn(
-            "grid grid-cols-2 gap-4 overflow-hidden transition-all duration-500 ease-expo",
-            isStack
-              ? "max-h-32 opacity-100 sm:grid-cols-4"
-              : "max-h-0 opacity-0 group-hover:max-h-24 group-hover:opacity-100"
-          )}
-        >
-          {project.results.slice(0, isStack ? 4 : 2).map((result) => (
-            <div key={result.label} className="border-t border-paper/15 pt-3">
-              <p
-                className={cn(
-                  "font-display font-semibold text-lime-300",
-                  isStack ? "text-2xl sm:text-4xl" : "text-lg"
-                )}
-              >
-                {result.value}
-              </p>
-              <p className={cn(isStack ? "text-sm" : "text-[0.7rem]", "text-paper/50")}>
-                {result.label}
-              </p>
-            </div>
+      {showCategory && (
+        <div className="absolute left-5 right-5 top-5 flex flex-wrap items-center gap-2">
+          {project.category.slice(0, 2).map((cat) => (
+            <span
+              key={cat}
+              className="rounded-full border border-paper/25 bg-ink-950/40 px-3 py-1 text-[0.65rem] font-medium uppercase tracking-wide text-paper backdrop-blur-sm"
+            >
+              {cat}
+            </span>
           ))}
         </div>
+      )}
+
+      <div className={cn("absolute inset-x-0 bottom-0 flex flex-col gap-3 sm:gap-4", isStack ? "p-6 sm:p-8" : "p-6")}>
+        {showText && (
+          <>
+            <div className="flex items-center gap-2">
+              <span className={cn("size-1.5 rounded-full", accentDot[project.accent])} />
+              <span className="font-mono text-xs uppercase tracking-wide text-paper/60">
+                {project.client} · {project.year}
+              </span>
+            </div>
+
+            <h3 className={cn("font-semibold leading-snug text-paper", isStack ? "text-xl sm:text-3xl" : "text-xl sm:text-2xl")}>
+              {project.title}
+            </h3>
+
+            <div
+              className={cn(
+                "grid grid-cols-2 gap-4 overflow-hidden transition-all duration-500 ease-expo",
+                isStack
+                  ? "max-h-32 opacity-100 sm:grid-cols-4"
+                  : "max-h-0 opacity-0 group-hover:max-h-24 group-hover:opacity-100"
+              )}
+            >
+              {project.results.slice(0, isStack ? 4 : 2).map((result) => (
+                <div key={result.label} className="border-t border-paper/15 pt-3">
+                  <p
+                    className={cn(
+                      "font-display font-semibold text-lime-300",
+                      isStack ? "text-2xl sm:text-4xl" : "text-lg"
+                    )}
+                  >
+                    {result.value}
+                  </p>
+                  <p className={cn(isStack ? "text-sm" : "text-[0.7rem]", "text-paper/50")}>
+                    {result.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
 
         <span className="inline-flex items-center gap-1.5 text-sm font-medium text-paper">
           View Case Study

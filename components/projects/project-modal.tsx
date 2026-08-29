@@ -193,6 +193,8 @@ export function ProjectModal({
                   project={item}
                   onClick={() => onSelectProject(item)}
                   className="aspect-[4/3]"
+                  showCategory={false}
+                  showText={false}
                 />
               ))}
             </div>

@@ -1,10 +1,12 @@
 "use client";
 
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { projects } from "@/data/projects";
+import type { Project } from "@/types";
 import { ProjectCard } from "@/components/projects/project-card";
+import { ProjectModal } from "@/components/projects/project-modal";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { Button } from "@/components/ui/button";
 
@@ -17,6 +19,7 @@ export function FeaturedProjects() {
   const trackRef = useRef<HTMLDivElement>(null);
   const progressRef = useRef<HTMLDivElement>(null);
   const featured = projects.slice(0, 8);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   useLayoutEffect(() => {
     const section = sectionRef.current;
@@ -93,7 +96,11 @@ export function FeaturedProjects() {
                 key={project.id}
                 className="w-[85vw] shrink-0 snap-start sm:w-[420px] lg:w-[420px]"
               >
-                <ProjectCard project={project} priority={index < 2} />
+                <ProjectCard
+                  project={project}
+                  priority={index < 2}
+                  onClick={() => setSelectedProject(project)}
+                />
               </div>
             ))}
           </div>
@@ -111,6 +118,13 @@ export function FeaturedProjects() {
           </Button>
         </div>
       </div>
+
+      <ProjectModal
+        project={selectedProject}
+        allProjects={projects}
+        onClose={() => setSelectedProject(null)}
+        onSelectProject={setSelectedProject}
+      />
     </>
   );
 }
