@@ -42,7 +42,7 @@ export function LegalPage({ lastUpdated, intro, sections }: LegalPageProps) {
           <aside className="hidden lg:block">
             <div className="sticky top-32 flex flex-col gap-6">
               <span className="eyebrow text-ink-500">
-                <span className="size-1.5 rounded-full bg-coral-500" />
+                <span className="size-1.5 rounded-full bg-blue-500" />
                 {lastUpdated}
               </span>
               <nav className="flex max-h-[calc(100svh-18rem)] flex-col overflow-y-auto border-l border-ink-100 pr-2">
@@ -53,7 +53,7 @@ export function LegalPage({ lastUpdated, intro, sections }: LegalPageProps) {
                     className={cn(
                       "-ml-px flex items-baseline gap-3 border-l-2 py-2 pl-5 text-sm transition-colors duration-300",
                       activeId === section.id
-                        ? "border-coral-600 font-medium text-ink-950"
+                        ? "border-blue-600 font-medium text-ink-950"
                         : "border-transparent text-ink-400 hover:text-ink-700"
                     )}
                   >
@@ -76,14 +76,14 @@ export function LegalPage({ lastUpdated, intro, sections }: LegalPageProps) {
                 className="scroll-mt-32 border-t border-ink-100 pt-10 first:border-t-0 first:pt-0"
               >
                 <div className="flex items-baseline gap-4">
-                  <span className="font-mono text-sm text-coral-600">
+                  <span className="font-mono text-sm text-blue-600">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <h2 className="text-xl font-semibold text-ink-950 sm:text-2xl">
                     {section.title}
                   </h2>
                 </div>
-                <div className="prose prose-neutral mt-4 max-w-none text-ink-600 prose-headings:font-display prose-a:text-coral-600 prose-a:no-underline hover:prose-a:underline prose-strong:text-ink-950 prose-li:marker:text-coral-400">
+                <div className="prose prose-neutral mt-4 max-w-none text-ink-600 prose-headings:font-display prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline prose-strong:text-ink-950 prose-li:marker:text-blue-400">
                   {section.body}
                 </div>
               </div>

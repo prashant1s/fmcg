@@ -180,18 +180,6 @@ export function RotatingCards({ items, onSelect, className }: RotatingCardsProps
                   draggable={false}
                   className="pointer-events-none object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink-950/85 via-ink-950/10 to-transparent" />
-                <span className="absolute right-3 top-3 font-mono text-xs font-semibold text-paper/50">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <div className="absolute inset-x-0 bottom-0 p-3.5">
-                  <p className="font-mono text-[0.55rem] uppercase tracking-wide text-paper/60">
-                    {item.client}
-                  </p>
-                  <p className="mt-0.5 line-clamp-2 text-xs font-semibold leading-snug text-paper sm:text-sm">
-                    {item.title}
-                  </p>
-                </div>
               </div>
             </div>
           );

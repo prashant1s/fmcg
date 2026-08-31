@@ -19,7 +19,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
           className={cn(
             "peer w-full rounded-md border bg-transparent px-4 pb-2.5 pt-6 text-base text-ink-950 outline-none transition-colors duration-300 sm:text-[0.95rem]",
             "border-ink-950/15 focus:border-ink-950",
-            error && "border-coral-500 focus:border-coral-600",
+            error && "border-error focus:border-error-600",
             className
           )}
           aria-invalid={!!error}
@@ -33,7 +33,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
           {label}
         </label>
         {error && (
-          <p id={`${inputId}-error`} className="mt-1.5 text-sm text-coral-600" role="alert">
+          <p id={`${inputId}-error`} className="mt-1.5 text-sm text-error-600" role="alert">
             {error}
           </p>
         )}

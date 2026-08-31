@@ -12,8 +12,7 @@ const spotlightSlugs = ["rhino-cult", "kishandas"];
 
 const accentTextLight = {
   lime: "text-lime-300",
-  coral: "text-coral-300",
-  violet: "text-violet-300",
+  blue: "text-blue-300",
 } as const;
 
 export function CaseStudyHighlight() {

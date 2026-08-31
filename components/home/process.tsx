@@ -57,7 +57,7 @@ export function Process() {
         <motion.div
           animate={{ x: [0, 30, 0], y: [0, -24, 0] }}
           transition={{ duration: 16, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute left-1/4 top-0 size-[26rem] -translate-x-1/2 rounded-full bg-coral-500/10 blur-[120px]"
+          className="absolute left-1/4 top-0 size-[26rem] -translate-x-1/2 rounded-full bg-blue-500/10 blur-[120px]"
         />
         <div className="grain-overlay" />
       </div>

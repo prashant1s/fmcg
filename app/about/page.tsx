@@ -8,7 +8,7 @@ import { breadcrumbJsonLd } from "@/lib/json-ld";
 
 const TITLE = "About Us";
 const DESCRIPTION =
-  "Meet Ripe — a social media agency built exclusively for FMCG and consumer goods brands. Our story, our team, and the values behind the work.";
+  "Meet Whizoidstudio — a social media agency built exclusively for FMCG and consumer goods brands. Our story, our team, and the values behind the work.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -38,15 +38,15 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
       />
       <PageHero
-        eyebrow="About Ripe"
+        eyebrow="About Whizoidstudio"
         title="A social agency built exclusively for consumer goods."
-        description="We started Ripe because FMCG brands deserve a social partner that understands retail cycles, shelf economics, and category culture — not a generalist agency running the same playbook for everyone."
+        description="We started Whizoidstudio because FMCG brands deserve a social partner that understands retail cycles, shelf economics, and category culture — not a generalist agency running the same playbook for everyone."
       />
       <StorySection />
       <Values />
       <CultureGallery />
       <CtaSection
-        eyebrow="Careers at Ripe"
+        eyebrow="Careers at Whizoidstudio"
         title="Talented, category-obsessed. Sound like you?"
         description="We're always looking for strategists, producers, and media buyers who want to go deep on one industry instead of wide across ten."
         buttonLabel="Let's Work Together"

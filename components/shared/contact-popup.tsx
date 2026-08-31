@@ -29,8 +29,12 @@ export function ContactPopup() {
 
   useEffect(() => {
     if (pathname !== "/") return;
+    if (localStorage.getItem("contact-popup-shown")) return;
 
-    const timer = setTimeout(() => setIsOpen(true), 1500);
+    const timer = setTimeout(() => {
+      setIsOpen(true);
+      localStorage.setItem("contact-popup-shown", "true");
+    }, 10000);
     return () => clearTimeout(timer);
   }, [pathname]);
 
@@ -41,7 +45,7 @@ export function ContactPopup() {
 
   const onSubmit = async (data: PopupContactValues) => {
     const message = [
-      `Hi Ripe, I'd like to get in touch.`,
+      `Hi Whizoidstudio, I'd like to get in touch.`,
       ``,
       `Name: ${data.name}`,
       `Email: ${data.email}`,
@@ -68,7 +72,7 @@ export function ContactPopup() {
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.4, ease: EXPO_EASE, delay: 0.6 }}
         aria-label="Open contact form"
-        className="fixed bottom-6 left-5 z-40 inline-flex items-center gap-2 rounded-full bg-lime-300 px-5 py-3.5 text-sm font-medium text-ink-950 shadow-lg transition-colors hover:bg-lime-200 sm:bottom-8 sm:left-8"
+        className="fixed bottom-6 right-5 z-40 inline-flex items-center gap-2 rounded-full bg-lime-300 px-5 py-3.5 text-sm font-medium text-ink-950 shadow-lg transition-colors hover:bg-lime-200 sm:bottom-8 sm:right-8"
       >
         <MessageSquareText className="size-4" />
         Contact Us

@@ -22,7 +22,7 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
           className={cn(
             "peer w-full appearance-none rounded-md border bg-transparent px-4 pb-2.5 pt-6 text-base text-ink-950 outline-none transition-colors duration-300 sm:text-[0.95rem]",
             "border-ink-950/15 focus:border-ink-950",
-            error && "border-coral-500 focus:border-coral-600",
+            error && "border-error focus:border-error-600",
             className
           )}
           aria-invalid={!!error}
@@ -47,7 +47,7 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
           className="pointer-events-none absolute right-4 top-1/2 size-4 -translate-y-1/2 text-ink-400"
         />
         {error && (
-          <p id={`${selectId}-error`} className="mt-1.5 text-sm text-coral-600" role="alert">
+          <p id={`${selectId}-error`} className="mt-1.5 text-sm text-error-600" role="alert">
             {error}
           </p>
         )}

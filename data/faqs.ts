@@ -5,7 +5,7 @@ export const faqs: FAQ[] = [
     id: "faq-1",
     question: "Do you only work with FMCG and consumer goods brands?",
     answer:
-      "Yes — every strategist, producer, and media buyer at Ripe works exclusively within food, beverage, personal care, and household categories. That focus means we understand retail cycles, distribution constraints, and margin structures that a generalist agency simply doesn't.",
+      "Yes — every strategist, producer, and media buyer at Whizoidstudio works exclusively within food, beverage, personal care, and household categories. That focus means we understand retail cycles, distribution constraints, and margin structures that a generalist agency simply doesn't.",
     category: "general",
   },
   {
@@ -33,7 +33,7 @@ export const faqs: FAQ[] = [
     id: "faq-5",
     question: "How do you price your engagements?",
     answer:
-      "Retainer-based, scoped around the services and channel mix your brand needs — most clients land between our Growth and Enterprise tiers. Paid media spend is always billed separately from management fees, with full transparency on both.",
+      "Retainer-based, scoped around the services and channel mix your brand needs. Paid media spend is always billed separately from management fees, with full transparency on both. Get in touch and we'll put together a custom quote.",
     category: "pricing",
   },
   {

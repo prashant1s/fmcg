@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
@@ -42,10 +43,13 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-10 py-16 xs:grid-cols-2 lg:grid-cols-5">
           <div className="col-span-1 flex flex-col gap-5 xs:col-span-2">
             <Link href="/" className="flex items-center gap-2.5">
-              <span className="flex size-9 items-center justify-center rounded-lg bg-lime-300 font-display text-lg font-bold text-ink-950">
-                R
-              </span>
-              <span className="font-display text-xl font-semibold">{SITE.name}</span>
+              <Image
+                src="/logo.avif"
+                alt={SITE.fullName}
+                width={640}
+                height={207}
+                className="h-8 w-auto sm:h-9"
+              />
             </Link>
             <p className="max-w-xs text-sm leading-relaxed text-paper/50">
               {SITE.description}
@@ -105,7 +109,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-4 border-t border-paper/10 py-8 text-xs text-paper/40 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-4 border-t border-paper/10 py-8 pr-0 text-xs text-paper/40 sm:flex-row sm:items-center sm:justify-between sm:pr-36">
           <p>
             © {new Date().getFullYear()} {SITE.fullName}. All rights reserved.
           </p>

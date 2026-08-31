@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { PageHero } from "@/components/shared/page-hero";
+import { ServicesHero } from "@/components/services/services-hero";
 import { ServiceDetail } from "@/components/services/service-detail";
 import { ServiceProcess } from "@/components/services/service-process";
 import { TechTools } from "@/components/services/tech-tools";
-import { PricingCards } from "@/components/services/pricing-cards";
 import { FAQ } from "@/components/services/faq";
 import { CtaSection } from "@/components/home/cta-section";
 import { breadcrumbJsonLd } from "@/lib/json-ld";
@@ -29,9 +28,6 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
   },
 };
-
-const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1612362426802-dcc0ccd25f64?w=1600&q=80&auto=format&fit=crop";
 
 const breadcrumbs = breadcrumbJsonLd([
   { name: "Home", path: "/" },
@@ -79,18 +75,10 @@ export default function ServicesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
-      <PageHero
-        eyebrow="Our Services"
-        title="The full social stack, built for consumer goods."
-        description="From always-on content to full-funnel paid media — every discipline working as one team, so nothing falls through the cracks between vendors."
-        image={HERO_IMAGE}
-        imageAlt="A content team planning a social campaign"
-        size="tall"
-      />
+      <ServicesHero />
       <ServiceDetail />
       <ServiceProcess />
       <TechTools />
-      <PricingCards />
       <FAQ />
       <CtaSection
         eyebrow="Not sure where to start?"

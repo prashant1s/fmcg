@@ -33,7 +33,7 @@ export function renderOgImage(eyebrow: string, title: string) {
               border: "2px solid #D6FF3F",
             }}
           >
-            <span style={{ color: "#D6FF3F", fontSize: 30, fontWeight: 700 }}>R</span>
+            <span style={{ color: "#D6FF3F", fontSize: 30, fontWeight: 700 }}>W</span>
           </div>
           <span
             style={{
@@ -43,7 +43,7 @@ export function renderOgImage(eyebrow: string, title: string) {
               letterSpacing: "-0.01em",
             }}
           >
-            Ripe
+            Whizoidstudio
           </span>
         </div>
 
@@ -79,7 +79,7 @@ export function renderOgImage(eyebrow: string, title: string) {
         </div>
 
         <div style={{ display: "flex", color: "#9E9EA7", fontSize: 22 }}>
-          ripe.agency — Social growth for FMCG brands
+          whizoidstudio.com — Social growth for FMCG brands
         </div>
       </div>
     ),

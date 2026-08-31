@@ -18,23 +18,14 @@ export const accentStyles = {
     chipText: "text-lime-800",
     panelFrom: "from-lime-900",
   },
-  coral: {
-    bg: "bg-coral-500",
+  blue: {
+    bg: "bg-blue-500",
     text: "text-paper",
-    ring: "ring-coral-500/30",
-    chipBg: "bg-coral-500/10",
-    chipBorder: "border-coral-500/25",
-    chipText: "text-coral-700",
-    panelFrom: "from-coral-900",
-  },
-  violet: {
-    bg: "bg-violet-500",
-    text: "text-paper",
-    ring: "ring-violet-500/30",
-    chipBg: "bg-violet-500/10",
-    chipBorder: "border-violet-500/25",
-    chipText: "text-violet-700",
-    panelFrom: "from-violet-900",
+    ring: "ring-blue-500/30",
+    chipBg: "bg-blue-500/10",
+    chipBorder: "border-blue-500/25",
+    chipText: "text-blue-700",
+    panelFrom: "from-blue-900",
   },
 } as const;
 
@@ -96,7 +87,7 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
 
         <Link
           href="/contact"
-          className="mt-2 inline-flex w-fit items-center gap-2 border-b border-ink-950 pb-1 text-sm font-medium text-ink-950 transition-colors hover:border-coral-500 hover:text-coral-600"
+          className="mt-2 inline-flex w-fit items-center gap-2 border-b border-ink-950 pb-1 text-sm font-medium text-ink-950 transition-colors hover:border-blue-500 hover:text-blue-600"
         >
           Get Started
         </Link>

@@ -78,7 +78,7 @@ export const projects: Project[] = [
       name: "Team Dainik Bhaskar",
       role: "Partner",
     },
-    accent: "coral",
+    accent: "blue",
   },
   {
     id: "proj-rasssa-rasoi",
@@ -118,7 +118,7 @@ export const projects: Project[] = [
       name: "Team Rasssa Rasoi",
       role: "Partner",
     },
-    accent: "violet",
+    accent: "blue",
   },
   {
     id: "proj-teju-masala",
@@ -197,7 +197,7 @@ export const projects: Project[] = [
       name: "Team Kishandas & Co.",
       role: "Partner",
     },
-    accent: "coral",
+    accent: "blue",
   },
   {
     id: "proj-rhino-cult",
@@ -246,7 +246,7 @@ export const projects: Project[] = [
       name: "Team Rhino Cult",
       role: "Partner",
     },
-    accent: "violet",
+    accent: "blue",
   },
   {
     id: "proj-snuzzles",

@@ -1,12 +1,12 @@
 import type { NavLink } from "@/types";
 
 export const SITE = {
-  name: "Ripe",
-  fullName: "Ripe Agency",
+  name: "Whizoidstudio",
+  fullName: "Whizoidstudio",
   tagline: "Social growth for FMCG brands",
   description:
-    "Ripe is a full-service social media agency built for FMCG brands — social strategy, UGC, influencer marketing, and paid social that turn scroll-stopping content into sell-through.",
-  url: "https://ripe.agency",
+    "Whizoidstudio is a full-service social media agency built for FMCG brands — social strategy, UGC, influencer marketing, and paid social that turn scroll-stopping content into sell-through.",
+  url: "https://whizoidstudio.com",
   email: "sanidhya@whizoidstudio.com",
   phone: "+91 89621 77924",
   phoneHref: "+918962177924",

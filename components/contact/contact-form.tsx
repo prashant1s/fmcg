@@ -26,7 +26,7 @@ export function ContactForm() {
 
   const onSubmit = async (data: ContactFormValues) => {
     const message = [
-      `Hi Ripe, I'd like to get in touch.`,
+      `Hi Whizoidstudio, I'd like to get in touch.`,
       ``,
       `Name: ${data.name}`,
       `Email: ${data.email}`,

@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 export default function NotFound() {
   return (
     <section className="flex min-h-[80svh] flex-col items-center justify-center bg-paper px-6 py-section text-center">
-      <span className="eyebrow justify-center text-coral-600">
-        <span className="size-1.5 rounded-full bg-coral-600" />
+      <span className="eyebrow justify-center text-blue-600">
+        <span className="size-1.5 rounded-full bg-blue-600" />
         404
       </span>
       <h1 className="mt-4 text-display-lg text-balance">Page not found</h1>

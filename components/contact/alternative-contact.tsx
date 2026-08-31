@@ -43,7 +43,7 @@ export function AlternativeContact() {
           </div>
 
           <div className="flex flex-col gap-5 rounded-lg border border-ink-950/8 bg-paper p-8">
-            <span className="flex size-12 items-center justify-center rounded-full bg-violet-100 text-violet-600">
+            <span className="flex size-12 items-center justify-center rounded-full bg-blue-100 text-blue-600">
               <CalendarClock className="size-5" />
             </span>
             <div>
@@ -87,7 +87,7 @@ function QuickCallCard() {
 
   return (
     <div className="flex flex-col gap-5 rounded-lg border border-ink-950/8 bg-paper p-8">
-      <span className="flex size-12 items-center justify-center rounded-full bg-coral-100 text-coral-600">
+      <span className="flex size-12 items-center justify-center rounded-full bg-lime-100 text-lime-800">
         <PhoneCall className="size-5" />
       </span>
       <div>

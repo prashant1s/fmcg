@@ -27,12 +27,12 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative flex min-h-[90svh] flex-col justify-center overflow-hidden bg-ink-950 pt-18 sm:pt-30">
+    <section className="relative flex min-h-[90svh] flex-col justify-center overflow-hidden bg-ink-950 pt-18 sm:pt-30 xl:min-h-[95svh] 2xl:min-h-screen 3xl:min-h-[110vh]">
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <motion.div
           animate={{ x: [0, 30, 0], y: [0, -20, 0] }}
           transition={{ duration: 16, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute -left-32 top-16 size-[26rem] rounded-full bg-violet-600/25 blur-[100px]"
+          className="absolute -left-32 top-16 size-[26rem] rounded-full bg-blue-600/25 blur-[100px]"
         />
         <motion.div
           animate={{ x: [0, -24, 0], y: [0, 24, 0] }}
@@ -42,7 +42,7 @@ export function Hero() {
         <motion.div
           animate={{ x: [0, 20, 0], y: [0, 16, 0] }}
           transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute bottom-0 left-1/3 size-[24rem] rounded-full bg-coral-500/20 blur-[100px]"
+          className="absolute bottom-0 left-1/3 size-[24rem] rounded-full bg-blue-400/20 blur-[100px]"
         />
         <div className="grain-overlay" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-ink-950" />
@@ -86,7 +86,7 @@ export function Hero() {
             variants={fadeUp}
             className="max-w-2xl text-balance text-md leading-relaxed text-ink-200 sm:text-md"
           >
-            Ripe is a social media agency built exclusively for consumer goods
+            Whizoidstudio is a social media agency built exclusively for consumer goods
             brands — strategy, content, UGC, and paid media engineered to move
             product, not just impressions.
           </motion.p>

@@ -25,7 +25,7 @@ export interface Service {
   icon: string;
   deliverables: string[];
   metric: ResultMetric;
-  accent: "lime" | "coral" | "violet";
+  accent: "lime" | "blue";
 }
 
 export interface ProjectTestimonial {
@@ -49,7 +49,7 @@ export interface Project {
   deliverables: string[];
   results: ResultMetric[];
   testimonial?: ProjectTestimonial;
-  accent: "lime" | "coral" | "violet";
+  accent: "lime" | "blue";
 }
 
 export interface SocialLinks {
@@ -105,17 +105,6 @@ export interface ValueProp {
   title: string;
   description: string;
   icon: string;
-}
-
-export interface PricingTier {
-  id: string;
-  name: string;
-  price: string;
-  period: string;
-  description: string;
-  features: string[];
-  highlighted: boolean;
-  cta: string;
 }
 
 export interface NavLink {

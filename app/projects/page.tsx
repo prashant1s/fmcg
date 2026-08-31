@@ -9,7 +9,7 @@ import { projects } from "@/data/projects";
 
 const TITLE = "Our Work";
 const DESCRIPTION =
-  "Case studies from Ripe's work with FMCG brands across social media, UGC, paid ads, branding, and influencer marketing — with real results.";
+  "Case studies from Whizoidstudio's work with FMCG brands across social media, UGC, paid ads, branding, and influencer marketing — with real results.";
 
 const HERO_IMAGE =
   "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1800&q=80&auto=format&fit=crop";

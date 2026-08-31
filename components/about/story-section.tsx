@@ -19,7 +19,7 @@ export function StorySection() {
               title="Founded on a simple bet: category focus beats generalist scale."
             />
             <p className="text-left leading-relaxed text-ink-500">
-              Ripe started in 2018 when our founder, fresh off a decade
+              Whizoidstudio started in 2018 when our founder, fresh off a decade
               running brand social for two Fortune 500 food companies, got
               tired of watching generalist agencies apply the same playbook
               to a snack brand as they would a SaaS startup. FMCG social
@@ -42,7 +42,7 @@ export function StorySection() {
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg">
               <Image
                 src={STORY_IMAGE}
-                alt="A quiet workspace overlooking the city, where Ripe's early strategy took shape"
+                alt="A quiet workspace overlooking the city, where Whizoidstudio's early strategy took shape"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover"

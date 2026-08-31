@@ -28,7 +28,7 @@ export function WhyChooseUs() {
 
       <div className="container-wide relative">
         <SectionHeading
-          eyebrow="Why Ripe"
+          eyebrow="Why Whizoidstudio"
           title="A social partner that thinks like a P&L owner."
           description="We've sat on the brand side of the table. Every recommendation is built to justify itself in the metrics that matter to your business, not just your feed."
           light

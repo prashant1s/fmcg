@@ -12,8 +12,7 @@ import { cn } from "@/lib/utils";
 
 const accentStyles = {
   lime: { bg: "bg-lime-300", text: "text-ink-950", glow: "rgba(214,255,63,0.2)" },
-  coral: { bg: "bg-coral-500", text: "text-paper", glow: "rgba(255,90,60,0.18)" },
-  violet: { bg: "bg-violet-500", text: "text-paper", glow: "rgba(108,92,231,0.2)" },
+  blue: { bg: "bg-blue-600", text: "text-paper", glow: "rgba(26,102,255,0.22)" },
 } as const;
 
 const HOME_SERVICES = [
@@ -24,7 +23,7 @@ const HOME_SERVICES = [
       "In-house photography, videography, and design that make packaged goods look irresistible on a 6-inch screen.",
     icon: "PenTool",
     metric: { value: "120+", label: "assets produced / month" },
-    accent: "coral",
+    accent: "blue",
   },
   {
     id: "home-2",
@@ -42,7 +41,7 @@ const HOME_SERVICES = [
       "The category, channel, and content strategy — backed by retail-minded reporting that connects performance to sell-through.",
     icon: "Compass",
     metric: { value: "80+", label: "brand strategies delivered" },
-    accent: "violet",
+    accent: "blue",
   },
 ] as const;
 

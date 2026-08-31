@@ -47,7 +47,7 @@ export function PageHero({
       )}
 
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute -left-20 top-10 size-96 rounded-full bg-violet-600/20 blur-[100px]" />
+        <div className="absolute -left-20 top-10 size-96 rounded-full bg-blue-600/20 blur-[100px]" />
         <div className="absolute right-[-4rem] top-1/3 size-[26rem] rounded-full bg-lime-300/15 blur-[110px]" />
         <div className="grain-overlay" />
       </div>

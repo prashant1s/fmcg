@@ -78,7 +78,7 @@ export function Testimonials() {
                   {testimonial.rating ? (
                     <div className="flex gap-0.5" aria-label={`${testimonial.rating} out of 5 stars`}>
                       {Array.from({ length: testimonial.rating }).map((_, i) => (
-                        <Star key={i} className="size-3.5 fill-coral-500 text-coral-500" />
+                        <Star key={i} className="size-3.5 fill-warning text-warning" />
                       ))}
                     </div>
                   ) : null}

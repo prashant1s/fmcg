@@ -2,46 +2,14 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Phone, Mail, Clock, type LucideIcon } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa6";
-import type { IconType } from "react-icons";
-import { SITE } from "@/lib/constants";
+import { Sparkles } from "lucide-react";
+import { services } from "@/data/services";
 import { fadeUp, fadeIn, staggerContainer, EXPO_EASE } from "@/lib/animations";
 
 const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&q=80&auto=format&fit=crop";
+  "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1200&q=80&auto=format&fit=crop";
 
-interface QuickAction {
-  icon: LucideIcon | IconType;
-  label: string;
-  value: string;
-  href: string;
-  external?: boolean;
-}
-
-const QUICK_ACTIONS: QuickAction[] = [
-  {
-    icon: Phone,
-    label: "Call us",
-    value: SITE.phone,
-    href: `tel:${SITE.phoneHref}`,
-  },
-  {
-    icon: FaWhatsapp,
-    label: "WhatsApp",
-    value: "Chat now",
-    href: `https://wa.me/${SITE.whatsappHref}`,
-    external: true,
-  },
-  {
-    icon: Mail,
-    label: "Email",
-    value: SITE.email,
-    href: `mailto:${SITE.email}`,
-  },
-];
-
-export function ContactHero() {
+export function ServicesHero() {
   return (
     <section className="relative overflow-hidden bg-ink-950 pt-32 pb-22 sm:pt-40 sm:pb-24 lg:pt-52">
       <div aria-hidden className="pointer-events-none absolute inset-0">
@@ -67,41 +35,30 @@ export function ContactHero() {
         >
           <motion.span variants={fadeUp} className="eyebrow text-lime-300">
             <span className="size-1.5 rounded-full bg-lime-300" />
-            Get In Touch
+            Our Services
           </motion.span>
 
           <motion.h1 variants={fadeUp} className="text-display-xl text-balance text-paper">
-            Let&apos;s create something amazing together.
+            The full social stack, built for consumer goods.
           </motion.h1>
 
           <motion.p
             variants={fadeUp}
             className="max-w-xl text-balance text-lg leading-relaxed text-ink-200 sm:text-xl"
           >
-            Tell us about your brand, your category, and where you want social
-            to take you. We reply within one business day.
+            From always-on content to full-funnel paid media — every discipline
+            working as one team, so nothing falls through the cracks between
+            vendors.
           </motion.p>
 
           <motion.div variants={fadeUp} className="flex flex-wrap gap-3 pt-4">
-            {QUICK_ACTIONS.map((action) => (
-              <a
-                key={action.label}
-                href={action.href}
-                {...(action.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                className="group flex items-center gap-3 rounded-full border border-paper/15 bg-paper/5 py-2.5 pl-2.5 pr-5 backdrop-blur-sm transition-colors hover:border-lime-300/40 hover:bg-paper/10"
+            {services.map((service) => (
+              <span
+                key={service.id}
+                className="rounded-full border border-paper/15 bg-paper/5 px-4 py-2 text-sm text-paper/80 backdrop-blur-sm"
               >
-                <span className="flex size-8 items-center justify-center rounded-full bg-paper/10 text-lime-300">
-                  <action.icon className="size-3.5" />
-                </span>
-                <span className="flex flex-col leading-tight">
-                  <span className="text-[0.65rem] uppercase tracking-wide text-paper/40">
-                    {action.label}
-                  </span>
-                  <span className="text-sm text-paper/85 transition-colors group-hover:text-paper">
-                    {action.value}
-                  </span>
-                </span>
-              </a>
+                {service.title}
+              </span>
             ))}
           </motion.div>
         </motion.div>
@@ -116,7 +73,7 @@ export function ContactHero() {
           <div className="relative aspect-[4/3.5] w-full overflow-hidden rounded-lg border border-paper/10">
             <Image
               src={HERO_IMAGE}
-              alt="Laptop, coffee, and notebook on a desk, ready for a conversation"
+              alt="Creative team reviewing social content on a tablet"
               fill
               priority
               sizes="(min-width: 1024px) 40vw, 100vw"
@@ -132,11 +89,11 @@ export function ContactHero() {
             className="absolute -bottom-6 left-6 flex items-center gap-3 rounded-lg border border-ink-950/8 bg-paper px-5 py-4 shadow-xl sm:left-8"
           >
             <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-lime-300 text-ink-950">
-              <Clock className="size-4" />
+              <Sparkles className="size-4" />
             </span>
             <div>
-              <p className="text-sm font-semibold text-ink-950">Avg. 1 business day</p>
-              <p className="text-xs text-ink-500">Response time on every enquiry</p>
+              <p className="text-sm font-semibold text-ink-950">4 core disciplines</p>
+              <p className="text-xs text-ink-500">Run by one integrated team</p>
             </div>
           </motion.div>
         </motion.div>

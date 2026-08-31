@@ -19,8 +19,7 @@ interface ProjectModalProps {
 
 const accentText = {
   lime: "text-lime-600",
-  coral: "text-coral-600",
-  violet: "text-violet-600",
+  blue: "text-blue-600",
 } as const;
 
 export function ProjectModal({

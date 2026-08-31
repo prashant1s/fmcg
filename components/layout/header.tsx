@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
@@ -37,34 +38,26 @@ export function Header() {
 
   return (
     <>
-      <header
-        className={cn(
-          "fixed inset-x-0 top-0 z-50 transition-colors duration-500 ease-expo",
-          solid ? "border-b border-ink-950/8 bg-paper/90 backdrop-blur-md" : "bg-transparent"
-        )}
-      >
-        <div className="container-wide flex h-20 items-center justify-between sm:h-24">
+      <header className="fixed inset-x-0 top-0 z-50 px-3 pt-1.5 sm:px-5 sm:pt-2">
+        <div
+          className={cn(
+            "mx-auto flex h-16 w-full max-w-container items-center justify-between rounded-xl bg-ink-950 px-5 shadow-lg shadow-black/20 transition-colors duration-500 ease-expo sm:h-20 sm:px-8",
+            solid && "border border-paper/10"
+          )}
+        >
           <Link
             href="/"
             className="group relative z-10 flex items-center gap-2.5"
             aria-label={`${SITE.fullName} — Home`}
           >
-            <span
-              className={cn(
-                "flex size-9 items-center justify-center rounded-lg font-display text-lg font-bold transition-colors duration-500",
-                solid ? "bg-ink-950 text-lime-300" : "bg-lime-300 text-ink-950"
-              )}
-            >
-              R
-            </span>
-            <span
-              className={cn(
-                "font-display text-xl font-semibold transition-colors duration-500",
-                solid ? "text-ink-950" : "text-paper"
-              )}
-            >
-              {SITE.name}
-            </span>
+            <Image
+              src="/logo.avif"
+              alt={SITE.fullName}
+              width={640}
+              height={207}
+              priority
+              className="h-8 w-auto sm:h-9"
+            />
           </Link>
 
           <nav className="hidden items-center gap-9 lg:flex">
@@ -75,20 +68,13 @@ export function Header() {
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    "relative py-2 text-sm font-medium transition-colors duration-300",
-                    solid
-                      ? active
-                        ? "text-ink-950"
-                        : "text-ink-500 hover:text-ink-950"
-                      : active
-                        ? "text-paper"
-                        : "text-paper/70 hover:text-paper"
+                    "text-sm transition-colors duration-300",
+                    active
+                      ? "font-semibold text-lime-300"
+                      : "font-medium text-paper/70 hover:text-paper"
                   )}
                 >
                   {link.label}
-                  {active && (
-                    <span className="absolute -bottom-0.5 left-0 h-0.5 w-full rounded-full bg-lime-300" />
-                  )}
                 </Link>
               );
             })}
@@ -109,23 +95,17 @@ export function Header() {
             <motion.span
               animate={{ rotate: mobileOpen ? 45 : 0, y: mobileOpen ? 6 : 0 }}
               transition={{ duration: 0.3, ease: EXPO_EASE }}
-              className={cn(
-                "h-[1.5px] w-6 origin-center rounded-full",
-                solid ? "bg-ink-950" : "bg-paper"
-              )}
+              className="h-[1.5px] w-6 origin-center rounded-full bg-paper"
             />
             <motion.span
               animate={{ opacity: mobileOpen ? 0 : 1 }}
               transition={{ duration: 0.2 }}
-              className={cn("h-[1.5px] w-6 rounded-full", solid ? "bg-ink-950" : "bg-paper")}
+              className="h-[1.5px] w-6 rounded-full bg-paper"
             />
             <motion.span
               animate={{ rotate: mobileOpen ? -45 : 0, y: mobileOpen ? -6 : 0 }}
               transition={{ duration: 0.3, ease: EXPO_EASE }}
-              className={cn(
-                "h-[1.5px] w-6 origin-center rounded-full",
-                solid ? "bg-ink-950" : "bg-paper"
-              )}
+              className="h-[1.5px] w-6 origin-center rounded-full bg-paper"
             />
           </button>
         </div>

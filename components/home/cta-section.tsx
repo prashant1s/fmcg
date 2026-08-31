@@ -30,7 +30,7 @@ export function CtaSection({
         <motion.div
           animate={{ x: [0, -30, 0], y: [0, 30, 0] }}
           transition={{ duration: 17, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute right-1/4 bottom-0 size-[26rem] translate-x-1/2 rounded-full bg-coral-500/15 blur-[110px]"
+          className="absolute right-1/4 bottom-0 size-[26rem] translate-x-1/2 rounded-full bg-blue-500/15 blur-[110px]"
         />
         <div className="grain-overlay" />
       </div>

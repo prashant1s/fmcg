@@ -17,35 +17,35 @@ const GALLERY = [
   {
     id: "g1",
     src: u("1706074793638-da28b90ea8ae", 1100),
-    alt: "Ripe conference room during a strategy session",
+    alt: "Whizoidstudio conference room during a strategy session",
     span: "sm:col-span-7 sm:row-span-2",
     speed: 0.15,
   },
   {
     id: "g2",
     src: u("1524758631624-e2822e304c36"),
-    alt: "A lounge corner in the Ripe studio",
+    alt: "A lounge corner in the Whizoidstudio studio",
     span: "sm:col-span-5",
     speed: -0.1,
   },
   {
     id: "g3",
     src: u("1667646590380-670b53b8c393"),
-    alt: "A quiet corner of the Ripe studio",
+    alt: "A quiet corner of the Whizoidstudio studio",
     span: "sm:col-span-5",
     speed: 0.08,
   },
   {
     id: "g4",
     src: u("1497366754035-f200968a6e72"),
-    alt: "A quiet hallway inside the Ripe studio",
+    alt: "A quiet hallway inside the Whizoidstudio studio",
     span: "sm:col-span-6",
     speed: -0.15,
   },
   {
     id: "g5",
     src: u("1706074797611-a02f9ed06439"),
-    alt: "Lounge space at the Ripe San Francisco office",
+    alt: "Lounge space at the Whizoidstudio Indore office",
     span: "sm:col-span-6",
     speed: 0.1,
   },
@@ -86,8 +86,8 @@ export function CultureGallery() {
       <div className="container-wide">
         <SectionHeading
           eyebrow="Culture"
-          title="What it actually looks like inside Ripe."
-          description="Behind-the-scenes from our San Francisco studio — where strategy decks and shoot days happen in the same room."
+          title="What it actually looks like inside Whizoidstudio."
+          description="Behind-the-scenes from our Indore studio — where strategy decks and shoot days happen in the same room."
         />
 
         <div

@@ -7,8 +7,7 @@ import { cn } from "@/lib/utils";
 
 const accentDot = {
   lime: "bg-lime-300",
-  coral: "bg-coral-500",
-  violet: "bg-violet-500",
+  blue: "bg-blue-500",
 } as const;
 
 interface ProjectCardProps {
@@ -88,8 +87,14 @@ export function ProjectCard({
                   : "max-h-0 opacity-0 group-hover:max-h-24 group-hover:opacity-100"
               )}
             >
-              {project.results.slice(0, isStack ? 4 : 2).map((result) => (
-                <div key={result.label} className="border-t border-paper/15 pt-3">
+              {project.results.slice(0, isStack ? 4 : 2).map((result, index) => (
+                <div
+                  key={result.label}
+                  className={cn(
+                    "border-t border-paper/15 pt-3",
+                    isStack && index >= 2 && "hidden sm:block"
+                  )}
+                >
                   <p
                     className={cn(
                       "font-display font-semibold text-lime-300",

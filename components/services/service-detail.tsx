@@ -35,7 +35,7 @@ export function ServiceDetail() {
   return (
     <section className="relative bg-paper py-section">
       <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -top-32 right-0 size-[420px] rounded-full bg-gradient-to-br from-lime-300/25 via-coral-500/15 to-violet-500/25 blur-[110px]" />
+        <div className="absolute -top-32 right-0 size-[420px] rounded-full bg-gradient-to-br from-lime-300/25 via-blue-400/15 to-blue-700/25 blur-[110px]" />
       </div>
 
       <div className="container-wide relative">
@@ -144,7 +144,7 @@ export function ServiceDetail() {
               <DynamicIcon name="Sparkles" className="size-4 text-ink-300" />
               <p className="text-sm leading-relaxed text-ink-400">
                 Not sure what you need?{" "}
-                <a href="/contact" className="font-medium text-ink-700 underline decoration-ink-950/20 underline-offset-2 hover:text-coral-600 hover:decoration-coral-500">
+                <a href="/contact" className="font-medium text-ink-700 underline decoration-ink-950/20 underline-offset-2 hover:text-blue-600 hover:decoration-blue-500">
                   Talk to us
                 </a>
               </p>

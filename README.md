@@ -35,7 +35,7 @@ npm run lint    # ESLint (next/core-web-vitals)
 
 ## Design System
 
-- **Color:** near-black `ink` + warm off-white `paper` as the base, with three accents — `lime` (#D6FF3F, primary), `coral` (#FF5A3C), `violet` (#6C5CE7) — used for CTAs, metrics, and category tagging. Full ramps are defined in [`tailwind.config.ts`](./tailwind.config.ts).
+- **Color:** near-black `ink` + warm off-white `paper` as the base, with two brand accents — `lime` (#D6FF3F) and `blue` (#1A66FF) — used together for CTAs, metrics, and category tagging. Full ramps are defined in [`tailwind.config.ts`](./tailwind.config.ts).
 - **Type:** *Bricolage Grotesque* for display/headings, *Inter* for body copy, *Space Mono* for eyebrow labels and numeric tags — all self-hosted via `next/font/google`.
 - **Spacing:** a `section` / `section-sm` fluid spacing scale (`clamp()`-based) keeps rhythm consistent across breakpoints; content sits inside a 1440px `container-wide`.
 - **Motion:** Framer Motion drives scroll-reveals, page transitions, and micro-interactions (magnetic buttons, tilt cards, filter pills). GSAP `ScrollTrigger` is reserved for effects Framer doesn't do natively: the pinned horizontal process timeline on the homepage, the scroll-scrubbed timeline line on the About page, and the parallax culture gallery.

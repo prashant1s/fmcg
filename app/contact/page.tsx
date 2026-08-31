@@ -9,7 +9,7 @@ import { breadcrumbJsonLd } from "@/lib/json-ld";
 
 const TITLE = "Contact Us";
 const DESCRIPTION =
-  "Get in touch with Ripe to talk about your FMCG brand's social strategy. Fill out the form, call, WhatsApp, or request a callback.";
+  "Get in touch with Whizoidstudio to talk about your FMCG brand's social strategy. Fill out the form, call, WhatsApp, or request a callback.";
 
 export const metadata: Metadata = {
   title: TITLE,

@@ -18,7 +18,7 @@ export const services: Service[] = [
       "Brand asset libraries",
     ],
     metric: { label: "assets produced / month", value: "120+" },
-    accent: "coral",
+    accent: "blue",
   },
   {
     id: "svc-4",
@@ -56,7 +56,7 @@ export const services: Service[] = [
       "Executive-ready strategy decks",
     ],
     metric: { label: "brand strategies delivered", value: "80+" },
-    accent: "violet",
+    accent: "blue",
   },
   {
     id: "svc-8",
@@ -75,7 +75,7 @@ export const services: Service[] = [
       "Retail velocity correlation (where available)",
     ],
     metric: { label: "brands reporting on one dashboard", value: "35+" },
-    accent: "coral",
+    accent: "blue",
   },
 ];
 

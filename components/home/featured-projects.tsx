@@ -106,7 +106,7 @@ export function FeaturedProjects() {
           </div>
 
           <div className="mt-6 hidden h-[2px] w-full max-w-xs overflow-hidden rounded-full bg-ink-950/10 lg:block">
-            <div ref={progressRef} className="h-full w-0 rounded-full bg-coral-500" />
+            <div ref={progressRef} className="h-full w-0 rounded-full bg-blue-500" />
           </div>
         </div>
       </section>

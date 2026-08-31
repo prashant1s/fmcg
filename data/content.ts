@@ -2,7 +2,6 @@ import type {
   StatItem,
   ProcessStep,
   ValueProp,
-  PricingTier,
   MilestoneItem,
 } from "@/types";
 
@@ -115,9 +114,9 @@ export const MILESTONES: MilestoneItem[] = [
   {
     id: "ms-1",
     year: "2018",
-    title: "Ripe is founded",
+    title: "Whizoidstudio is founded",
     description:
-      "Jordan Ellis leaves a Fortune 500 marketing role to start Ripe from a co-working desk in San Francisco, with two founding clients in the snack aisle.",
+      "Jordan Ellis leaves a Fortune 500 marketing role to start Whizoidstudio from a co-working desk in Indore, India, with two founding clients in the snack aisle.",
   },
   {
     id: "ms-2",
@@ -152,60 +151,7 @@ export const MILESTONES: MilestoneItem[] = [
     year: "2025",
     title: "68 brands, 3 studios",
     description:
-      "Ripe now operates from San Francisco, New York, and Mumbai, serving 68 active FMCG brands across four continents.",
-  },
-];
-
-export const PRICING_TIERS: PricingTier[] = [
-  {
-    id: "tier-starter",
-    name: "Starter",
-    price: "₹5,000",
-    period: "/ month",
-    description: "For emerging brands ready to build a real content system.",
-    features: [
-      "2 social platforms managed",
-      "12 content pieces / month",
-      "Monthly content calendar",
-      "Monthly performance report",
-    ],
-    highlighted: false,
-    cta: "Get Started",
-  },
-  {
-    id: "tier-growth",
-    name: "Growth",
-    price: "₹15,000",
-    period: "/ month",
-    description: "For scaling brands ready to add paid, UGC, and creators.",
-    features: [
-      "4 social platforms managed",
-      "30+ content pieces / month",
-      "UGC creator sourcing (10 creators)",
-      "Paid social management",
-      "Bi-weekly strategy calls",
-      "Custom live dashboard",
-    ],
-    highlighted: true,
-    cta: "Start Growing",
-  },
-  {
-    id: "tier-enterprise",
-    name: "Enterprise",
-    price: "Custom",
-    period: "",
-    description: "For multi-brand portfolios and national retail rollouts.",
-    features: [
-      "Unlimited platforms managed",
-      "Dedicated content & production team",
-      "Full influencer & UGC program",
-      "Advanced paid media & MMM support",
-      "24/7 community coverage",
-      "Dedicated account & analytics lead",
-      "Quarterly executive business reviews",
-    ],
-    highlighted: false,
-    cta: "Contact Sales",
+      "Whizoidstudio now operates from Indore, New York, and Mumbai, serving 68 active FMCG brands across four continents.",
   },
 ];
 

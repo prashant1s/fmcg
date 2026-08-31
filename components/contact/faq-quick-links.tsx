@@ -16,12 +16,12 @@ export function FaqQuickLinks() {
             <Link
               key={faq.id}
               href={`/services#faq`}
-              className="group flex items-center justify-between gap-6 py-5 transition-colors hover:text-coral-600"
+              className="group flex items-center justify-between gap-6 py-5 transition-colors hover:text-blue-600"
             >
-              <span className="text-base font-medium text-ink-800 group-hover:text-coral-600 sm:text-lg">
+              <span className="text-base font-medium text-ink-800 group-hover:text-blue-600 sm:text-lg">
                 {faq.question}
               </span>
-              <ArrowUpRight className="size-5 shrink-0 text-ink-300 transition-all duration-300 ease-expo group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-coral-600" />
+              <ArrowUpRight className="size-5 shrink-0 text-ink-300 transition-all duration-300 ease-expo group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-blue-600" />
             </Link>
           ))}
         </div>
