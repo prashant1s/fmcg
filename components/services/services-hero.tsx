@@ -7,7 +7,7 @@ import { services } from "@/data/services";
 import { fadeUp, fadeIn, staggerContainer, EXPO_EASE } from "@/lib/animations";
 
 const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1200&q=80&auto=format&fit=crop";
+  "https://images.unsplash.com/photo-1694109016554-9a52bff4e9f1?w=1200&q=80&auto=format&fit=crop";
 
 export function ServicesHero() {
   return (
@@ -73,7 +73,7 @@ export function ServicesHero() {
           <div className="relative aspect-[4/3.5] w-full overflow-hidden rounded-lg border border-paper/10">
             <Image
               src={HERO_IMAGE}
-              alt="Creative team reviewing social content on a tablet"
+              alt="Colorful 3D social app icons scattered on a dark background"
               fill
               priority
               sizes="(min-width: 1024px) 40vw, 100vw"
