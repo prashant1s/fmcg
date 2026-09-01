@@ -41,7 +41,7 @@ export function Header() {
       <header className="fixed inset-x-0 top-0 z-50 px-3 pt-1.5 sm:px-5 sm:pt-2">
         <div
           className={cn(
-            "mx-auto flex h-16 w-full max-w-container items-center justify-between rounded-xl bg-ink-950 px-5 shadow-lg shadow-black/20 transition-colors duration-500 ease-expo sm:h-20 sm:px-8",
+            "mx-auto flex h-14 w-full max-w-container items-center justify-between rounded-xl bg-ink-950 px-5 shadow-lg shadow-black/20 transition-colors duration-500 ease-expo sm:h-16 sm:px-8",
             solid && "border border-paper/10"
           )}
         >
@@ -56,7 +56,7 @@ export function Header() {
               width={640}
               height={207}
               priority
-              className="h-8 w-auto sm:h-9"
+              className="h-7 w-auto sm:h-8"
             />
           </Link>
 
