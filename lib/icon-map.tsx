@@ -14,6 +14,9 @@ import {
   Search,
   Rocket,
   RefreshCw,
+  Zap,
+  Cpu,
+  Layers,
   type LucideIcon,
 } from "lucide-react";
 
@@ -33,6 +36,9 @@ export const ICON_MAP: Record<string, LucideIcon> = {
   Search,
   Rocket,
   RefreshCw,
+  Zap,
+  Cpu,
+  Layers,
 };
 
 export function DynamicIcon({

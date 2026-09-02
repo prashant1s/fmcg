@@ -110,6 +110,44 @@ export const MISSION_VISION_VALUES: ValueProp[] = [
   },
 ];
 
+export const OUR_APPROACH: ValueProp[] = [
+  {
+    id: "app-1",
+    title: "Perfection",
+    description:
+      "From pixel-perfect creative to flawless execution, every aspect of our work is crafted with care to ensure the highest standards of quality.",
+    icon: "Sparkles",
+  },
+  {
+    id: "app-2",
+    title: "Innovative",
+    description:
+      "We stay ahead of platform and content trends, offering modern, visually impactful work that sets your brand apart on the shelf and in the feed.",
+    icon: "Zap",
+  },
+  {
+    id: "app-3",
+    title: "Expertise",
+    description:
+      "We're passionate about integrating the latest tools and trends, from interactive creative formats to mobile-first, sound-off storytelling.",
+    icon: "Cpu",
+  },
+  {
+    id: "app-4",
+    title: "Full-Cycle Services",
+    description:
+      "From strategy to content, paid social, and reporting, we provide a full range of services that cover every stage of your social presence.",
+    icon: "Layers",
+  },
+  {
+    id: "app-5",
+    title: "Client Success",
+    description:
+      "Our clients consistently see improved engagement, conversion rates, and business growth — the metrics that actually move the P&L.",
+    icon: "TrendingUp",
+  },
+];
+
 export const MILESTONES: MilestoneItem[] = [
   {
     id: "ms-1",

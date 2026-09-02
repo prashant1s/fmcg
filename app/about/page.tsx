@@ -3,6 +3,7 @@ import { AboutHero } from "@/components/about/about-hero";
 import { StorySection } from "@/components/about/story-section";
 import { Values } from "@/components/about/values";
 import { CultureGallery } from "@/components/about/culture-gallery";
+import { ApproachSection } from "@/components/about/approach-section";
 import { CtaSection } from "@/components/home/cta-section";
 import { breadcrumbJsonLd } from "@/lib/json-ld";
 
@@ -41,6 +42,7 @@ export default function AboutPage() {
       <StorySection />
       <Values />
       <CultureGallery />
+      <ApproachSection />
       <CtaSection
         eyebrow="Careers at Whizoidstudio"
         title="Talented, category-obsessed. Sound like you?"
