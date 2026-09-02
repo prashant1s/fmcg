@@ -37,7 +37,7 @@ export function Hero() {
         <motion.div
           animate={{ x: [0, -24, 0], y: [0, 24, 0] }}
           transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute right-[-6rem] top-40 size-[30rem] rounded-full bg-lime-300/20 blur-[110px]"
+          className="absolute right-[-6rem] top-40 size-[30rem] rounded-full bg-blue-500/20 blur-[110px]"
         />
         <motion.div
           animate={{ x: [0, 20, 0], y: [0, 16, 0] }}
@@ -55,8 +55,8 @@ export function Hero() {
           animate="visible"
           className="flex max-w-4xl flex-col gap-7 lg:col-span-7"
         >
-          <motion.span variants={fadeUp} className="eyebrow text-lime-300">
-            <span className="size-1.5 rounded-full bg-lime-300" />
+          <motion.span variants={fadeUp} className="eyebrow text-blue-300">
+            <span className="size-1.5 rounded-full bg-blue-300" />
             Social growth for FMCG brands
           </motion.span>
 
@@ -73,7 +73,7 @@ export function Hero() {
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: "-100%", opacity: 0 }}
                   transition={{ duration: 0.55, ease: EXPO_EASE }}
-                  className="inline-block bg-gradient-to-r from-lime-300 to-lime-100 bg-clip-text text-transparent"
+                  className="inline-block bg-gradient-to-r from-blue-300 to-blue-100 bg-clip-text text-transparent"
                 >
                   {ROTATING_WORDS[wordIndex]}
                 </motion.span>

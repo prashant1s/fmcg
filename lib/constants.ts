@@ -71,5 +71,4 @@ export const PROJECT_FILTERS = [
   "Ad Production",
   "Influencer Marketing",
   "Branding",
-  "Photography",
 ] as const;

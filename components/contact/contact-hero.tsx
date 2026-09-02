@@ -53,7 +53,7 @@ export function ContactHero() {
         <motion.div
           animate={{ x: [0, -22, 0], y: [0, 20, 0] }}
           transition={{ duration: 17, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute right-[-4rem] top-1/3 size-[26rem] rounded-full bg-lime-300/15 blur-[110px]"
+          className="absolute right-[-4rem] top-1/3 size-[26rem] rounded-full bg-blue-500/15 blur-[110px]"
         />
         <div className="grain-overlay" />
       </div>
@@ -65,8 +65,8 @@ export function ContactHero() {
           animate="visible"
           className="flex flex-col gap-6 lg:col-span-7"
         >
-          <motion.span variants={fadeUp} className="eyebrow text-lime-300">
-            <span className="size-1.5 rounded-full bg-lime-300" />
+          <motion.span variants={fadeUp} className="eyebrow text-blue-300">
+            <span className="size-1.5 rounded-full bg-blue-300" />
             Get In Touch
           </motion.span>
 
@@ -88,9 +88,9 @@ export function ContactHero() {
                 key={action.label}
                 href={action.href}
                 {...(action.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                className="group flex items-center gap-3 rounded-full border border-paper/15 bg-paper/5 py-2.5 pl-2.5 pr-5 backdrop-blur-sm transition-colors hover:border-lime-300/40 hover:bg-paper/10"
+                className="group flex items-center gap-3 rounded-full border border-paper/15 bg-paper/5 py-2.5 pl-2.5 pr-5 backdrop-blur-sm transition-colors hover:border-blue-300/40 hover:bg-paper/10"
               >
-                <span className="flex size-8 items-center justify-center rounded-full bg-paper/10 text-lime-300">
+                <span className="flex size-8 items-center justify-center rounded-full bg-paper/10 text-blue-300">
                   <action.icon className="size-3.5" />
                 </span>
                 <span className="flex flex-col leading-tight">
@@ -131,7 +131,7 @@ export function ContactHero() {
             transition={{ duration: 0.8, ease: EXPO_EASE, delay: 0.6 }}
             className="absolute -bottom-6 left-6 flex items-center gap-3 rounded-lg border border-ink-950/8 bg-paper px-5 py-4 shadow-xl sm:left-8"
           >
-            <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-lime-300 text-ink-950">
+            <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-blue-500 text-paper">
               <Clock className="size-4" />
             </span>
             <div>

@@ -14,7 +14,7 @@ interface TiltCardProps {
 export function TiltCard({
   children,
   className,
-  glowColor = "rgba(214,255,63,0.18)",
+  glowColor = "rgba(26,102,255,0.18)",
   tiltStrength = 10,
 }: TiltCardProps) {
   const ref = useRef<HTMLDivElement>(null);

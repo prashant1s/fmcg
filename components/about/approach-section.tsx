@@ -29,9 +29,9 @@ export function ApproachSection() {
               variants={fadeUp}
               whileHover={{ y: -6 }}
               transition={{ duration: 0.4, ease: "easeOut" }}
-              className="group relative flex flex-col gap-5 overflow-hidden rounded-lg border border-ink-950/8 bg-paper p-8 shadow-sm transition-[border-color,box-shadow] duration-500 ease-expo hover:border-lime-300/40 hover:shadow-lg sm:p-9"
+              className="group relative flex flex-col gap-5 overflow-hidden rounded-lg border border-ink-950/8 bg-paper p-8 shadow-sm transition-[border-color,box-shadow] duration-500 ease-expo hover:border-blue-300/40 hover:shadow-lg sm:p-9"
             >
-              <span className="flex size-12 items-center justify-center rounded-full bg-ink-950 text-lime-300 transition-transform duration-500 ease-expo group-hover:scale-110 group-hover:rotate-6">
+              <span className="flex size-12 items-center justify-center rounded-full bg-ink-950 text-blue-300 transition-transform duration-500 ease-expo group-hover:scale-110 group-hover:rotate-6">
                 <DynamicIcon name={item.icon} className="size-5" />
               </span>
               <h3 className="text-xl font-semibold text-ink-950">{item.title}</h3>

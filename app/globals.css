@@ -17,7 +17,7 @@
   }
 
   ::selection {
-    @apply bg-lime-300 text-ink-950;
+    @apply bg-blue-300 text-ink-950;
   }
 
   :focus-visible {
@@ -27,7 +27,7 @@
   }
 
   .dark :focus-visible {
-    outline-color: theme("colors.lime.300");
+    outline-color: theme("colors.blue.300");
   }
 
   h1, h2, h3, h4, h5, h6 {

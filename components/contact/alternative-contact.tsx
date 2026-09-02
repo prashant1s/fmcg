@@ -87,7 +87,7 @@ function QuickCallCard() {
 
   return (
     <div className="flex flex-col gap-5 rounded-lg border border-ink-950/8 bg-paper p-8">
-      <span className="flex size-12 items-center justify-center rounded-full bg-lime-100 text-lime-800">
+      <span className="flex size-12 items-center justify-center rounded-full bg-blue-100 text-blue-800">
         <PhoneCall className="size-5" />
       </span>
       <div>
@@ -98,8 +98,8 @@ function QuickCallCard() {
       </div>
 
       {isSubmitted ? (
-        <div className="mt-auto flex items-center gap-2.5 rounded-md bg-lime-50 px-4 py-3 text-sm text-ink-700">
-          <CheckCircle2 className="size-4 shrink-0 text-lime-600" />
+        <div className="mt-auto flex items-center gap-2.5 rounded-md bg-blue-50 px-4 py-3 text-sm text-ink-700">
+          <CheckCircle2 className="size-4 shrink-0 text-blue-600" />
           We&apos;ll be in touch shortly.
         </div>
       ) : (

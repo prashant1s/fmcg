@@ -58,7 +58,7 @@ export function ContactForm() {
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.5, ease: EXPO_EASE, delay: 0.15 }}
-          className="flex size-16 items-center justify-center rounded-full bg-lime-300 text-ink-950"
+          className="flex size-16 items-center justify-center rounded-full bg-blue-500 text-paper"
         >
           <CheckCircle2 className="size-8" />
         </motion.span>

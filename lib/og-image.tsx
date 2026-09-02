@@ -15,7 +15,7 @@ export function renderOgImage(eyebrow: string, title: string) {
           justifyContent: "space-between",
           backgroundColor: "#0A0A0C",
           backgroundImage:
-            "radial-gradient(circle at 6% 8%, rgba(108,92,231,0.35), transparent 45%), radial-gradient(circle at 94% 28%, rgba(214,255,63,0.25), transparent 45%)",
+            "radial-gradient(circle at 6% 8%, rgba(108,92,231,0.35), transparent 45%), radial-gradient(circle at 94% 28%, rgba(26,102,255,0.25), transparent 45%)",
           padding: "72px",
           fontFamily: "system-ui, -apple-system, Segoe UI, sans-serif",
         }}

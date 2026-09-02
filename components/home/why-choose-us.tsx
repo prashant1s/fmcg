@@ -20,7 +20,7 @@ export function WhyChooseUs() {
         <motion.div
           animate={{ x: [0, 26, 0], y: [0, -20, 0] }}
           transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute -right-24 top-0 size-[30rem] rounded-full bg-lime-300/[0.06] blur-[140px]"
+          className="absolute -right-24 top-0 size-[30rem] rounded-full bg-blue-500/[0.06] blur-[140px]"
         />
         <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-paper/15 to-transparent" />
         <div className="grain-overlay" />
@@ -47,18 +47,18 @@ export function WhyChooseUs() {
               variants={fadeUp}
               whileHover={{ y: -6 }}
               transition={{ duration: 0.4, ease: "easeOut" }}
-              className="group relative flex flex-col gap-8 rounded-2xl border border-paper/10 bg-gradient-to-b from-paper/[0.04] to-transparent p-8 backdrop-blur-sm transition-colors duration-500 hover:border-lime-300/30 sm:p-10"
+              className="group relative flex flex-col gap-8 rounded-2xl border border-paper/10 bg-gradient-to-b from-paper/[0.04] to-transparent p-8 backdrop-blur-sm transition-colors duration-500 hover:border-blue-300/30 sm:p-10"
             >
               <div
                 aria-hidden
-                className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 shadow-[0_0_70px_-20px_rgba(214,255,63,0.35)] transition-opacity duration-500 group-hover:opacity-100"
+                className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 shadow-[0_0_70px_-20px_rgba(26,102,255,0.35)] transition-opacity duration-500 group-hover:opacity-100"
               />
 
               <div className="flex items-start justify-between">
                 <motion.span
                   whileHover={{ rotate: 8, scale: 1.08 }}
                   transition={{ duration: 0.35, ease: "easeOut" }}
-                  className="flex size-14 items-center justify-center rounded-full border border-lime-300/25 bg-lime-300/[0.07] text-lime-300 transition-colors duration-500 group-hover:bg-lime-300/15"
+                  className="flex size-14 items-center justify-center rounded-full border border-blue-300/25 bg-blue-300/[0.07] text-blue-300 transition-colors duration-500 group-hover:bg-blue-300/15"
                 >
                   <DynamicIcon name={item.icon} className="size-6" />
                 </motion.span>
@@ -75,7 +75,7 @@ export function WhyChooseUs() {
               </div>
 
               <div className="mt-auto flex items-baseline gap-2 border-t border-paper/10 pt-6">
-                <span className="font-display text-3xl font-semibold text-lime-300">
+                <span className="font-display text-3xl font-semibold text-blue-300">
                   <AnimatedCounter
                     value={supportingStats[index].value}
                     suffix={supportingStats[index].suffix}

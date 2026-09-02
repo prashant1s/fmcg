@@ -18,13 +18,13 @@ const socialIcons = {
 export function Footer() {
   return (
     <footer className="relative overflow-hidden bg-ink-950 pt-20 text-paper sm:pt-28">
-      <div className="pointer-events-none absolute -top-40 right-0 size-[32rem] rounded-full bg-lime-300/10 blur-3xl" />
+      <div className="pointer-events-none absolute -top-40 right-0 size-[32rem] rounded-full bg-blue-500/10 blur-3xl" />
 
       <div className="container-wide relative">
         <div className="flex flex-col justify-between gap-10 border-b border-paper/10 pb-16 lg:flex-row lg:items-end">
           <div className="max-w-xl">
-            <span className="eyebrow text-lime-300">
-              <span className="size-1.5 rounded-full bg-lime-300" />
+            <span className="eyebrow text-blue-300">
+              <span className="size-1.5 rounded-full bg-blue-300" />
               Let&apos;s work together
             </span>
             <h2 className="mt-5 text-display-md text-balance text-paper">
@@ -33,7 +33,7 @@ export function Footer() {
           </div>
           <Link
             href="/contact"
-            className="group inline-flex w-fit items-center gap-3 rounded-full bg-lime-300 px-7 py-4 font-medium text-ink-950 transition-colors hover:bg-lime-200"
+            className="group inline-flex w-fit items-center gap-3 rounded-full bg-blue-500 px-7 py-4 font-medium text-paper transition-colors hover:bg-blue-600"
           >
             Start Your Campaign
             <ArrowUpRight className="size-4 transition-transform duration-400 ease-expo group-hover:translate-x-1 group-hover:-translate-y-1" />
@@ -66,7 +66,7 @@ export function Footer() {
                     aria-label={social.label}
                     whileHover={{ y: -3, scale: 1.08 }}
                     transition={{ duration: 0.25, ease: EXPO_EASE }}
-                    className="flex size-10 items-center justify-center rounded-full border border-paper/15 text-paper/70 transition-colors hover:border-lime-300 hover:text-lime-300"
+                    className="flex size-10 items-center justify-center rounded-full border border-paper/15 text-paper/70 transition-colors hover:border-blue-300 hover:text-blue-300"
                   >
                     <Icon className="size-4" />
                   </motion.a>

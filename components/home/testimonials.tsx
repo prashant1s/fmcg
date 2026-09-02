@@ -45,7 +45,7 @@ export function Testimonials() {
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id} className="!h-auto pb-4">
               <div className="flex h-full flex-col justify-between gap-5 rounded-lg border border-ink-950/8 bg-paper p-6 sm:p-7">
-                <Quote className="size-6 text-lime-400" />
+                <Quote className="size-6 text-blue-400" />
 
                 <p className="line-clamp-5 text-sm leading-relaxed text-ink-700">
                   &ldquo;{testimonial.quote}&rdquo;

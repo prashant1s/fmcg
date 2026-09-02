@@ -80,7 +80,7 @@ export function Process() {
                     animate={{ opacity: 1, scale: 1, rotate: 0 }}
                     exit={{ opacity: 0, scale: 0.7, rotate: 12 }}
                     transition={{ duration: 0.4, ease: EXPO_EASE }}
-                    className="flex size-16 shrink-0 items-center justify-center rounded-full bg-lime-300 text-ink-950"
+                    className="flex size-16 shrink-0 items-center justify-center rounded-full bg-blue-500 text-paper"
                   >
                     <DynamicIcon name={activeStep.icon} className="size-6" />
                   </motion.span>
@@ -127,7 +127,7 @@ export function Process() {
                     key={step.id}
                     className={cn(
                       "h-1 rounded-full transition-all duration-500 ease-expo",
-                      index === activeIndex ? "w-9 bg-lime-300" : "w-4 bg-paper/15"
+                      index === activeIndex ? "w-9 bg-blue-300" : "w-4 bg-paper/15"
                     )}
                   />
                 ))}
@@ -150,7 +150,7 @@ export function Process() {
                   {isActive && (
                     <motion.span
                       layoutId="process-active-bar"
-                      className="absolute -left-0.5 top-0 h-full w-0.5 bg-lime-300"
+                      className="absolute -left-0.5 top-0 h-full w-0.5 bg-blue-300"
                       transition={{ type: "spring", stiffness: 350, damping: 32 }}
                     />
                   )}

@@ -22,7 +22,7 @@ export function Values() {
               variants={fadeUp}
               className="flex flex-col gap-5 rounded-lg border border-ink-950/8 bg-paper p-8 sm:p-9"
             >
-              <span className="flex size-12 items-center justify-center rounded-full bg-ink-950 text-lime-300">
+              <span className="flex size-12 items-center justify-center rounded-full bg-ink-950 text-blue-300">
                 <DynamicIcon name={item.icon} className="size-5" />
               </span>
               <h3 className="text-xl font-semibold text-ink-950">{item.title}</h3>

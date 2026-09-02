@@ -70,7 +70,7 @@ export function Header() {
                   className={cn(
                     "text-sm transition-colors duration-300",
                     active
-                      ? "font-semibold text-lime-300"
+                      ? "font-semibold text-blue-300"
                       : "font-medium text-paper/70 hover:text-paper"
                   )}
                 >

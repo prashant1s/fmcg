@@ -39,9 +39,9 @@ export function SectionHeading({
       {eyebrow && (
         <motion.span
           variants={fadeUp}
-          className={cn("eyebrow", light ? "text-lime-300" : "text-ink-500")}
+          className={cn("eyebrow", light ? "text-blue-300" : "text-ink-500")}
         >
-          <span className={cn("size-1.5 rounded-full", light ? "bg-lime-300" : "bg-blue-500")} />
+          <span className={cn("size-1.5 rounded-full", light ? "bg-blue-300" : "bg-blue-500")} />
           {eyebrow}
         </motion.span>
       )}

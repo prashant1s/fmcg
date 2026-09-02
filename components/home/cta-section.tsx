@@ -25,7 +25,7 @@ export function CtaSection({
         <motion.div
           animate={{ x: [0, 40, 0], y: [0, -30, 0] }}
           transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute left-1/4 top-0 size-[28rem] -translate-x-1/2 rounded-full bg-lime-300/15 blur-[110px]"
+          className="absolute left-1/4 top-0 size-[28rem] -translate-x-1/2 rounded-full bg-blue-400/15 blur-[110px]"
         />
         <motion.div
           animate={{ x: [0, -30, 0], y: [0, 30, 0] }}
@@ -42,8 +42,8 @@ export function CtaSection({
         viewport={viewportOnce}
         className="container-wide relative flex flex-col items-center gap-8 text-center"
       >
-        <motion.span variants={fadeUp} className="eyebrow text-lime-300">
-          <span className="size-1.5 rounded-full bg-lime-300" />
+        <motion.span variants={fadeUp} className="eyebrow text-blue-300">
+          <span className="size-1.5 rounded-full bg-blue-300" />
           {eyebrow}
         </motion.span>
 

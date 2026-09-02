@@ -28,7 +28,7 @@ export function AboutHero() {
         <motion.div
           animate={{ x: [0, -22, 0], y: [0, 20, 0] }}
           transition={{ duration: 17, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute right-[-4rem] top-1/3 size-[26rem] rounded-full bg-lime-300/15 blur-[110px]"
+          className="absolute right-[-4rem] top-1/3 size-[26rem] rounded-full bg-blue-500/15 blur-[110px]"
         />
         <div className="grain-overlay" />
       </div>
@@ -40,8 +40,8 @@ export function AboutHero() {
           animate="visible"
           className="flex flex-col gap-6 lg:col-span-7"
         >
-          <motion.span variants={fadeUp} className="eyebrow text-lime-300">
-            <span className="size-1.5 rounded-full bg-lime-300" />
+          <motion.span variants={fadeUp} className="eyebrow text-blue-300">
+            <span className="size-1.5 rounded-full bg-blue-300" />
             About Whizoidstudio
           </motion.span>
 
@@ -98,7 +98,7 @@ export function AboutHero() {
             transition={{ duration: 0.8, ease: EXPO_EASE, delay: 0.6 }}
             className="absolute -bottom-6 left-6 flex items-center gap-3 rounded-lg border border-ink-950/8 bg-paper px-5 py-4 shadow-xl sm:left-8"
           >
-            <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-lime-300 text-ink-950">
+            <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-blue-500 text-paper">
               <Sparkles className="size-4" />
             </span>
             <div>

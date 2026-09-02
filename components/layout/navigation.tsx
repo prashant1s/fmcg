@@ -43,7 +43,7 @@ export function Navigation({ isOpen, onClose, pathname }: NavigationProps) {
                     onClick={onClose}
                     className={cn(
                       "flex items-baseline gap-4 font-display text-4xl font-medium transition-colors",
-                      active ? "text-lime-300" : "text-paper hover:text-lime-300"
+                      active ? "text-blue-300" : "text-paper hover:text-blue-300"
                     )}
                   >
                     <span className="font-mono text-sm text-paper/40">0{i + 1}</span>

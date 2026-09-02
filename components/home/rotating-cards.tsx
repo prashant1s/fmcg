@@ -169,7 +169,7 @@ export function RotatingCards({ items, onSelect, className }: RotatingCardsProps
               <div
                 className={cn(
                   "group relative h-60 w-52 cursor-pointer overflow-hidden rounded-lg border shadow-2xl shadow-ink-950/40 transition-colors duration-300 sm:h-72 sm:w-64",
-                  isFront ? "border-lime-300/70" : "border-paper/10 hover:border-paper/30"
+                  isFront ? "border-blue-300/70" : "border-paper/10 hover:border-paper/30"
                 )}
               >
                 <Image

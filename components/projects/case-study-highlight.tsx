@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { fadeUp, fadeIn, viewportOnce } from "@/lib/animations";
 import { cn } from "@/lib/utils";
 
-const spotlightSlugs = ["rhino-cult", "kishandas"];
+const spotlightSlugs = ["rasssa-rasoi", "11-11"];
 
 const accentTextLight = {
   lime: "text-lime-300",

@@ -44,53 +44,12 @@ export const projects: Project[] = [
       name: "Team 11:11",
       role: "Partner",
     },
-    accent: "lime",
-  },
-  {
-    id: "proj-snuzzles",
-    slug: "snuzzles",
-    title: "Launching a Bangalore cafe to a packed house from day one",
-    client: "Snuzzles",
-    year: "2025",
-    category: ["Social Media", "Photography", "Ad Production", "Branding"],
-    coverImage: img("snuzzles", "banner"),
-    gallery: [
-      img("snuzzles", "gallery-01"),
-      img("snuzzles", "gallery-02"),
-      img("snuzzles", "gallery-03"),
-      img("snuzzles", "gallery-04"),
-    ],
-    summary:
-      "Launch marketing for a new Bangalore cafe, built to convert opening buzz into consistent, extensive foot traffic from week one.",
-    challenge:
-      "Snuzzles needed to go from an empty space to a destination cafe fast — building local awareness, a distinct identity, and enough pre-launch buzz to drive real walk-ins from opening day.",
-    approach:
-      "We led the cafe's launch campaign end to end — professional photography, a cohesive visual identity, and a consistent social presence paired with targeted local ad production that turned launch-week curiosity into sustained foot falls through the cafe's opening and early growth phase.",
-    deliverables: [
-      "Launch campaign strategy",
-      "Professional photo shoots",
-      "Social media management",
-      "Local ad production",
-      "Visual identity system",
-    ],
-    results: [
-      { label: "Core services delivered", value: "4" },
-      { label: "Campaign deliverables", value: "5" },
-      { label: "Gallery highlights", value: "4" },
-      { label: "Launch year", value: "2025" },
-    ],
-    testimonial: {
-      quote:
-        "We appreciate the team's responsiveness and ability to execute complex requirements seamlessly.",
-      name: "Team Snuzzles",
-      role: "Partner",
-    },
-    accent: "lime",
+    accent: "blue",
   },
   {
     id: "proj-rasssa-rasoi",
     slug: "rasssa-rasoi",
-    title: "Turning a restaurant launch into a dining destination",
+    title: "Turning a Kolhapuri cloud kitchen into Pune's Best Newcomer",
     client: "Rasssa Rasoi",
     year: "2025",
     category: ["Ad Production", "Social Media", "Photography", "Influencer Marketing"],
@@ -102,11 +61,11 @@ export const projects: Project[] = [
       img("rasssa-rasoi", "gallery-04"),
     ],
     summary:
-      "Food brand marketing for an authentic Indian restaurant, built on photography, social strategy, and influencer partnerships to establish market presence.",
+      "Food brand marketing for a Pune cloud kitchen specializing in authentic Kolhapuri cuisine, built on photography, social strategy, and influencer partnerships to establish market presence.",
     challenge:
-      "Rasssa Rasoi needed compelling visual content, strategic social engagement, and influencer collaborations to attract food enthusiasts and become a destination dining venue.",
+      "Rasssa Rasoi needed compelling visual content, strategic social engagement, and influencer collaborations to stand out in Pune's crowded cloud kitchen market and turn its signature Tambda & Pandhra Rassa into a must-try order.",
     approach:
-      "We ran professional food photography shoots alongside targeted social content, paid campaigns, and food influencer partnerships that showcased the restaurant's authenticity and ambiance.",
+      "We ran professional food photography shoots alongside targeted social content, paid campaigns, and food influencer partnerships that showcased the kitchen's authenticity and Kolhapuri roots — helping it get recognized as Pune's Best Newcomer Cloud Kitchen.",
     deliverables: [
       "Professional food photography",
       "Social media content strategy",
@@ -121,9 +80,9 @@ export const projects: Project[] = [
     ],
     testimonial: {
       quote:
-        "Whizoid Studio truly understood our vision. The results have been outstanding and we've seen great engagement.",
-      name: "Team Rasssa Rasoi",
-      role: "Partner",
+        "From the very first month, the social media and influencer campaigns delivered clear results, generating 200+ orders for our cloud kitchen. The strategy was focused, execution was smooth, and the impact on visibility and demand was immediate.",
+      name: "Harsh Ingale",
+      role: "Owner, Rasssa Rasoi",
     },
     accent: "blue",
   },
@@ -164,7 +123,48 @@ export const projects: Project[] = [
       name: "Team Teju Masala",
       role: "Partner",
     },
-    accent: "lime",
+    accent: "blue",
+  },
+  {
+    id: "proj-snuzzles",
+    slug: "snuzzles",
+    title: "Launching a Bangalore cafe to a packed house from day one",
+    client: "Snuzzles",
+    year: "2025",
+    category: ["Social Media", "Photography", "Ad Production", "Branding"],
+    coverImage: img("snuzzles", "banner"),
+    gallery: [
+      img("snuzzles", "gallery-01"),
+      img("snuzzles", "gallery-02"),
+      img("snuzzles", "gallery-03"),
+      img("snuzzles", "gallery-04"),
+    ],
+    summary:
+      "Launch marketing for a new Bangalore cafe, built to convert opening buzz into consistent, extensive foot traffic from week one.",
+    challenge:
+      "Snuzzles needed to go from an empty space to a destination cafe fast — building local awareness, a distinct identity, and enough pre-launch buzz to drive real walk-ins from opening day.",
+    approach:
+      "We led the cafe's launch campaign end to end — professional photography, a cohesive visual identity, and a consistent social presence paired with targeted local ad production that turned launch-week curiosity into sustained foot falls through the cafe's opening and early growth phase.",
+    deliverables: [
+      "Launch campaign strategy",
+      "Professional photo shoots",
+      "Social media management",
+      "Local ad production",
+      "Visual identity system",
+    ],
+    results: [
+      { label: "Core services delivered", value: "4" },
+      { label: "Campaign deliverables", value: "5" },
+      { label: "Gallery highlights", value: "4" },
+      { label: "Launch year", value: "2025" },
+    ],
+    testimonial: {
+      quote:
+        "We appreciate the team's responsiveness and ability to execute complex requirements seamlessly.",
+      name: "Team Snuzzles",
+      role: "Partner",
+    },
+    accent: "blue",
   },
   {
     id: "proj-kishandas",
@@ -309,7 +309,7 @@ export const projects: Project[] = [
       name: "Team IHP Masala",
       role: "Partner",
     },
-    accent: "lime",
+    accent: "blue",
   },
 ];
 

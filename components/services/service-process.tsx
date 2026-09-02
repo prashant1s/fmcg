@@ -25,7 +25,7 @@ export function ServiceProcess() {
           <div className="absolute left-0 right-0 top-7 hidden h-px bg-gradient-to-r from-transparent via-paper/15 to-transparent lg:block" />
           {PROCESS_STEPS.map((step) => (
             <motion.div key={step.id} variants={fadeUp} className="relative flex flex-col gap-4">
-              <span className="relative z-10 flex size-14 items-center justify-center rounded-full border border-paper/20 bg-ink-950 font-display text-lg font-semibold text-lime-300">
+              <span className="relative z-10 flex size-14 items-center justify-center rounded-full border border-paper/20 bg-ink-950 font-display text-lg font-semibold text-blue-300">
                 {step.number}
               </span>
               <h3 className="text-lg font-semibold text-paper">{step.title}</h3>

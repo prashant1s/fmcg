@@ -25,7 +25,7 @@ export function OfficeLocations() {
               variants={fadeUp}
               className="flex flex-col gap-5 rounded-lg border border-paper/10 p-8"
             >
-              <span className="flex size-11 items-center justify-center rounded-full bg-paper/8 text-lime-300">
+              <span className="flex size-11 items-center justify-center rounded-full bg-paper/8 text-blue-300">
                 <Building2 className="size-5" />
               </span>
               <h3 className="text-lg font-semibold text-paper">{office.city}</h3>
@@ -33,13 +33,13 @@ export function OfficeLocations() {
               <div className="mt-auto flex flex-col gap-1.5">
                 <a
                   href={`tel:${office.phone.replace(/[^+\d]/g, "")}`}
-                  className="text-sm font-medium text-paper underline decoration-paper/25 underline-offset-4 transition-colors hover:text-lime-300 hover:decoration-lime-300"
+                  className="text-sm font-medium text-paper underline decoration-paper/25 underline-offset-4 transition-colors hover:text-blue-300 hover:decoration-blue-300"
                 >
                   {office.phone}
                 </a>
                 <a
                   href={`mailto:${office.email}`}
-                  className="text-sm font-medium text-paper underline decoration-paper/25 underline-offset-4 transition-colors hover:text-lime-300 hover:decoration-lime-300"
+                  className="text-sm font-medium text-paper underline decoration-paper/25 underline-offset-4 transition-colors hover:text-blue-300 hover:decoration-blue-300"
                 >
                   {office.email}
                 </a>

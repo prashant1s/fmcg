@@ -37,7 +37,7 @@ export const services: Service[] = [
       "Post-campaign performance analysis",
     ],
     metric: { label: "creator partnerships managed", value: "450+" },
-    accent: "lime",
+    accent: "blue",
   },
   {
     id: "svc-6",

@@ -32,7 +32,7 @@ const HOME_SERVICES = [
       "Creator partnerships that build trust at shelf and velocity online.",
     icon: "Users",
     metric: { value: "450+", label: "creator partnerships managed" },
-    accent: "lime",
+    accent: "blue",
   },
   {
     id: "home-3",

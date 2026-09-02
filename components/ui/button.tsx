@@ -33,7 +33,7 @@ type ButtonProps = ButtonOwnProps &
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "bg-lime-300 text-ink-950 hover:bg-lime-200 shadow-[0_0_0_0_rgba(214,255,63,0)] hover:shadow-[0_8px_30px_-6px_rgba(214,255,63,0.55)]",
+    "bg-blue-500 text-paper hover:bg-blue-600 shadow-[0_0_0_0_rgba(26,102,255,0)] hover:shadow-[0_8px_30px_-6px_rgba(26,102,255,0.55)]",
   dark: "bg-ink-950 text-paper hover:bg-ink-800",
   outline:
     "bg-transparent text-current border border-current/25 hover:border-current/60",

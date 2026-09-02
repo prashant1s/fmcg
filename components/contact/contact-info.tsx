@@ -28,13 +28,13 @@ export function ContactInfo() {
       <div className="flex flex-col gap-6">
         {items.map((item) => (
           <div key={item.label} className="flex items-start gap-4">
-            <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-paper/8 text-lime-300">
+            <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-paper/8 text-blue-300">
               <item.icon className="size-4" />
             </span>
             <div>
               <p className="text-xs uppercase tracking-wide text-paper/40">{item.label}</p>
               {item.href ? (
-                <a href={item.href} className="text-sm text-paper transition-colors hover:text-lime-300">
+                <a href={item.href} className="text-sm text-paper transition-colors hover:text-blue-300">
                   {item.value}
                 </a>
               ) : (
@@ -55,7 +55,7 @@ export function ContactInfo() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={social.label}
-              className="flex size-10 items-center justify-center rounded-full border border-paper/15 text-paper/70 transition-colors hover:border-lime-300 hover:text-lime-300"
+              className="flex size-10 items-center justify-center rounded-full border border-paper/15 text-paper/70 transition-colors hover:border-blue-300 hover:text-blue-300"
             >
               <Icon className="size-4" />
             </a>

@@ -35,7 +35,7 @@ export function ServiceDetail() {
   return (
     <section className="relative bg-paper py-section">
       <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -top-32 right-0 size-[420px] rounded-full bg-gradient-to-br from-lime-300/25 via-blue-400/15 to-blue-700/25 blur-[110px]" />
+        <div className="absolute -top-32 right-0 size-[420px] rounded-full bg-gradient-to-br from-blue-300/25 via-blue-400/15 to-blue-700/25 blur-[110px]" />
       </div>
 
       <div className="container-wide relative">

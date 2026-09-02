@@ -65,7 +65,7 @@ export function ProjectCard({
         </div>
       )}
 
-      <div className={cn("absolute inset-x-0 bottom-0 flex flex-col gap-3 sm:gap-4", isStack ? "p-6 sm:p-8" : "p-6")}>
+      <div className={cn("absolute inset-x-0 bottom-0 flex flex-col gap-2 sm:gap-3", isStack ? "p-4 sm:p-5" : "p-6")}>
         {showText && (
           <>
             <div className="flex items-center gap-2">
@@ -75,15 +75,15 @@ export function ProjectCard({
               </span>
             </div>
 
-            <h3 className={cn("font-semibold leading-snug text-paper", isStack ? "text-xl sm:text-3xl" : "text-xl sm:text-2xl")}>
+            <h3 className={cn("font-semibold leading-snug text-paper", isStack ? "text-lg sm:text-2xl" : "text-xl sm:text-2xl")}>
               {project.title}
             </h3>
 
             <div
               className={cn(
-                "grid grid-cols-2 gap-4 overflow-hidden transition-all duration-500 ease-expo",
+                "grid grid-cols-2 gap-3 overflow-hidden transition-all duration-500 ease-expo",
                 isStack
-                  ? "max-h-32 opacity-100 sm:grid-cols-4"
+                  ? "max-h-24 opacity-100 sm:grid-cols-4"
                   : "max-h-0 opacity-0 group-hover:max-h-24 group-hover:opacity-100"
               )}
             >
@@ -91,19 +91,19 @@ export function ProjectCard({
                 <div
                   key={result.label}
                   className={cn(
-                    "border-t border-paper/15 pt-3",
+                    "border-t border-paper/15 pt-2",
                     isStack && index >= 2 && "hidden sm:block"
                   )}
                 >
                   <p
                     className={cn(
                       "font-display font-semibold text-lime-300",
-                      isStack ? "text-2xl sm:text-4xl" : "text-lg"
+                      isStack ? "text-lg sm:text-2xl" : "text-lg"
                     )}
                   >
                     {result.value}
                   </p>
-                  <p className={cn(isStack ? "text-sm" : "text-[0.7rem]", "text-paper/50")}>
+                  <p className={cn(isStack ? "text-xs" : "text-[0.7rem]", "text-paper/50")}>
                     {result.label}
                   </p>
                 </div>

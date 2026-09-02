@@ -23,19 +23,19 @@ export function ProjectFilter({ active, onChange, counts }: ProjectFilterProps) 
             aria-pressed={isActive}
             className={cn(
               "relative shrink-0 whitespace-nowrap rounded-full px-4 py-2.5 text-sm font-medium transition-colors duration-300 sm:px-5",
-              isActive ? "text-ink-950" : "text-ink-400 hover:text-ink-700"
+              isActive ? "text-paper" : "text-ink-400 hover:text-ink-700"
             )}
           >
             {isActive && (
               <motion.span
                 layoutId="project-filter-pill"
                 transition={{ duration: 0.45, ease: EXPO_EASE }}
-                className="absolute inset-0 rounded-full bg-lime-300"
+                className="absolute inset-0 rounded-full bg-blue-500"
               />
             )}
             <span className="relative z-10">
               {filter}
-              <span className={cn("ml-1.5 text-xs", isActive ? "text-ink-950/60" : "text-ink-300")}>
+              <span className={cn("ml-1.5 text-xs", isActive ? "text-paper/60" : "text-ink-300")}>
                 {counts[filter] ?? 0}
               </span>
             </span>

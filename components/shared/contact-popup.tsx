@@ -72,7 +72,7 @@ export function ContactPopup() {
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.4, ease: EXPO_EASE, delay: 0.6 }}
         aria-label="Open contact form"
-        className="fixed bottom-6 right-5 z-40 inline-flex items-center gap-2 rounded-full bg-lime-300 px-5 py-3.5 text-sm font-medium text-ink-950 shadow-lg transition-colors hover:bg-lime-200 sm:bottom-8 sm:right-8"
+        className="fixed bottom-6 right-5 z-40 inline-flex items-center gap-2 rounded-full bg-blue-500 px-5 py-3.5 text-sm font-medium text-paper shadow-lg transition-colors hover:bg-blue-600 sm:bottom-8 sm:right-8"
       >
         <MessageSquareText className="size-4" />
         Contact Us
@@ -91,7 +91,7 @@ export function ContactPopup() {
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 0.5, ease: EXPO_EASE, delay: 0.15 }}
-                className="flex size-14 items-center justify-center rounded-full bg-lime-300 text-ink-950"
+                className="flex size-14 items-center justify-center rounded-full bg-blue-500 text-paper"
               >
                 <CheckCircle2 className="size-7" />
               </motion.span>
