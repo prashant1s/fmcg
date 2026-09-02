@@ -91,21 +91,21 @@ export const MISSION_VISION_VALUES: ValueProp[] = [
     id: "mvv-1",
     title: "Mission",
     description:
-      "To give FMCG brands of every size the social presence their products deserve — turning shelf-stable goods into scroll-stopping culture.",
+      "To give FMCG brands of every size the social presence their products deserve — pairing category depth with the creative excellence and technical craft usually reserved for tech and DTC brands.",
     icon: "Target",
   },
   {
     id: "mvv-2",
     title: "Vision",
     description:
-      "A world where the best product doesn't lose to the loudest ad budget — where great social strategy levels the playing field at retail.",
+      "A world where the best product doesn't lose to the loudest ad budget — where innovation and data-driven strategy level the playing field at retail.",
     icon: "Eye",
   },
   {
     id: "mvv-3",
     title: "Values",
     description:
-      "Category obsession, radical transparency in reporting, and creative work we'd be proud to see in our own feeds.",
+      "Category obsession, radical transparency in reporting, and creative work we'd be proud to see in our own feeds — built on innovation, competence, and a genuine passion for the craft.",
     icon: "Heart",
   },
 ];
@@ -135,9 +135,9 @@ export const MILESTONES: MilestoneItem[] = [
   {
     id: "ms-4",
     year: "2022",
-    title: "New York studio opens",
+    title: "Bengaluru & Pune studios open",
     description:
-      "A second studio location opens to serve East Coast CPG clients and expand production capacity.",
+      "Two new studio locations open in Bengaluru and Pune, expanding our footprint across India's key retail and creator hubs.",
   },
   {
     id: "ms-5",
@@ -151,7 +151,7 @@ export const MILESTONES: MilestoneItem[] = [
     year: "2025",
     title: "68 brands, 3 studios",
     description:
-      "Whizoidstudio now operates from Indore, New York, and Mumbai, serving 68 active FMCG brands across four continents.",
+      "Whizoidstudio now operates from Indore, Bengaluru, and Pune, serving 68 active FMCG brands across four continents.",
   },
 ];
 

@@ -9,7 +9,9 @@ export type ProjectCategory =
   | "Graphics Design"
   | "Strategy Planning"
   | "Photography"
-  | "E-commerce";
+  | "E-commerce"
+  | "Quick Commerce"
+  | "Marketplace Onboarding";
 
 export interface ResultMetric {
   label: string;

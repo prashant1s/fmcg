@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PageHero } from "@/components/shared/page-hero";
+import { AboutHero } from "@/components/about/about-hero";
 import { StorySection } from "@/components/about/story-section";
 import { Values } from "@/components/about/values";
 import { CultureGallery } from "@/components/about/culture-gallery";
@@ -37,11 +37,7 @@ export default function AboutPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
       />
-      <PageHero
-        eyebrow="About Whizoidstudio"
-        title="A social agency built exclusively for consumer goods."
-        description="We started Whizoidstudio because FMCG brands deserve a social partner that understands retail cycles, shelf economics, and category culture — not a generalist agency running the same playbook for everyone."
-      />
+      <AboutHero />
       <StorySection />
       <Values />
       <CultureGallery />

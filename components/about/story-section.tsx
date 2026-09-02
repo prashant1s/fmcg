@@ -25,12 +25,16 @@ export function StorySection() {
               to a snack brand as they would a SaaS startup. FMCG social
               doesn&apos;t work like that — it lives at the intersection of
               retail cycles, impulse purchase psychology, and category
-              culture. So we built an agency that only works within it.
+              culture. So we built an agency that only works within it, run on
+              the same principles that define good craft anywhere: innovation,
+              excellence, and a genuine passion for the work.
             </p>
             <p className="text-left leading-relaxed text-ink-500">
               Seven years later, that focus is still our only real
               differentiator: every strategist, producer, and media buyer
-              here has only ever worked on consumer goods.
+              here has only ever worked on consumer goods — backed by studios
+              in Indore, Bengaluru, and Pune, and a track record built on
+              measurable results, not vanity metrics.
             </p>
           </div>
           <motion.div
