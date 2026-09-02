@@ -218,4 +218,5 @@ export const TRUSTED_BRAND_LOGOS: TrustedBrand[] = [
   { name: "11:11", src: "/logos/11-11.svg" },
   { name: "Masoli Restaurant", src: "/logos/masoli-restaurant.webp" },
   { name: "Ditra", src: "/logos/ditra.webp" },
+  { name: "IHP Masala", src: "/logos/ihp.jpeg" },
 ];

@@ -288,9 +288,8 @@ export const projects: Project[] = [
     client: "IHP Masala",
     year: "2025",
     category: ["Quick Commerce", "Marketplace Onboarding"],
-    // TODO: replace with real IHP Masala photography once uploaded to whizoid.com/img/portfolio/ihp-masala/
-    coverImage: "/logo.avif",
-    gallery: ["/logo.avif", "/logo.avif"],
+    coverImage: "/logos/ihp.jpeg",
+    gallery: ["/logos/ihp.jpeg", "/logos/ihp.jpeg"],
     summary:
       "Marketplace onboarding for a masala brand, getting it fully set up and live for quick-commerce shoppers on Blinkit.",
     challenge:
