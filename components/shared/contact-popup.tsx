@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion, AnimatePresence } from "framer-motion";
-import { CheckCircle2, Mail, MessageSquareText, Phone } from "lucide-react";
+import { CheckCircle2, Mail, MessageSquareText, Phone, ShieldCheck, Sparkles, Zap } from "lucide-react";
 import { popupContactSchema, type PopupContactValues } from "@/lib/validations";
 import { SITE } from "@/lib/constants";
 import { Modal } from "@/components/ui/modal";
@@ -13,6 +13,24 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { EXPO_EASE } from "@/lib/animations";
+
+const POPUP_STEPS = [
+  {
+    icon: Sparkles,
+    title: "Share your details",
+    description: "Takes less than a minute — no calls until you're ready.",
+  },
+  {
+    icon: Zap,
+    title: "We reply on WhatsApp",
+    description: "Usually within a few hours, often sooner.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Free strategy chat",
+    description: "A plan for your brand — no pressure, no fine print.",
+  },
+];
 
 export function ContactPopup() {
   const pathname = usePathname();
@@ -118,8 +136,13 @@ export function ContactPopup() {
               transition={{ duration: 0.5, ease: EXPO_EASE }}
               className="flex flex-col sm:flex-row"
             >
-              <div className="flex flex-col justify-between gap-8 bg-ink-950 px-8 py-10 text-paper sm:w-[38%] sm:px-9 sm:py-11">
-                <div>
+              <div className="relative flex flex-col gap-10 overflow-hidden bg-ink-950 px-8 py-10 text-paper sm:w-[42%] sm:px-9 sm:py-12">
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute -left-16 -top-20 size-64 rounded-full bg-blue-500/20 blur-3xl"
+                />
+
+                <div className="relative">
                   <span className="flex size-11 items-center justify-center rounded-md bg-blue-500 text-paper">
                     <MessageSquareText className="size-5" />
                   </span>
@@ -131,10 +154,24 @@ export function ContactPopup() {
                   </p>
                 </div>
 
-                <div className="flex flex-col gap-3 border-t border-paper/10 pt-6 text-sm text-paper/70">
-                  <a href={`mailto:${SITE.email}`} className="flex items-center gap-2.5 transition-colors hover:text-paper">
+                <div className="relative flex flex-1 flex-col gap-6">
+                  {POPUP_STEPS.map(({ icon: Icon, title, description }) => (
+                    <div key={title} className="flex items-start gap-3.5">
+                      <span className="flex size-9 shrink-0 items-center justify-center rounded-md bg-paper/8 text-paper/80">
+                        <Icon className="size-4" />
+                      </span>
+                      <div>
+                        <p className="text-sm font-medium text-paper">{title}</p>
+                        <p className="mt-0.5 text-sm leading-relaxed text-paper/50">{description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="relative flex flex-col gap-3 border-t border-paper/10 pt-6 text-sm text-paper/70">
+                  <a href={`mailto:${SITE.email}`} className="flex items-center gap-2.5 break-all transition-colors hover:text-paper">
                     <Mail className="size-4 shrink-0" />
-                    <span className="truncate">{SITE.email}</span>
+                    {SITE.email}
                   </a>
                   <a href={`tel:${SITE.phoneHref}`} className="flex items-center gap-2.5 transition-colors hover:text-paper">
                     <Phone className="size-4 shrink-0" />
@@ -146,23 +183,30 @@ export function ContactPopup() {
               <form
                 onSubmit={handleSubmit(onSubmit)}
                 noValidate
-                className="flex flex-1 flex-col gap-5 px-8 py-10 sm:px-9 sm:py-11"
+                className="flex flex-1 flex-col justify-between gap-8 px-8 py-10 sm:px-9 sm:py-12"
               >
-                <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-                  <Input label="Full Name" error={errors.name?.message} {...register("name")} />
-                  <Input label="Email Address" type="email" error={errors.email?.message} {...register("email")} />
+                <div className="flex flex-col gap-5">
+                  <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                    <Input label="Full Name" error={errors.name?.message} {...register("name")} />
+                    <Input label="Email Address" type="email" error={errors.email?.message} {...register("email")} />
+                  </div>
+                  <Input label="Phone Number" type="tel" error={errors.phone?.message} {...register("phone")} />
+                  <Textarea
+                    label="Tell us a bit about your brand (optional)"
+                    rows={6}
+                    error={errors.message?.message}
+                    {...register("message")}
+                  />
                 </div>
-                <Input label="Phone Number" type="tel" error={errors.phone?.message} {...register("phone")} />
-                <Textarea
-                  label="Tell us a bit about your brand (optional)"
-                  rows={3}
-                  error={errors.message?.message}
-                  {...register("message")}
-                />
 
-                <Button type="submit" size="lg" loading={isSubmitting} showArrow className="mt-1 w-full">
-                  Send Message
-                </Button>
+                <div className="flex flex-col gap-3">
+                  <Button type="submit" size="lg" loading={isSubmitting} showArrow className="w-full">
+                    Send Message
+                  </Button>
+                  <p className="text-center text-xs text-ink-400">
+                    We&apos;ll only use your details to get in touch — no spam, ever.
+                  </p>
+                </div>
               </form>
             </motion.div>
           </AnimatePresence>
