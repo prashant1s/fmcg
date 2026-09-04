@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion, AnimatePresence } from "framer-motion";
-import { CheckCircle2, MessageSquareText } from "lucide-react";
+import { CheckCircle2, Mail, MessageSquareText, Phone } from "lucide-react";
 import { popupContactSchema, type PopupContactValues } from "@/lib/validations";
 import { SITE } from "@/lib/constants";
 import { Modal } from "@/components/ui/modal";
@@ -81,7 +81,7 @@ export function ContactPopup() {
       <Modal
         isOpen={isOpen}
         onClose={close}
-        className="max-w-md rounded-md"
+        className="max-w-3xl rounded-md"
         labelledBy="contact-popup-title"
         closeButtonClassName="rounded-md border border-ink-950/10 bg-paper text-ink-500 shadow-sm backdrop-blur-none hover:bg-ink-100 hover:text-ink-950"
       >
@@ -90,7 +90,7 @@ export function ContactPopup() {
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, ease: EXPO_EASE }}
-            className="flex flex-col items-center gap-5 px-8 py-12 text-center sm:px-10"
+            className="flex flex-col items-center gap-5 px-8 py-16 text-center sm:px-10"
           >
             <motion.span
               initial={{ scale: 0 }}
@@ -111,27 +111,47 @@ export function ContactPopup() {
           </motion.div>
         ) : (
           <AnimatePresence mode="wait">
-            <motion.form
+            <motion.div
               key="contact-popup-form"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: EXPO_EASE }}
-              onSubmit={handleSubmit(onSubmit)}
-              noValidate
-              className="flex flex-col"
+              className="flex flex-col sm:flex-row"
             >
-              <div className="border-b border-ink-950/8 px-8 py-6 sm:px-10">
-                <h3 id="contact-popup-title" className="text-2xl font-semibold text-ink-950">
-                  Let&apos;s talk.
-                </h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-ink-500">
-                  Drop your details and we&apos;ll get back to you within one business day.
-                </p>
+              <div className="flex flex-col justify-between gap-8 bg-ink-950 px-8 py-10 text-paper sm:w-[38%] sm:px-9 sm:py-11">
+                <div>
+                  <span className="flex size-11 items-center justify-center rounded-md bg-blue-500 text-paper">
+                    <MessageSquareText className="size-5" />
+                  </span>
+                  <h3 id="contact-popup-title" className="mt-6 text-2xl font-semibold leading-tight sm:text-[1.7rem]">
+                    Let&apos;s talk.
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-paper/60">
+                    Drop your details and we&apos;ll get back to you within one business day.
+                  </p>
+                </div>
+
+                <div className="flex flex-col gap-3 border-t border-paper/10 pt-6 text-sm text-paper/70">
+                  <a href={`mailto:${SITE.email}`} className="flex items-center gap-2.5 transition-colors hover:text-paper">
+                    <Mail className="size-4 shrink-0" />
+                    <span className="truncate">{SITE.email}</span>
+                  </a>
+                  <a href={`tel:${SITE.phoneHref}`} className="flex items-center gap-2.5 transition-colors hover:text-paper">
+                    <Phone className="size-4 shrink-0" />
+                    {SITE.phone}
+                  </a>
+                </div>
               </div>
 
-              <div className="flex flex-col gap-5 px-8 py-8 sm:px-10">
-                <Input label="Full Name" error={errors.name?.message} {...register("name")} />
-                <Input label="Email Address" type="email" error={errors.email?.message} {...register("email")} />
+              <form
+                onSubmit={handleSubmit(onSubmit)}
+                noValidate
+                className="flex flex-1 flex-col gap-5 px-8 py-10 sm:px-9 sm:py-11"
+              >
+                <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                  <Input label="Full Name" error={errors.name?.message} {...register("name")} />
+                  <Input label="Email Address" type="email" error={errors.email?.message} {...register("email")} />
+                </div>
                 <Input label="Phone Number" type="tel" error={errors.phone?.message} {...register("phone")} />
                 <Textarea
                   label="Tell us a bit about your brand (optional)"
@@ -143,8 +163,8 @@ export function ContactPopup() {
                 <Button type="submit" size="lg" loading={isSubmitting} showArrow className="mt-1 w-full">
                   Send Message
                 </Button>
-              </div>
-            </motion.form>
+              </form>
+            </motion.div>
           </AnimatePresence>
         )}
       </Modal>
