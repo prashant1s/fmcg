@@ -13,9 +13,17 @@ interface ModalProps {
   children: ReactNode;
   className?: string;
   labelledBy?: string;
+  closeButtonClassName?: string;
 }
 
-export function Modal({ isOpen, onClose, children, className, labelledBy }: ModalProps) {
+export function Modal({
+  isOpen,
+  onClose,
+  children,
+  className,
+  labelledBy,
+  closeButtonClassName,
+}: ModalProps) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
@@ -64,14 +72,17 @@ export function Modal({ isOpen, onClose, children, className, labelledBy }: Moda
             exit={{ opacity: 0, y: 24, scale: 0.98 }}
             transition={{ duration: 0.45, ease: EXPO_EASE }}
             className={cn(
-              "relative z-10 w-full max-w-3xl overflow-hidden rounded-lg bg-paper shadow-2xl",
+              "relative z-10 w-full max-w-3xl overflow-hidden rounded-md border border-ink-950/10 bg-paper shadow-2xl",
               className
             )}
           >
             <button
               onClick={onClose}
               aria-label="Close dialog"
-              className="absolute right-4 top-4 z-20 inline-flex size-10 items-center justify-center rounded-full bg-ink-950/80 text-paper backdrop-blur transition-colors hover:bg-ink-950"
+              className={cn(
+                "absolute right-4 top-4 z-20 inline-flex size-10 items-center justify-center rounded-full bg-ink-950/80 text-paper backdrop-blur transition-colors hover:bg-ink-950",
+                closeButtonClassName
+              )}
             >
               <X className="size-4" />
             </button>
