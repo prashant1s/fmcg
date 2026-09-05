@@ -122,7 +122,7 @@ export function ContactPopup() {
             </motion.span>
             <h3 className="text-2xl font-semibold text-ink-950 text-balance">Redirecting you to WhatsApp</h3>
             <p className="max-w-sm text-sm leading-relaxed text-ink-500 text-balance">
-              We've opened WhatsApp with your details filled in. Just hit send and
+              We&apos;ve opened WhatsApp with your details filled in. Just hit send and
               our team will reply shortly.
             </p>
             <Button variant="outline" className="mt-4 border-ink-950/15" onClick={close}>
@@ -150,10 +150,10 @@ export function ContactPopup() {
                     <MessageSquareText className="size-5" />
                   </span>
                   <h3 id="contact-popup-title" className="mt-4 text-2xl font-semibold leading-tight sm:text-[1.7rem]">
-                    Let's talk.
+                    Let&apos;s talk.
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-paper/70">
-                    Drop your details and we'll get back to you within one business day.
+                    Drop your details and we&apos;ll get back to you within one business day.
                   </p>
                 </div>
 
@@ -198,7 +198,7 @@ export function ContactPopup() {
                       Send Message
                     </Button>
                     <p className="text-center text-xs text-ink-400">
-                      We'll only use your details to get in touch — no spam, ever.
+                      We&apos;ll only use your details to get in touch — no spam, ever.
                     </p>
                   </div>
                   
