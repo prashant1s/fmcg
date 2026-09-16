@@ -1,16 +1,13 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-  FaYoutube,
-} from "react-icons/fa6";
 import { services } from "@/data/services";
 import { fadeUp, fadeIn, staggerContainer, EXPO_EASE } from "@/lib/animations";
+
+const HERO_IMAGE =
+  "https://images.unsplash.com/photo-1643503640904-75c1a2093570?w=1200&q=80&auto=format&fit=crop";
 
 export function ServicesHero() {
   return (
@@ -73,50 +70,15 @@ export function ServicesHero() {
           transition={{ duration: 1, ease: EXPO_EASE, delay: 0.25 }}
           className="relative lg:col-span-5"
         >
-          <div
-            role="img"
-            aria-label="Assorted social media app logos floating together"
-            className="relative aspect-[4/3.5] w-full overflow-hidden rounded-lg border border-paper/10 bg-gradient-to-br from-blue-900 via-ink-900 to-ink-950"
-          >
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="relative size-full max-w-xs">
-                <motion.div
-                  animate={{ y: [0, -10, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute left-1/2 top-1/2 flex size-24 -translate-x-1/2 -translate-y-1/2 -rotate-6 items-center justify-center rounded-3xl bg-gradient-to-br from-amber-400 via-pink-500 to-purple-600 text-paper shadow-2xl"
-                >
-                  <FaInstagram className="size-11" />
-                </motion.div>
-                <motion.div
-                  animate={{ y: [0, 8, 0] }}
-                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
-                  className="absolute bottom-4 left-2 flex size-20 rotate-6 items-center justify-center rounded-2xl bg-[#1877F2] text-paper shadow-xl"
-                >
-                  <FaFacebook className="size-9" />
-                </motion.div>
-                <motion.div
-                  animate={{ y: [0, -8, 0] }}
-                  transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
-                  className="absolute bottom-0 right-8 flex size-20 -rotate-[8deg] items-center justify-center rounded-2xl bg-[#FF0000] text-paper shadow-xl"
-                >
-                  <FaYoutube className="size-9" />
-                </motion.div>
-                <motion.div
-                  animate={{ y: [0, 10, 0] }}
-                  transition={{ duration: 4.2, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
-                  className="absolute right-0 top-4 flex size-16 rotate-[10deg] items-center justify-center rounded-2xl bg-[#0A66C2] text-paper shadow-xl"
-                >
-                  <FaLinkedin className="size-7" />
-                </motion.div>
-                <motion.div
-                  animate={{ y: [0, -9, 0] }}
-                  transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                  className="absolute left-4 top-6 flex size-14 -rotate-[10deg] items-center justify-center rounded-2xl bg-[#1DA1F2] text-paper shadow-xl"
-                >
-                  <FaTwitter className="size-6" />
-                </motion.div>
-              </div>
-            </div>
+          <div className="relative aspect-[4/3.5] w-full overflow-hidden rounded-lg border border-paper/10">
+            <Image
+              src={HERO_IMAGE}
+              alt="Assorted 3D social media app logos floating together"
+              fill
+              priority
+              sizes="(min-width: 1024px) 40vw, 100vw"
+              className="object-cover"
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-ink-950/60 via-transparent to-transparent" />
           </div>
 
