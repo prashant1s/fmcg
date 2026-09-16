@@ -46,7 +46,7 @@ export function ServicesHero() {
             variants={fadeUp}
             className="max-w-xl text-balance text-lg leading-relaxed text-ink-200 sm:text-xl"
           >
-            From always-on content to full-funnel paid media — every discipline
+            From always-on content to full-funnel paid media every discipline
             working as one team, so nothing falls through the cracks between
             vendors.
           </motion.p>

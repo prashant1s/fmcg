@@ -112,7 +112,7 @@ const sections: LegalSection[] = [
     body: (
       <>
         <p>
-          Ownership of custom deliverables — including final creative,
+          Ownership of custom deliverables including final creative,
           copy, and campaign assets produced specifically for a client —
           transfers to that client once payment for the corresponding work
           has been received in full.
@@ -161,8 +161,8 @@ const sections: LegalSection[] = [
     body: (
       <p>
         Both parties agree to protect any proprietary or confidential
-        information disclosed during the engagement — including strategy
-        documents, performance data, and unreleased campaign plans — and to
+        information disclosed during the engagement including strategy
+        documents, performance data, and unreleased campaign plans and to
         use it solely for the purposes of the engagement, both during and
         after the relationship ends.
       </p>

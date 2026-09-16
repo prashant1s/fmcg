@@ -79,7 +79,7 @@ export function renderOgImage(eyebrow: string, title: string) {
         </div>
 
         <div style={{ display: "flex", color: "#9E9EA7", fontSize: 22 }}>
-          whizoidstudio.com — Social growth for FMCG brands
+          whizoidstudio.com Social growth for FMCG brands
         </div>
       </div>
     ),

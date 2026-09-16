@@ -87,7 +87,7 @@ export function Hero() {
             className="max-w-2xl text-balance text-md leading-relaxed text-ink-200 sm:text-md"
           >
             Whizoidstudio is a social media agency built exclusively for consumer goods
-            brands — strategy, content, UGC, and paid media engineered to move
+            brands strategy, content, UGC, and paid media engineered to move
             product, not just impressions.
           </motion.p>
 

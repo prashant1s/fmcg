@@ -21,7 +21,7 @@ export const projects: Project[] = [
     summary:
       "Digital strategy for a premium protein bar brand launching into a competitive health food market.",
     challenge:
-      "11:11 needed to stand out in a saturated protein bar market and be seen as a lifestyle choice, not just another snack — with no existing digital presence to build from.",
+      "11:11 needed to stand out in a saturated protein bar market and be seen as a lifestyle choice, not just another snack with no existing digital presence to build from.",
     approach:
       "We ran a high-energy launch campaign built on workout-focused ad production, dedicated product photography, and fitness influencer partnerships that put clean ingredients and taste front and center, backed by a new brand website.",
     deliverables: [
@@ -65,7 +65,7 @@ export const projects: Project[] = [
     challenge:
       "Rasssa Rasoi needed compelling visual content, strategic social engagement, and influencer collaborations to stand out in Pune's crowded cloud kitchen market and turn its signature Tambda & Pandhra Rassa into a must-try order.",
     approach:
-      "We ran professional food photography shoots alongside targeted social content, paid campaigns, and food influencer partnerships that showcased the kitchen's authenticity and Kolhapuri roots — helping it get recognized as Pune's Best Newcomer Cloud Kitchen.",
+      "We ran professional food photography shoots alongside targeted social content, paid campaigns, and food influencer partnerships that showcased the kitchen's authenticity and Kolhapuri roots helping it get recognized as Pune's Best Newcomer Cloud Kitchen.",
     deliverables: [
       "Professional food photography",
       "Social media content strategy",
@@ -142,9 +142,9 @@ export const projects: Project[] = [
     summary:
       "Launch marketing for a new Bangalore cafe, built to convert opening buzz into consistent, extensive foot traffic from week one.",
     challenge:
-      "Snuzzles needed to go from an empty space to a destination cafe fast — building local awareness, a distinct identity, and enough pre-launch buzz to drive real walk-ins from opening day.",
+      "Snuzzles needed to go from an empty space to a destination cafe fast building local awareness, a distinct identity, and enough pre-launch buzz to drive real walk-ins from opening day.",
     approach:
-      "We led the cafe's launch campaign end to end — professional photography, a cohesive visual identity, and a consistent social presence paired with targeted local ad production that turned launch-week curiosity into sustained foot falls through the cafe's opening and early growth phase.",
+      "We led the cafe's launch campaign end to end professional photography, a cohesive visual identity, and a consistent social presence paired with targeted local ad production that turned launch-week curiosity into sustained foot falls through the cafe's opening and early growth phase.",
     deliverables: [
       "Launch campaign strategy",
       "Professional photo shoots",
@@ -185,7 +185,7 @@ export const projects: Project[] = [
     challenge:
       "Kishandas & Co. needed to connect with contemporary audiences while maintaining the legacy brand identity and heritage values built over generations.",
     approach:
-      "We blended heritage storytelling with contemporary marketing — elegant social content, fashion influencer collaborations, premium ad production, and refined visual design that showcased the brand's craftsmanship.",
+      "We blended heritage storytelling with contemporary marketing elegant social content, fashion influencer collaborations, premium ad production, and refined visual design that showcased the brand's craftsmanship.",
     deliverables: [
       "Social media strategy",
       "Influencer partnerships",
@@ -225,7 +225,7 @@ export const projects: Project[] = [
     challenge:
       "Rhino Cult was launching from scratch with no existing audience or content library, and needed a distinct brand identity plus a social presence that could compete in a crowded fitness apparel category from day one.",
     approach:
-      "We led the brand's initial launch — building its visual identity and content strategy, then driving a consistent social media presence backed by professional product photography, ad production, and influencer partnerships within the fitness community.",
+      "We led the brand's initial launch building its visual identity and content strategy, then driving a consistent social media presence backed by professional product photography, ad production, and influencer partnerships within the fitness community.",
     deliverables: [
       "Brand launch strategy",
       "Social media management",
@@ -295,7 +295,7 @@ export const projects: Project[] = [
     challenge:
       "IHP Masala needed to get listed and selling on Blinkit but lacked the marketplace experience to navigate onboarding, listings, and catalog setup on its own.",
     approach:
-      "We managed the end-to-end onboarding process with Blinkit — from account and catalog setup to listing optimization — getting IHP Masala live and discoverable to quick-commerce shoppers.",
+      "We managed the end-to-end onboarding process with Blinkit from account and catalog setup to listing optimization getting IHP Masala live and discoverable to quick-commerce shoppers.",
     deliverables: ["Blinkit account onboarding", "Catalog & listing setup"],
     results: [
       { label: "Core services delivered", value: "2" },

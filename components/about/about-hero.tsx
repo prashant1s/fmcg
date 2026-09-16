@@ -55,7 +55,7 @@ export function AboutHero() {
           >
             We started Whizoidstudio because FMCG brands deserve a social
             partner that understands retail cycles, shelf economics, and
-            category culture — not a generalist agency running the same
+            category culture not a generalist agency running the same
             playbook for everyone. Every strategy we ship pairs that category
             depth with the innovation, craft, and attention to detail we&apos;d
             want on our own brands.

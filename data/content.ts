@@ -31,14 +31,14 @@ export const WHY_CHOOSE_US: ValueProp[] = [
     id: "why-2",
     title: "Creative Excellence",
     description:
-      "An in-house studio and a 3,000-strong creator network mean your brand never looks like everyone else's feed — on any budget tier.",
+      "An in-house studio and a 3,000-strong creator network mean your brand never looks like everyone else's feed on any budget tier.",
     icon: "Sparkles",
   },
   {
     id: "why-3",
     title: "Proven ROI",
     description:
-      "We report in the metrics that matter to your P&L — CAC, ROAS, and where possible, velocity at retail — not vanity impressions.",
+      "We report in the metrics that matter to your P&L CAC, ROAS, and where possible, velocity at retail not vanity impressions.",
     icon: "TrendingUp",
   },
 ];
@@ -57,7 +57,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
     number: "02",
     title: "Strategy",
     description:
-      "A channel and content roadmap tied to real business goals — trial, repeat purchase, and distribution support.",
+      "A channel and content roadmap tied to real business goals trial, repeat purchase, and distribution support.",
     icon: "Compass",
   },
   {
@@ -91,21 +91,21 @@ export const MISSION_VISION_VALUES: ValueProp[] = [
     id: "mvv-1",
     title: "Mission",
     description:
-      "To give FMCG brands of every size the social presence their products deserve — pairing category depth with the creative excellence and technical craft usually reserved for tech and DTC brands.",
+      "To give FMCG brands of every size the social presence their products deserve pairing category depth with the creative excellence and technical craft usually reserved for tech and DTC brands.",
     icon: "Target",
   },
   {
     id: "mvv-2",
     title: "Vision",
     description:
-      "A world where the best product doesn't lose to the loudest ad budget — where innovation and data-driven strategy level the playing field at retail.",
+      "A world where the best product doesn't lose to the loudest ad budget where innovation and data-driven strategy level the playing field at retail.",
     icon: "Eye",
   },
   {
     id: "mvv-3",
     title: "Values",
     description:
-      "Category obsession, radical transparency in reporting, and creative work we'd be proud to see in our own feeds — built on innovation, competence, and a genuine passion for the craft.",
+      "Category obsession, radical transparency in reporting, and creative work we'd be proud to see in our own feeds built on innovation, competence, and a genuine passion for the craft.",
     icon: "Heart",
   },
 ];
@@ -143,7 +143,7 @@ export const OUR_APPROACH: ValueProp[] = [
     id: "app-5",
     title: "Client Success",
     description:
-      "Our clients consistently see improved engagement, conversion rates, and business growth — the metrics that actually move the P&L.",
+      "Our clients consistently see improved engagement, conversion rates, and business growth the metrics that actually move the P&L.",
     icon: "TrendingUp",
   },
 ];

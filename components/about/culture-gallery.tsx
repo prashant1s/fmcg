@@ -87,7 +87,7 @@ export function CultureGallery() {
         <SectionHeading
           eyebrow="Culture"
           title="What it actually looks like inside Whizoidstudio."
-          description="Behind-the-scenes from our Indore studio — where strategy decks and shoot days happen in the same room."
+          description="Behind-the-scenes from our Indore studio where strategy decks and shoot days happen in the same room."
         />
 
         <div

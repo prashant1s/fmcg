@@ -75,8 +75,8 @@ const sections: LegalSection[] = [
       <p>
         Our website uses cookies and similar technologies to remember your
         preferences and analyze website traffic. Essential cookies keep the
-        Site functioning, while analytics cookies — used only where enabled
-        — help us understand aggregate usage patterns. You can control or
+        Site functioning, while analytics cookies used only where enabled
+        help us understand aggregate usage patterns. You can control or
         disable cookies at any time through your browser settings.
       </p>
     ),

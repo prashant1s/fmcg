@@ -42,7 +42,7 @@ export function ServiceDetail() {
         <SectionHeading
           eyebrow="Full service list"
           title="Every discipline. One team. Zero hand-offs."
-          description="Mix and match what your brand needs, or lean on the full stack — every discipline is built to work together, not in silos."
+          description="Mix and match what your brand needs, or lean on the full stack every discipline is built to work together, not in silos."
         />
 
         <motion.nav

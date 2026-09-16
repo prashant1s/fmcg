@@ -5,7 +5,7 @@ export const SITE = {
   fullName: "Whizoidstudio",
   tagline: "Social growth for FMCG brands",
   description:
-    "Whizoidstudio is a full-service social media agency built for FMCG brands — social strategy, UGC, influencer marketing, and paid social that turn scroll-stopping content into sell-through.",
+    "Whizoidstudio is a full-service social media agency built for FMCG brands social strategy, UGC, influencer marketing, and paid social that turn scroll-stopping content into sell-through.",
   url: "https://whizoidstudio.com",
   email: "sanidhya@whizoidstudio.com",
   phone: "+91 89621 77924",

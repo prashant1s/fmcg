@@ -38,7 +38,7 @@ const HOME_SERVICES = [
     id: "home-3",
     title: "Strategy & Analytics",
     shortDescription:
-      "The category, channel, and content strategy — backed by retail-minded reporting that connects performance to sell-through.",
+      "The category, channel, and content strategy backed by retail-minded reporting that connects performance to sell-through.",
     icon: "Compass",
     metric: { value: "80+", label: "brand strategies delivered" },
     accent: "blue",

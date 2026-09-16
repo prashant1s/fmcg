@@ -19,7 +19,7 @@ interface RotatingCardsProps {
   className?: string;
 }
 
-// Each card keeps its own fixed tilt/horizontal jitter permanently — only its
+// Each card keeps its own fixed tilt/horizontal jitter permanently only its
 // vertical position cycles as the deck is dragged, which is what gives the
 // "scattered photos on a table" look rather than a uniform circular wheel.
 const CARD_JITTER = [

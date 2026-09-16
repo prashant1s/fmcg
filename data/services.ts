@@ -8,7 +8,7 @@ export const services: Service[] = [
     shortDescription:
       "In-house photography, videography, and design that make packaged goods look irresistible on a 6-inch screen.",
     description:
-      "Our studio team shoots and edits scroll-stopping product content — flat lays, motion product shots, recipe videos, and brand campaigns — then adapts every asset for feed, Reels, Stories, and paid placements so nothing feels stretched or off-brand.",
+      "Our studio team shoots and edits scroll-stopping product content flat lays, motion product shots, recipe videos, and brand campaigns then adapts every asset for feed, Reels, Stories, and paid placements so nothing feels stretched or off-brand.",
     icon: "PenTool",
     deliverables: [
       "Studio & lifestyle photography",
@@ -27,7 +27,7 @@ export const services: Service[] = [
     shortDescription:
       "Creator partnerships that build trust at shelf and velocity online.",
     description:
-      "From nano-creators to category tastemakers, we build influencer programs mapped to your distribution footprint — briefing, negotiating, and managing partnerships that drive both brand lift and trackable conversion, not just reach.",
+      "From nano-creators to category tastemakers, we build influencer programs mapped to your distribution footprint briefing, negotiating, and managing partnerships that drive both brand lift and trackable conversion, not just reach.",
     icon: "Users",
     deliverables: [
       "Creator strategy & tiering",
@@ -46,7 +46,7 @@ export const services: Service[] = [
     shortDescription:
       "The category, channel, and content strategy that everything else is built on.",
     description:
-      "Before a single post goes out, we audit your category landscape, competitive whitespace, and audience behavior to build a social roadmap tied to real business outcomes — trial, repeat purchase, and distribution support.",
+      "Before a single post goes out, we audit your category landscape, competitive whitespace, and audience behavior to build a social roadmap tied to real business outcomes trial, repeat purchase, and distribution support.",
     icon: "Compass",
     deliverables: [
       "Category & competitive audits",
@@ -65,7 +65,7 @@ export const services: Service[] = [
     shortDescription:
       "Clear, retail-minded reporting that connects social performance to sell-through.",
     description:
-      "We build custom dashboards that tie social KPIs to the metrics your leadership actually tracks — reach, engagement, paid efficiency, and where possible, velocity at retail — so budget conversations run on data, not opinions.",
+      "We build custom dashboards that tie social KPIs to the metrics your leadership actually tracks reach, engagement, paid efficiency, and where possible, velocity at retail so budget conversations run on data, not opinions.",
     icon: "BarChart3",
     deliverables: [
       "Custom live dashboards",

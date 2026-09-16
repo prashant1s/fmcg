@@ -18,7 +18,7 @@ const POPUP_STEPS = [
   {
     icon: Sparkles,
     title: "Share your details",
-    description: "Takes less than a minute — no calls until you're ready.",
+    description: "Takes less than a minute no calls until you're ready.",
   },
   {
     icon: Zap,
@@ -28,7 +28,7 @@ const POPUP_STEPS = [
   {
     icon: ShieldCheck,
     title: "Free strategy chat",
-    description: "A plan for your brand — no pressure, no fine print.",
+    description: "A plan for your brand no pressure, no fine print.",
   },
 ];
 
@@ -198,7 +198,7 @@ export function ContactPopup() {
                       Send Message
                     </Button>
                     <p className="text-center text-xs text-ink-400">
-                      We&apos;ll only use your details to get in touch — no spam, ever.
+                      We&apos;ll only use your details to get in touch no spam, ever.
                     </p>
                   </div>
                   

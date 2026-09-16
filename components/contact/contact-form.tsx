@@ -64,7 +64,7 @@ export function ContactForm() {
         </motion.span>
         <h3 className="text-2xl font-semibold text-ink-950">Redirecting you to WhatsApp.</h3>
         <p className="max-w-sm text-ink-500">
-          We&apos;ve opened WhatsApp with your details filled in — just hit send and
+          We&apos;ve opened WhatsApp with your details filled in just hit send and
           our team will reply shortly.
         </p>
         <Button variant="outline" className="mt-2 border-ink-950/15" onClick={() => setIsSubmitted(false)}>

@@ -12,7 +12,7 @@ export const faqs: FAQ[] = [
     id: "faq-2",
     question: "How quickly can we get started?",
     answer:
-      "Most engagements kick off within 2–3 weeks of signing, starting with a discovery sprint. If you're working against a hard launch date, tell us during your first call — we've onboarded clients in as little as 5 business days.",
+      "Most engagements kick off within 2–3 weeks of signing, starting with a discovery sprint. If you're working against a hard launch date, tell us during your first call we've onboarded clients in as little as 5 business days.",
     category: "process",
   },
   {
@@ -47,7 +47,7 @@ export const faqs: FAQ[] = [
     id: "faq-7",
     question: "What does a typical monthly report include?",
     answer:
-      "A live dashboard covering reach, engagement, follower growth, paid efficiency, and content performance, plus a written analysis translating the numbers into next month's priorities — not just a data dump.",
+      "A live dashboard covering reach, engagement, follower growth, paid efficiency, and content performance, plus a written analysis translating the numbers into next month's priorities not just a data dump.",
     category: "services",
   },
   {
